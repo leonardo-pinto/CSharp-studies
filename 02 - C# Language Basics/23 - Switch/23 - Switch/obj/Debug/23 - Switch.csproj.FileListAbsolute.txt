@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\bin\Debug\23 - Switch.exe.config
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\bin\Debug\23 - Switch.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\bin\Debug\23 - Switch.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\obj\Debug\23 - Switch.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\obj\Debug\23 - Switch.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\obj\Debug\23 - Switch.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\obj\Debug\23 - Switch.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\23 - Switch\23 - Switch\obj\Debug\23 - Switch.pdb

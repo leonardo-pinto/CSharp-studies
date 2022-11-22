@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\bin\Debug\18 - SystemConsole.exe.config
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\bin\Debug\18 - SystemConsole.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\bin\Debug\18 - SystemConsole.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\obj\Debug\18 - SystemConsole.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\obj\Debug\18 - SystemConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\obj\Debug\18 - SystemConsole.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\obj\Debug\18 - SystemConsole.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\18 - SystemConsole\18 - SystemConsole\obj\Debug\18 - SystemConsole.pdb

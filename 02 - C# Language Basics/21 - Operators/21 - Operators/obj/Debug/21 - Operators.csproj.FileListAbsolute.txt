@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\bin\Debug\21 - Operators.exe.config
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\bin\Debug\21 - Operators.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\bin\Debug\21 - Operators.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\obj\Debug\21 - Operators.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\obj\Debug\21 - Operators.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\obj\Debug\21 - Operators.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\obj\Debug\21 - Operators.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\21 - Operators\21 - Operators\obj\Debug\21 - Operators.pdb

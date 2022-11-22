@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\bin\Debug\19 - Variables.exe.config
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\bin\Debug\19 - Variables.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\bin\Debug\19 - Variables.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\obj\Debug\19 - Variables.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\obj\Debug\19 - Variables.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\obj\Debug\19 - Variables.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\obj\Debug\19 - Variables.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\19 - Variables\19 - Variables\obj\Debug\19 - Variables.pdb

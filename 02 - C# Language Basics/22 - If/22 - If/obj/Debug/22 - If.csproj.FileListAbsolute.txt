@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\bin\Debug\22 - If.exe.config
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\bin\Debug\22 - If.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\bin\Debug\22 - If.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\obj\Debug\22 - If.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\obj\Debug\22 - If.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\obj\Debug\22 - If.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\obj\Debug\22 - If.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\22 - If\22 - If\obj\Debug\22 - If.pdb

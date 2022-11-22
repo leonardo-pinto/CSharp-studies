@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\bin\Debug\25 - For Loop.exe.config
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\bin\Debug\25 - For Loop.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\bin\Debug\25 - For Loop.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\obj\Debug\25 - For Loop.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\obj\Debug\25 - For Loop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\obj\Debug\25 - For Loop.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\obj\Debug\25 - For Loop.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\02 - C# Language Basics\25 - For Loop\25 - For Loop\obj\Debug\25 - For Loop.pdb
