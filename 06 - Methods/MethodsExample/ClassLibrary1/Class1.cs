@@ -13,9 +13,9 @@
         dateOfPurchase = System.DateTime.Now.ToShortDateString();
     }
 
-    public void SetName(string value)
+    public void SetName(string name)
     {
-        name = value;
+        this.name = name;
     }
 
     public string GetName()
@@ -23,9 +23,9 @@
         return name;
     }
 
-    public void SetCost(int value)
+    public void SetCost(int cost)
     {
-        cost = value;
+        this.cost = cost;
     }
 
     public int GetCost()
