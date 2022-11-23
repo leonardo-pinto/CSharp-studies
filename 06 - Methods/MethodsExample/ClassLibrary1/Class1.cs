@@ -1,4 +1,6 @@
-﻿public class Product
+﻿using System.Runtime.CompilerServices;
+
+public class Product
 {
     private string name;
     private int cost;
@@ -52,6 +54,18 @@
     public string GetDateOfPurchase()
     {
         return dateOfPurchase;
+    }
+
+    // static methods
+    // used to manipulate static fields
+    public static void SetTotalProducts(int value)
+    {
+        totalProducts = value + 1;
+    }
+
+    public static int GetTotalProducts()
+    {
+        return totalProducts;
     }
 
 
