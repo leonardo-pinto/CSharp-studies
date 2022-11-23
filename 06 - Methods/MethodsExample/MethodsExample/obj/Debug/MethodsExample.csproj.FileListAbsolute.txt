@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\bin\Debug\MethodsExample.exe.config
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\bin\Debug\MethodsExample.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\bin\Debug\MethodsExample.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\obj\Debug\MethodsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\obj\Debug\MethodsExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\obj\Debug\MethodsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\obj\Debug\MethodsExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\obj\Debug\MethodsExample.exe
+C:\Users\Leonardo\Documents\Cursos\C#\C# - Beginner to Advanced\06 - Methods\MethodsExample\MethodsExample\obj\Debug\MethodsExample.pdb
