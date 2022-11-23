@@ -1,12 +1,13 @@
 ﻿public class Product
 {
-    public string name;
-    public int cost;
-    public double tax;
+    private string name;
+    private int cost;
+    private double tax;
     public static int totalProducts;
     public const string manufacturer = "Microsoft";
-    public readonly string dateOfPurchase;
+    private readonly string dateOfPurchase;
 
+    // constructor
     public Product()
     {
         dateOfPurchase = System.DateTime.Now.ToShortDateString();
