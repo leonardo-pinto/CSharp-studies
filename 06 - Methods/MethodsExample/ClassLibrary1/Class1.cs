@@ -35,7 +35,7 @@ public class Product
         return cost;
     }
 
-    public void CalculateTax(double percentage = 12)
+    public void CalculateTax(in double percentage = 12)
     {
         if (cost <= 1000)
         {
