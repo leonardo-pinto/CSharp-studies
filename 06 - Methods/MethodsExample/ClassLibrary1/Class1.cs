@@ -35,14 +35,14 @@ public class Product
         return cost;
     }
 
-    public void CalculateTax()
+    public void CalculateTax(double percentage = 12)
     {
         if (cost <= 1000)
         {
-            tax = 0.125;
+            tax = percentage/100;
         } else
         {
-            tax = 0.25;
+            tax = 25/100;
         }
     }
 
