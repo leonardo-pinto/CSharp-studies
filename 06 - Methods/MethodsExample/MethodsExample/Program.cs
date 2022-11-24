@@ -14,7 +14,9 @@
         Product.SetTotalProducts(Product.GetTotalProducts());
         product2.SetName("Microsoft Office 365");
         product2.SetCost(150);
-        product2.CalculateTax(6.5);
+        // example of named arguments
+        // if one argument is named, all the others must also be named
+        product2.CalculateTax(percentage: 6.5);
 
 
         System.Console.WriteLine("Product: " + product1.GetName());
