@@ -5,6 +5,8 @@
         Employee emp1 = new Employee(1, "John Doe", "plumber");
         Employee emp2 = new Employee(2, "Joseph Richards", "product owner");
 
+        System.Console.WriteLine("Welcome to " + Employee.companyName);
+
         System.Console.WriteLine("First Employee: ");
         System.Console.WriteLine("ID: " + emp1.id);
         System.Console.WriteLine("Name: " + emp1.name);
