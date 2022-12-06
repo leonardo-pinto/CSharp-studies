@@ -16,8 +16,7 @@
             Id = 3,
             Name = "A",
             Job = "Software Engineer",
-            Tax = 3,
-            Nationality = "Brazil"
+            Tax = 3
         };
 
         System.Console.WriteLine("Welcome to " + Employee.CompanyName);

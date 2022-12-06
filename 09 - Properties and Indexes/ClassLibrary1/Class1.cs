@@ -55,13 +55,16 @@
             }
         }
     }
-    
+
     // auto-implemented property
     public string Nationality
     {
         set;
         get;
-    }
+    // initializer is a feature of C# 6.0
+    // works like a default value when the class is created
+    // it is overwritten if the set accessor is used
+    } = "Undefined";
 
     // static property
     public static string CompanyName
