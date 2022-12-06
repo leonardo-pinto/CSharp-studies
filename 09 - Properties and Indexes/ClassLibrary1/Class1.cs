@@ -5,6 +5,8 @@
     private int _id;
     private string _name;
     private string _job;
+    private readonly int _salary;
+    private double _tax;
     // static field
     private static string _companyName;
 
@@ -33,6 +35,27 @@
         get { return _job; }
     }
 
+    public int Salary
+    {
+        // readonly property
+        get
+        {
+            return _salary;
+        }
+    }
+
+    public double Tax
+    {
+        // writeonly property
+        set
+        {
+            if (value >= 0 && value < 100)
+            {
+                _tax = value;
+            }
+        }
+    }
+
     // static property
     public static string CompanyName
     {
@@ -41,15 +64,26 @@
     }
 
     // instance constructor
-    public Employee() { }
+    public Employee()
+    {
+        _salary = 500;
+    }
 
 
     // with parameters
-    public Employee(int id, string name, string job) 
+    public Employee(int id, string name, string job, int salary) 
     {
         _id = id;
         _name = name;
         _job = job;
+        _salary = salary;
+    }
+
+    // methods
+    public double CalculateNetSalary()
+    {
+        double netSalary = _salary - (_salary * (_tax / 100));
+        return netSalary;
     }
 
 
