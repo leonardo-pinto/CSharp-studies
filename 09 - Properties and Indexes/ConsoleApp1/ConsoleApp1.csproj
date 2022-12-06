@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BA4BD6A3-A167-446F-82F5-923058A73470}</ProjectGuid>
+    <ProjectGuid>{6837F04A-CEEA-4953-BE5C-3C2213E15AF9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApp1</RootNamespace>
     <AssemblyName>ConsoleApp1</AssemblyName>
@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{8b2e98e4-f766-4bfe-a470-2b30ec6a78f9}</Project>
+      <Project>{8fb697a3-33cc-4647-a9a8-5b3c6aa743cc}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
   </ItemGroup>
