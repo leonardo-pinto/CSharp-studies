@@ -55,6 +55,13 @@
             }
         }
     }
+    
+    // auto-implemented property
+    public string Nationality
+    {
+        set;
+        get;
+    }
 
     // static property
     public static string CompanyName
