@@ -15,4 +15,10 @@
     {
         return "Health insurance amount is: 600";
     }
+
+    // method overriding
+    public virtual string GetDentalPlanAmount()
+    {
+        return "Dental plan amount is: 500";
+    }
 }

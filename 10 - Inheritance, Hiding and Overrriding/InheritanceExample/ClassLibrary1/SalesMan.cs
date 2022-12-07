@@ -16,4 +16,10 @@
     {
         return "Health insurance amount is: 650";
     }
+
+    public override string GetDentalPlanAmount()
+    {
+        System.Console.WriteLine(base.GetDentalPlanAmount());
+        return "Extra dental plan amount is: 50";
+    }
 }
