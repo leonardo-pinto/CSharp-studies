@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\bin\Debug\InheritanceExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\bin\Debug\InheritanceExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\bin\Debug\InheritanceExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\10 - Inheritance, Hiding and Overrriding\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.pdb
