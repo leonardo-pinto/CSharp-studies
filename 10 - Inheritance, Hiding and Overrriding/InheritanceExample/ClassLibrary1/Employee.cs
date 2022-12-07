@@ -10,4 +10,9 @@
         Name = name;
         Location = location;
     }
+
+    public string GetHealthInsuranceAmount()
+    {
+        return "Health insurance amount is: 600";
+    }
 }

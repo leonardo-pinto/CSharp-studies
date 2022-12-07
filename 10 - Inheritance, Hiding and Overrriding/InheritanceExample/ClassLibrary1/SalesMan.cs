@@ -11,4 +11,9 @@
     {
         return 500;
     }
+
+    public new string GetHealthInsuranceAmount()
+    {
+        return "Health insurance amount is: 650";
+    }
 }

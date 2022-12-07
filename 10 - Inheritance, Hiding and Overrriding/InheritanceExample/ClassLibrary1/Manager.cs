@@ -11,4 +11,10 @@
     {
         return 5000;
     }
+
+    // method hiding
+    public new string GetHealthInsuranceAmount()
+    {
+        return "Health insurance amount is: 750";
+    }
 }
