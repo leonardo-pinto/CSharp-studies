@@ -22,7 +22,6 @@
         System.Console.WriteLine(man1.DepartmentName);
         System.Console.WriteLine(man1.GetTotalSalesOfYear());
         System.Console.WriteLine(man1.GetHealthInsuranceAmount());
-        System.Console.WriteLine(man1.GetDentalPlanAmount());
         System.Console.WriteLine();
 
         // create object of SalesMan
@@ -34,7 +33,6 @@
         System.Console.WriteLine(sal1.Region);
         System.Console.WriteLine(sal1.GetSalesOfCurrentMonth());
         System.Console.WriteLine(sal1.GetHealthInsuranceAmount());
-        System.Console.WriteLine(sal1.GetDentalPlanAmount());
         System.Console.WriteLine();
         System.Console.ReadKey();
     }

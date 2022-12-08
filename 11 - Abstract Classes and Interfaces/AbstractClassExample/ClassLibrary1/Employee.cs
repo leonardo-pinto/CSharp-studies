@@ -11,14 +11,9 @@
         Location = location;
     }
 
-    public string GetHealthInsuranceAmount()
-    {
-        return "Health insurance amount is: 600";
-    }
+    // abstract method has no body
+    public abstract string GetHealthInsuranceAmount();
+
 
     // method overriding
-    public virtual string GetDentalPlanAmount()
-    {
-        return "Dental plan amount is: 500";
-    }
 }

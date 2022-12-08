@@ -12,15 +12,10 @@
         return 5000;
     }
 
-    // method hiding
-    public new string GetHealthInsuranceAmount()
+    // override abstract method from parent class
+    public override string GetHealthInsuranceAmount()
     {
         return "Health insurance amount is: 750";
     }
 
-    public override string GetDentalPlanAmount()
-    {
-        System.Console.WriteLine(base.GetDentalPlanAmount());
-        return "Extra dental plan amount is: 100";
-    }
 }
