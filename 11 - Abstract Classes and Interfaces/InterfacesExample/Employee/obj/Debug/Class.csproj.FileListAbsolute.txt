@@ -1,0 +1,6 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\Employee\bin\Debug\Employee.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\Employee\bin\Debug\Employee.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\Employee\obj\Debug\Class.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\Employee\obj\Debug\Class.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\Employee\obj\Debug\Employee.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\Employee\obj\Debug\Employee.pdb

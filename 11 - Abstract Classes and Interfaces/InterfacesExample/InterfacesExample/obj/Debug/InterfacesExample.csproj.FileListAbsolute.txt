@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\bin\Debug\InterfacesExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\bin\Debug\InterfacesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\bin\Debug\InterfacesExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\bin\Debug\Employee.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\bin\Debug\Employee.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\obj\Debug\InterfacesExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\obj\Debug\InterfacesExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\obj\Debug\InterfacesExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\obj\Debug\InterfacesExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\obj\Debug\InterfacesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\11 - Abstract Classes and Interfaces\InterfacesExample\InterfacesExample\obj\Debug\InterfacesExample.pdb
