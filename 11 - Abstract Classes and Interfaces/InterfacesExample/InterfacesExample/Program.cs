@@ -2,11 +2,13 @@
 {
     static void Main()
     {
-        Manager manager1 = new Manager(1, "John Doe", "New York");
+        Manager manager1 = new Manager(1, "John Doe", "New York", "1993-07-04");
         System.Console.WriteLine("Manager 1: ");
         System.Console.WriteLine("ID: " + manager1.Id);
         System.Console.WriteLine("Name: " + manager1.Name);
         System.Console.WriteLine("Location: " + manager1.Location);
+        System.Console.WriteLine("Date of birth: " + manager1.DateOfBirth);
+        System.Console.WriteLine("Age: " + manager1.GetAge());
         System.Console.WriteLine("Health Insurance: " + manager1.GetHealthInsuranceAmount());
 
         System.Console.WriteLine();
