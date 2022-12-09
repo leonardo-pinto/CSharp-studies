@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\bin\Debug\NamespacesExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\bin\Debug\NamespacesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\bin\Debug\NamespacesExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\obj\Debug\NamespacesExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\obj\Debug\NamespacesExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\obj\Debug\NamespacesExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\obj\Debug\NamespacesExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\obj\Debug\NamespacesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\12 - Namespaces\NamespacesExample\NamespacesExample\obj\Debug\NamespacesExample.pdb
