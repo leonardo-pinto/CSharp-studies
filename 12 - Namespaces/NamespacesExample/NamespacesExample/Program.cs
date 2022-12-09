@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        HR.Manager manager = new HR.Manager();
-        HR.Executive executive = new HR.Executive();
+        HR.Manager.ExecutiveManager executiveManager = new HR.Manager.ExecutiveManager();
+        HR.Manager.AssistantManager assistantManager = new HR.Manager.AssistantManager();
     }
 }
