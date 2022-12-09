@@ -1,4 +1,5 @@
 ﻿using HR.Manager;
+// using HR.Manager = AliasExample
 
 
 
