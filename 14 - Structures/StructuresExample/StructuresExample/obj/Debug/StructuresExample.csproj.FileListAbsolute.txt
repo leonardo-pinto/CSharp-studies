@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\bin\Debug\StructuresExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\bin\Debug\StructuresExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\bin\Debug\StructuresExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\obj\Debug\StructuresExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\obj\Debug\StructuresExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\obj\Debug\StructuresExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\obj\Debug\StructuresExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\obj\Debug\StructuresExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\14 - Structures\StructuresExample\StructuresExample\obj\Debug\StructuresExample.pdb
