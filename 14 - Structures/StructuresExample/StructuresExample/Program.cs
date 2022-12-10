@@ -13,6 +13,9 @@ class Program
 
         WriteLine("Category ID: " + category.CategoryId);
         WriteLine("Code number: " + category.CodeNumber);
+
+        Employee employee = new Employee(1);
+        WriteLine("Employee ID: " + employee.Id);
         ReadKey();
     }
 }
