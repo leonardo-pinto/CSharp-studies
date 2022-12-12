@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\bin\Debug\GenericsExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\bin\Debug\GenericsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\bin\Debug\GenericsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\obj\Debug\GenericsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\obj\Debug\GenericsExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\obj\Debug\GenericsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\obj\Debug\GenericsExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\obj\Debug\GenericsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\16 - Generics\GenericsExample\GenericsExample\obj\Debug\GenericsExample.pdb
