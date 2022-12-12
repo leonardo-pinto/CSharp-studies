@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\bin\Debug\PatternMatchingExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\bin\Debug\PatternMatchingExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\bin\Debug\PatternMatchingExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\obj\Debug\PatternMatchingExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\obj\Debug\PatternMatchingExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\obj\Debug\PatternMatchingExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\obj\Debug\PatternMatchingExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\obj\Debug\PatternMatchingExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\PatternMatchingExample\PatternMatchingExample\obj\Debug\PatternMatchingExample.pdb
