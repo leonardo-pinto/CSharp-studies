@@ -19,10 +19,21 @@ class Program
         WriteLine("User 1 registration status: " + user1.registrationStatus);
         WriteLine("User 2 registration status: " + user2.registrationStatus);
         
+        // generic constraints example
         // create object of generic class with constaints
         MarksPrinter<GraduateStudent> marksPrinter = new MarksPrinter<GraduateStudent>();
         marksPrinter.student = new GraduateStudent() { Marks = 10};
         marksPrinter.PrintMarks();
+
+
+        // generic method example
+        Employee employee = new Employee() { salary = 1000 };
+        Manager manager = new Manager() { tax = 12 };
+        Sample sample = new Sample();
+        // <Employee> is optional
+        sample.PrintData<Employee>(employee);
+        sample.PrintData(manager);
+        sample.PrintData(sample);
 
         ReadKey();
     }
