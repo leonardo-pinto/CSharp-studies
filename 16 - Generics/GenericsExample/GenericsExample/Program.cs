@@ -18,6 +18,12 @@ class Program
 
         WriteLine("User 1 registration status: " + user1.registrationStatus);
         WriteLine("User 2 registration status: " + user2.registrationStatus);
+        
+        // create object of generic class with constaints
+        MarksPrinter<GraduateStudent> marksPrinter = new MarksPrinter<GraduateStudent>();
+        marksPrinter.student = new GraduateStudent() { Marks = 10};
+        marksPrinter.PrintMarks();
+
         ReadKey();
     }
 }
