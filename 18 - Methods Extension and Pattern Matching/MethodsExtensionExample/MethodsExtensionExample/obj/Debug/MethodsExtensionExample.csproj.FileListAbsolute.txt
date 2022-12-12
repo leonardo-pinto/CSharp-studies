@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\bin\Debug\MethodsExtensionExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\bin\Debug\MethodsExtensionExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\bin\Debug\MethodsExtensionExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\bin\Debug\Product.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\bin\Debug\Product.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\obj\Debug\MethodsExtensionExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\obj\Debug\MethodsExtensionExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\obj\Debug\MethodsExtensionExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\obj\Debug\MethodsExtensionExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\obj\Debug\MethodsExtensionExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\MethodsExtensionExample\obj\Debug\MethodsExtensionExample.pdb

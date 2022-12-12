@@ -1,0 +1,6 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\Product\bin\Debug\Product.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\Product\bin\Debug\Product.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\Product\obj\Debug\Product.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\Product\obj\Debug\Product.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\Product\obj\Debug\Product.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\18 - Methods Extension and Pattern Matching\MethodsExtensionExample\Product\obj\Debug\Product.pdb
