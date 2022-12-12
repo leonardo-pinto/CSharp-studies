@@ -33,6 +33,11 @@ class Program
         // alternative argument type must be the same field type (int)
         WriteLine(person1.numberOfChildren ?? 0);
         WriteLine(person2.numberOfChildren ?? 0);
+
+        // null propagation operator
+        WriteLine("Example using null propagation");
+        WriteLine(person1?.numberOfChildren);
+        WriteLine(person3?.numberOfChildren);
         ReadKey();
     }
 }
