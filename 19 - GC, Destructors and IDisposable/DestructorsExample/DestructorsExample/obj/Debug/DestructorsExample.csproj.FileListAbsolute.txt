@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\bin\Debug\DestructorsExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\bin\Debug\DestructorsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\bin\Debug\DestructorsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\obj\Debug\DestructorsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\obj\Debug\DestructorsExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\obj\Debug\DestructorsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\obj\Debug\DestructorsExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\obj\Debug\DestructorsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\DestructorsExample\obj\Debug\DestructorsExample.pdb

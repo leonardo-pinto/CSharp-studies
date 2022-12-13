@@ -1,0 +1,6 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\DestructorsExample\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
