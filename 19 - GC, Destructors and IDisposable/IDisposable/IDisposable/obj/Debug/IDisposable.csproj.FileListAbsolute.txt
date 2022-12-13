@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\bin\Debug\IDisposable.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\bin\Debug\IDisposable.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\bin\Debug\IDisposable.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\obj\Debug\IDisposable.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\obj\Debug\IDisposable.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\obj\Debug\IDisposable.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\obj\Debug\IDisposable.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\obj\Debug\IDisposable.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\19 - GC, Destructors and IDisposable\IDisposable\IDisposable\obj\Debug\IDisposable.pdb
