@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\bin\Debug\SingleCastDelegatesExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\bin\Debug\SingleCastDelegatesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\bin\Debug\SingleCastDelegatesExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\obj\Debug\SingleCastDelegatesExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\obj\Debug\SingleCastDelegatesExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\obj\Debug\SingleCastDelegatesExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\obj\Debug\SingleCastDelegatesExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\obj\Debug\SingleCastDelegatesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\SingleCastDelegatesExample\SingleCastDelegatesExample\obj\Debug\SingleCastDelegatesExample.pdb

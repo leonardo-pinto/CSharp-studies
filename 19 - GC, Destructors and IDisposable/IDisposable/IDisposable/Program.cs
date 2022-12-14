@@ -1,6 +1,12 @@
 ﻿using Sample;
 class Program
 {
+    static void DoWork()
+    {
+        // create object using "using declaration"
+        using 
+    }
+
     static void Main()
     {
         // create object using "using structure"
@@ -8,7 +14,7 @@ class Program
         {
             sample.MethodExample();
         } // dispose is executed after end of using block
-
+        
         System.Console.WriteLine("Execution after using block");
         System.Console.ReadKey();
     }
