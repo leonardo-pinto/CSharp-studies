@@ -26,6 +26,16 @@ namespace ArrayMethodsExample
             {
                 Console.WriteLine(element);
             }
+
+            // example of Resize method
+            // increase/decrease array with null values
+            int[] resizeExample = new int[2] { 1, 2 };
+            Array.Resize(ref resizeExample, 5);
+
+            foreach (int element in resizeExample)
+            {
+                Console.WriteLine(element);
+            }
             
             Console.ReadKey();
         }
