@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\bin\Debug\ExpressionBodiedMethods.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\bin\Debug\ExpressionBodiedMethods.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\bin\Debug\ExpressionBodiedMethods.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\obj\Debug\ExpressionBodiedMethods.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\obj\Debug\ExpressionBodiedMethods.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\obj\Debug\ExpressionBodiedMethods.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\obj\Debug\ExpressionBodiedMethods.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\obj\Debug\ExpressionBodiedMethods.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\ExpressionBodiedMethods\ExpressionBodiedMethods\obj\Debug\ExpressionBodiedMethods.pdb
