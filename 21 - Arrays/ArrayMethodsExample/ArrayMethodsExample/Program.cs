@@ -17,6 +17,15 @@ namespace ArrayMethodsExample
             // example of BinarySearch
             // can only be used in sorted arrays
             Console.WriteLine(Array.BinarySearch(numbersArray, 3));
+
+            // example of Clear method
+            int[] arrayToBeCleared = new int[5] { 1, 2, 3, 4, 5 };
+            Array.Clear(arrayToBeCleared, 2, 3);
+            
+            foreach (int element in arrayToBeCleared)
+            {
+                Console.WriteLine(element);
+            }
             
             Console.ReadKey();
         }
