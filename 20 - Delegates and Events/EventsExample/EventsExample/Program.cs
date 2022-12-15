@@ -15,6 +15,12 @@ namespace EventsExample
             // handle the event (or) subscribe to event
             publisher.myEvent += subscriber.Add;
 
+            // example of anonymous methods
+            publisher.myEvent += delegate (int a, int b)
+            {
+                System.Console.WriteLine("Anonymous method multiplication: " + (a * b));
+            };
+
             // invoke the event
             publisher.RaiseEvent(10, 20);
 
