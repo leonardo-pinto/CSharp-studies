@@ -25,7 +25,10 @@
         public void RaiseEvent(int a, int b)
         {
             // step 2: raise event
-            this.myDelegate(a, b);
+            if (this.myDelegate != null)
+            {
+                this.myDelegate(a, b);
+            }
         }
     }
 }
