@@ -46,6 +46,17 @@ namespace ArrayMethodsExample
             {
                 Console.WriteLine(element);
             }
+
+            // example of Reverse method
+            int[] arrayToBeReversed = new int[3] { 1, 2, 3 };
+            Console.WriteLine();
+            Array.Reverse(arrayToBeReversed);
+
+            Console.WriteLine("Example of Reverse method");
+            foreach (int element in arrayToBeReversed)
+            {
+                Console.WriteLine(element);
+            }
             
             Console.ReadKey();
         }
