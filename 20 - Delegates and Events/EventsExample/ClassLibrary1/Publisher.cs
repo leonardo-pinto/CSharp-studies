@@ -7,28 +7,37 @@
     public class Publisher
     {
         // private delegate
-        private MyDelegateType myDelegate;
+        // this syntax is not necessary when using auto-implemented events
+        //private MyDelegateType myDelegate;
 
         // step 1: create event
-        public event MyDelegateType myEvent
-        {
-            add
-            {
-                myDelegate += value;
-            }
-            remove
-            {
-                myDelegate -= value;
-            }
-        }
+        public event MyDelegateType myEvent;
+        // this syntax is not necessary when using auto-implemented events
+        //{
+        //    add
+        //    {
+        //        myDelegate += value;
+        //    }
+        //    remove
+        //    {
+        //        myDelegate -= value;
+        //    }
+        //}
 
         public void RaiseEvent(int a, int b)
         {
             // step 2: raise event
-            if (this.myDelegate != null)
+            // in the case of auto-implement events, myEvent is used rather than myDelegate
+            if (this.myEvent != null)
             {
-                this.myDelegate(a, b);
+                myEvent(a, b);
             }
+
+            // step 2: raise event
+            //if (this.myDelegate != null)
+            //{
+            //    this.myDelegate(a, b);
+            //}
         }
     }
 }
