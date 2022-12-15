@@ -1,0 +1,6 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\ClassLibraryExample\bin\Debug\ClassLibraryExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\ClassLibraryExample\bin\Debug\ClassLibraryExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\ClassLibraryExample\obj\Debug\ClassLibraryExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\ClassLibraryExample\obj\Debug\ClassLibraryExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\ClassLibraryExample\obj\Debug\ClassLibraryExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\ClassLibraryExample\obj\Debug\ClassLibraryExample.pdb

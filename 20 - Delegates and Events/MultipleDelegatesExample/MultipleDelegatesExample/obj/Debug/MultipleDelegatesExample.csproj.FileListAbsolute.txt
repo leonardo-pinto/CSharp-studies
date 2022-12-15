@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\bin\Debug\MultipleDelegatesExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\bin\Debug\MultipleDelegatesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\bin\Debug\MultipleDelegatesExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\bin\Debug\ClassLibraryExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\bin\Debug\ClassLibraryExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\obj\Debug\MultipleDelegatesExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\obj\Debug\MultipleDelegatesExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\obj\Debug\MultipleDelegatesExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\obj\Debug\MultipleDelegatesExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\obj\Debug\MultipleDelegatesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\MultipleDelegatesExample\MultipleDelegatesExample\obj\Debug\MultipleDelegatesExample.pdb
