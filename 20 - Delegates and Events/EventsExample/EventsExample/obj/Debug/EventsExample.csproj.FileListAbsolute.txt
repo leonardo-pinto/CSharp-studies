@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\bin\Debug\EventsExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\bin\Debug\EventsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\bin\Debug\EventsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\obj\Debug\EventsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\obj\Debug\EventsExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\obj\Debug\EventsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\obj\Debug\EventsExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\obj\Debug\EventsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\20 - Delegates and Events\EventsExample\EventsExample\obj\Debug\EventsExample.pdb
