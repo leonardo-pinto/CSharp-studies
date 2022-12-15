@@ -21,6 +21,13 @@ namespace EventsExample
                 System.Console.WriteLine("Anonymous method multiplication: " + (a * b));
             };
 
+            // example of lambda expressions
+            // doest not required parameters type
+            publisher.myEvent += (a, b) =>
+            {
+                System.Console.WriteLine("Lamba expression subtraction: " + (a - b));
+            };
+
             // invoke the event
             publisher.RaiseEvent(10, 20);
 
