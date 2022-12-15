@@ -36,6 +36,16 @@ namespace ArrayMethodsExample
             {
                 Console.WriteLine(element);
             }
+
+            // example of Sort method
+            int[] arrayToBeSorted = new int[8] { 52, 48, 432, 1, 986, 358, 224, 985 };
+            Console.WriteLine();
+            Array.Sort(arrayToBeSorted);
+            Console.WriteLine("Example of Sort method");
+            foreach (int element in arrayToBeSorted)
+            {
+                Console.WriteLine(element);
+            }
             
             Console.ReadKey();
         }
