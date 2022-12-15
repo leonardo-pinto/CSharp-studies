@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\bin\Debug\ArraysExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\bin\Debug\ArraysExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\bin\Debug\ArraysExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\obj\Debug\ArraysExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\obj\Debug\ArraysExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\obj\Debug\ArraysExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\obj\Debug\ArraysExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArraysExample\ArraysExample\obj\Debug\ArraysExample.pdb
