@@ -57,6 +57,29 @@ namespace ArrayMethodsExample
             {
                 Console.WriteLine(element);
             }
+
+            // example of multi-dimensional arrays
+            // multi-dim array 2 x 3
+            Console.WriteLine("Example of multi-dim array");
+            int[,] multiDimensionalArray = new int[4, 3]
+            {
+                // rows
+                {1, 1, 1 },
+                {2, 2, 2 },
+                {3, 3, 3 },
+                {4, 4, 4 }
+            }; 
+
+            // read data from multi-dim array
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(multiDimensionalArray[i, j]);
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
             
             Console.ReadKey();
         }
