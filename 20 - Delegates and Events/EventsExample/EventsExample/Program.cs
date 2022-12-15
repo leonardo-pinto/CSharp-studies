@@ -28,6 +28,10 @@ namespace EventsExample
                 System.Console.WriteLine("Lamba expression subtraction: " + (a - b));
             };
 
+            // example of lambda expressions
+            // must return a value
+            // publisher.myEvent += (a, b) => a + b;
+
             // invoke the event
             publisher.RaiseEvent(10, 20);
 
