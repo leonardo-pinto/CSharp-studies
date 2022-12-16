@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\bin\Debug\CopyAndClone.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\bin\Debug\CopyAndClone.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\bin\Debug\CopyAndClone.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\obj\Debug\CopyAndClone.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\obj\Debug\CopyAndClone.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\obj\Debug\CopyAndClone.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\obj\Debug\CopyAndClone.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\CopyAndClone\CopyAndClone\obj\Debug\CopyAndClone.pdb
