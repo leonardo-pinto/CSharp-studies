@@ -50,8 +50,25 @@ namespace ListExample
             // Clear method
             // myList.Clear();
 
+            // IndexOf method
+            // returns -1 if not found
+            // performs linear search
+            // stops at first occurance
+            Console.WriteLine("(IndexOf) Index of value 5 is: " + myList.IndexOf(5));
 
-            foreach(int element in myList)
+            // BinarySearch method
+            // List must be sorted
+            // Better performance for large Lists
+            List<int> binarySearchExample = new List<int>() { 1, 2, 3, 4, 5, 6 };
+            int binarySearchIndex = binarySearchExample.BinarySearch(2);
+            Console.WriteLine("(BinarySearch) Index of value 2 is: " + binarySearchIndex);
+
+            // Contains method
+            Console.WriteLine("myList contains value 70? " + myList.Contains(80));
+            Console.WriteLine("myList contains value 5? " + myList.Contains(5));
+
+
+            foreach (int element in myList)
             {
                 Console.WriteLine(element);
             }
