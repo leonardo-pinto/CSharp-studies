@@ -80,6 +80,25 @@ namespace ArrayMethodsExample
                 }
                 Console.WriteLine();
             }
+
+            // example of jagged arrays
+            // i.e., array of arrays
+            Console.WriteLine("Example of jagged arrays");
+            int[][] jaggedArrays = new int[2][];
+            jaggedArrays[0] = new int[3] {0,1,2};
+            jaggedArrays[1] = new int[5] {5,9,4,8,6}; 
+
+            // read jagged arrays
+            for(int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < jaggedArrays[i].Length; j++)
+                {
+                    Console.Write(jaggedArrays[i][j]);
+                    Console.Write("");
+                }
+                Console.WriteLine();
+            }
+             
             
             Console.ReadKey();
         }
