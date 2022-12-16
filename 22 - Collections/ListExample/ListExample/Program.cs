@@ -74,10 +74,26 @@ namespace ListExample
             // Reverse method
             //myList.Reverse();
 
-            foreach (int element in myList)
+            // ToArray method
+            // converts to array
+            List<string> toArrayExample = new List<string>() { "John Doe", "Joseph Richards" };
+            string[] convertedArray = toArrayExample.ToArray();
+            Console.WriteLine();
+            Console.WriteLine("Example of ToArray");
+            Console.WriteLine();
+            foreach(string element in convertedArray)
             {
                 Console.WriteLine(element);
             }
+
+            Console.WriteLine();
+
+            myList.ForEach(element => Console.WriteLine(element));
+
+            //foreach (int element in myList)
+            //{
+            //    Console.WriteLine(element);
+            //}
 
             Console.ReadKey();
         }
