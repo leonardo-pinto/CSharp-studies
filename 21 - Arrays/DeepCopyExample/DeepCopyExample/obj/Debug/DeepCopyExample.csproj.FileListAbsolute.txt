@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\bin\Debug\DeepCopyExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\bin\Debug\DeepCopyExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\bin\Debug\DeepCopyExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\obj\Debug\DeepCopyExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\obj\Debug\DeepCopyExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\obj\Debug\DeepCopyExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\obj\Debug\DeepCopyExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\DeepCopyExample\DeepCopyExample\obj\Debug\DeepCopyExample.pdb
