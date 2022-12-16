@@ -67,6 +67,12 @@ namespace ListExample
             Console.WriteLine("myList contains value 70? " + myList.Contains(80));
             Console.WriteLine("myList contains value 5? " + myList.Contains(5));
 
+            // Sort method
+            // ascending order
+            //myList.Sort();
+
+            // Reverse method
+            //myList.Reverse();
 
             foreach (int element in myList)
             {
