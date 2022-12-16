@@ -30,6 +30,27 @@ namespace ListExample
             List<int> listToBeInsertedRange = new List<int>() { 10, 20 };
             myList.InsertRange(1, listToBeInsertedRange);
 
+            // Remove method
+            myList.Remove(0);
+
+            // RemoveAt method
+            // run-time error if index does not exist
+            if (100 < myList.Count)
+            {
+                myList.RemoveAt(100);
+            }
+
+            // RemoveRange method
+            myList.RemoveRange(0, 3);
+
+            // RemoveAll method
+            // uses a lambda expression
+            myList.RemoveAll(n => n >= 6);
+
+            // Clear method
+            // myList.Clear();
+
+
             foreach(int element in myList)
             {
                 Console.WriteLine(element);
