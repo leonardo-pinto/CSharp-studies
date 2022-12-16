@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary1;
+using System;
 
 namespace ArrayMethodsExample
 {
@@ -98,8 +99,26 @@ namespace ArrayMethodsExample
                 }
                 Console.WriteLine();
             }
-             
-            
+
+            // example of array of objects
+        
+            // create array of employees
+            Employee[] employees = new Employee[]
+            { 
+                new Employee() { EmpID = 1, EmpName = "John Doe" },
+                new Employee() { EmpID = 2, EmpName = "Leonardo" },
+                new Employee() { EmpID = 3, EmpName = "Joseph Richards" },
+            };
+
+            // foreach loop for array of objects
+            foreach(Employee employee in employees)
+            {
+                Console.WriteLine("ID: " + employee.EmpID);
+                Console.WriteLine("Name: " + employee.EmpName);
+                Console.WriteLine();
+            }
+
+
             Console.ReadKey();
         }
     }

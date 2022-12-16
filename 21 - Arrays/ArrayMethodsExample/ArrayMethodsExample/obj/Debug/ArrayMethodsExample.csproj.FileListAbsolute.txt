@@ -6,3 +6,6 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArrayMethodsExam
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArrayMethodsExample\ArrayMethodsExample\obj\Debug\ArrayMethodsExample.csproj.CoreCompileInputs.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArrayMethodsExample\ArrayMethodsExample\obj\Debug\ArrayMethodsExample.exe
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArrayMethodsExample\ArrayMethodsExample\obj\Debug\ArrayMethodsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArrayMethodsExample\ArrayMethodsExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArrayMethodsExample\ArrayMethodsExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\21 - Arrays\ArrayMethodsExample\ArrayMethodsExample\obj\Debug\ArrayMethodsExample.csproj.CopyComplete
