@@ -3,12 +3,12 @@
 namespace DeepCopyExample
 {
     // model class
-    class Employee
+    class Employee: ICloneable
     {
         public string Name { get; set; }
         public string Role { get; set; }
 
-        public Employee Clone()
+        public object Clone()
             // C# recommendation is to name method as Clone
         {
             return new Employee() { Name = this.Name, Role = this.Role }
