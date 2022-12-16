@@ -15,6 +15,13 @@ namespace ListExample
             // not reconstructed
             List<int> myList = new List<int>(10) { 1, 2, 3 };
 
+            // Add method
+            myList.Add(4);
+
+            // AddRange method
+            List<int> listToBeAdded = new List<int>() { 5, 6, 7 };
+            myList.AddRange(listToBeAdded);
+
             foreach(int element in myList)
             {
                 Console.WriteLine(element);
