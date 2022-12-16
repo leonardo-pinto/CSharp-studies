@@ -22,6 +22,14 @@ namespace ListExample
             List<int> listToBeAdded = new List<int>() { 5, 6, 7 };
             myList.AddRange(listToBeAdded);
 
+            // Insert method
+            // (int, newValue)
+            myList.Insert(0, 0);
+
+            // InsertRange
+            List<int> listToBeInsertedRange = new List<int>() { 10, 20 };
+            myList.InsertRange(1, listToBeInsertedRange);
+
             foreach(int element in myList)
             {
                 Console.WriteLine(element);
