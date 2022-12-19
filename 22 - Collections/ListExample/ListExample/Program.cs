@@ -76,6 +76,7 @@ namespace ListExample
 
             // ToArray method
             // converts to array
+
             List<string> toArrayExample = new List<string>() { "John Doe", "Joseph Richards" };
             string[] convertedArray = toArrayExample.ToArray();
             Console.WriteLine();
@@ -87,13 +88,40 @@ namespace ListExample
             }
 
             Console.WriteLine();
-
+            // ForEach method example
+            // executes a lambda expression
             myList.ForEach(element => Console.WriteLine(element));
 
             //foreach (int element in myList)
             //{
             //    Console.WriteLine(element);
             //}
+
+            // Exists method
+            List<int> marks = new List<int>() { 70, 60, 80, 45, 10 };
+            Console.WriteLine("Any marks below 50? " + marks.Exists(mark => mark < 50));
+
+            // Find method
+            // returns the first mathing event
+            Console.WriteLine("First failed mark: " + marks.Find(mark => mark < 50));
+
+            // FindIndex method
+            // returns the indexOf the find result
+            Console.WriteLine("Index of the first failed mark: " + marks.FindIndex(mark => mark < 50));
+
+            // FindLast method
+            // returns the last matching event
+            Console.WriteLine("Last failed mark: " + marks.FindLast(mark => mark < 50));
+
+            // LastIndex method
+            // returns the indexOf the findLast result
+            Console.WriteLine("Index of the first failed mark: " + marks.FindLastIndex(mark => mark < 50));
+
+            // FindAll method
+            // returns all matching elements
+            Console.Write("All failed marks: ");
+            List<int> failedMarks = marks.FindAll(mark => mark < 50);
+            failedMarks.ForEach(failedMark => Console.Write(failedMark + " "));
 
             Console.ReadKey();
         }
