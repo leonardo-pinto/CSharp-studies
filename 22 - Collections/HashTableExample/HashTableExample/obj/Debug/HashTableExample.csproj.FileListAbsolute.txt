@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\bin\Debug\HashTableExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\bin\Debug\HashTableExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\bin\Debug\HashTableExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\obj\Debug\HashTableExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\obj\Debug\HashTableExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\obj\Debug\HashTableExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\obj\Debug\HashTableExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashTableExample\HashTableExample\obj\Debug\HashTableExample.pdb
