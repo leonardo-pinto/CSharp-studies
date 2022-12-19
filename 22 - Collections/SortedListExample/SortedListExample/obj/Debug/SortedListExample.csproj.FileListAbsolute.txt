@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\bin\Debug\SortedListExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\bin\Debug\SortedListExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\bin\Debug\SortedListExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\obj\Debug\SortedListExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\obj\Debug\SortedListExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\obj\Debug\SortedListExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\obj\Debug\SortedListExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\SortedListExample\SortedListExample\obj\Debug\SortedListExample.pdb
