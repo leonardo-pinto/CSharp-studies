@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\bin\Debug\HashSetExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\bin\Debug\HashSetExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\bin\Debug\HashSetExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\obj\Debug\HashSetExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\obj\Debug\HashSetExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\obj\Debug\HashSetExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\obj\Debug\HashSetExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\HashSetExample\HashSetExample\obj\Debug\HashSetExample.pdb
