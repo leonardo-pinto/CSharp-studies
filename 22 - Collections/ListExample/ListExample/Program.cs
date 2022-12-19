@@ -123,6 +123,13 @@ namespace ListExample
             List<int> failedMarks = marks.FindAll(mark => mark < 50);
             failedMarks.ForEach(failedMark => Console.Write(failedMark + " "));
 
+            // ConvertAll method
+            // Adds each returned element into a new collection
+            // and returns the same at last
+            List<string> strMarks = marks.ConvertAll<string>(mark => Convert.ToString(mark));
+            strMarks.ForEach(strMark => Console.WriteLine(strMark));
+
+
             Console.ReadKey();
         }
     }
