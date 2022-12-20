@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\obj\Debug\OneToManyExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\obj\Debug\OneToManyExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\obj\Debug\OneToManyExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\bin\Debug\OneToManyExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\bin\Debug\OneToManyExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\bin\Debug\OneToManyExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\obj\Debug\OneToManyExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\obj\Debug\OneToManyExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToManyExample\OneToManyExample\obj\Debug\OneToManyExample.pdb

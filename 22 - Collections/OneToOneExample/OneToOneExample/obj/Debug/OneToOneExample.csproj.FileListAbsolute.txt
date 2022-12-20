@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\bin\Debug\OneToOneExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\bin\Debug\OneToOneExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\bin\Debug\OneToOneExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\bin\Debug\ClassLibrary1.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\bin\Debug\ClassLibrary1.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\obj\Debug\OneToOneExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\obj\Debug\OneToOneExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\obj\Debug\OneToOneExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\obj\Debug\OneToOneExample.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\obj\Debug\OneToOneExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\OneToOneExample\OneToOneExample\obj\Debug\OneToOneExample.pdb
