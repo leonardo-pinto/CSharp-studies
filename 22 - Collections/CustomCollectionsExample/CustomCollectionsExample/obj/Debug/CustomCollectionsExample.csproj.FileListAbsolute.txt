@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\bin\Debug\CustomCollectionsExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\bin\Debug\CustomCollectionsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\bin\Debug\CustomCollectionsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\obj\Debug\CustomCollectionsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\obj\Debug\CustomCollectionsExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\obj\Debug\CustomCollectionsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\obj\Debug\CustomCollectionsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CustomCollectionsExample\CustomCollectionsExample\obj\Debug\CustomCollectionsExample.pdb
