@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\bin\Debug\ICollectionExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\bin\Debug\ICollectionExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\bin\Debug\ICollectionExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\obj\Debug\ICollectionExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\obj\Debug\ICollectionExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\obj\Debug\ICollectionExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\obj\Debug\ICollectionExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ICollectionExample\ICollectionExample\obj\Debug\ICollectionExample.pdb
