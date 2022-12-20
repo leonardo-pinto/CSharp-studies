@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\bin\Debug\GenericIEnumerableExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\bin\Debug\GenericIEnumerableExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\bin\Debug\GenericIEnumerableExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\obj\Debug\GenericIEnumerableExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\obj\Debug\GenericIEnumerableExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\obj\Debug\GenericIEnumerableExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\obj\Debug\GenericIEnumerableExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\GenericIEnumerableExample\GenericIEnumerableExample\obj\Debug\GenericIEnumerableExample.pdb
