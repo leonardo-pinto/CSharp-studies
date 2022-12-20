@@ -1,0 +1,6 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CollectionOfObjectsExample\ECommerce\bin\Debug\ECommerce.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CollectionOfObjectsExample\ECommerce\bin\Debug\ECommerce.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CollectionOfObjectsExample\ECommerce\obj\Debug\ECommerce.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CollectionOfObjectsExample\ECommerce\obj\Debug\ECommerce.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CollectionOfObjectsExample\ECommerce\obj\Debug\ECommerce.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CollectionOfObjectsExample\ECommerce\obj\Debug\ECommerce.pdb
