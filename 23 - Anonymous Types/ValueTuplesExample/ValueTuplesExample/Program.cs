@@ -16,10 +16,11 @@ namespace ValueTuplesExample
 
             // example of tuple deconstructing
             // variable is deconstructed based on the order, not the property names
-            (int customerId, string customerName) = customer.GetCustomerDetails();
+            // underscore is used to discard element
+            (int customerId, _) = customer.GetCustomerDetails();
 
 
-            Console.WriteLine(customerName);
+            // Console.WriteLine(customerName);
             Console.WriteLine(customerId);
 
             Console.ReadKey();
