@@ -2,9 +2,12 @@
 
 namespace LABank.Entities
 {
+    /// <summary>
+    /// Represents interface of customer entity
+    /// </summary>
     public interface ICustomer
     {
-        // global unique identifier
+        #region Properties
         Guid CustomerId { get; set; }
         long CustomerCode { get; set; }
         string Address { get; set; }
@@ -12,5 +15,6 @@ namespace LABank.Entities
         string City { get; set; }
         string Country { get; set; }
         string Mobile { get; set; }
+        #endregion
     }
 }
