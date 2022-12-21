@@ -1,4 +1,5 @@
 ﻿using System;
+using LABank.Entities.Contracts;
 using LABank.Exceptions;
 
 namespace LABank.Entities
@@ -6,7 +7,7 @@ namespace LABank.Entities
     /// <summary>
     /// Represents customer of the bank
     /// </summary>
-    public class Customer: ICustomer
+    public class Customer: ICustomer, ICloneable
     {
         #region Private fields
         private Guid _customerId;
@@ -100,6 +101,23 @@ namespace LABank.Entities
                 }
             }
                
+        }
+        #endregion
+
+        #region Methods
+        public object Clone()
+        {
+            return new Customer()
+            { 
+                CustomerId = this.CustomerId,
+                CustomerCode = this.CustomerCode,
+                CustomerName = this.CustomerName,
+                Address = this.Address,
+                Landmark = this.Landmark,
+                City = this.City,
+                Country = this.Country,
+                Mobile = this.Mobile
+            };
         }
         #endregion
     }

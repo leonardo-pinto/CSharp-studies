@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LABank.Entities
+namespace LABank.Entities.Contracts
 {
     /// <summary>
     /// Represents interface of customer entity
