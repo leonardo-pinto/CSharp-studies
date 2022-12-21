@@ -11,10 +11,16 @@ namespace ValueTuplesExample
         {
             Customer customer= new Customer();
 
-            (int customerId, string customerName) cust = customer.GetCustomerDetails();
+            // example of ValueTuple
+            //(int customerId, string customerName) cust = customer.GetCustomerDetails();
 
-            Console.WriteLine(cust.customerName);
-            Console.WriteLine(cust.customerId);
+            // example of tuple deconstructing
+            // variable is deconstructed based on the order, not the property names
+            (int customerId, string customerName) = customer.GetCustomerDetails();
+
+
+            Console.WriteLine(customerName);
+            Console.WriteLine(customerId);
 
             Console.ReadKey();
         }
