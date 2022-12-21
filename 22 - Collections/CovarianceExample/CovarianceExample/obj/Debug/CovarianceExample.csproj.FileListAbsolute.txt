@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\bin\Debug\CovarianceExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\bin\Debug\CovarianceExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\bin\Debug\CovarianceExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\obj\Debug\CovarianceExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\obj\Debug\CovarianceExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\obj\Debug\CovarianceExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\obj\Debug\CovarianceExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\CovarianceExample\CovarianceExample\obj\Debug\CovarianceExample.pdb
