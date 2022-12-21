@@ -1,4 +1,5 @@
 ﻿using System;
+using LABank.Exceptions;
 
 namespace LABank.Entities
 {
@@ -26,31 +27,80 @@ namespace LABank.Entities
         /// <summary>
         /// Aut-generated code number of the customer
         /// </summary>
-        public long CustomerCode { get => _customerCode; set => _customerCode = value; }
+        public long CustomerCode
+        { 
+            get => _customerCode;
+            set
+            {
+                if (value > 0)
+                {
+                    _customerCode = value;
+                }
+                else
+                {
+                    throw new CustomerException("Customer code should be positive only");
+                }
+            }
+        }
+
         /// <summary>
         /// Name of the customer
         /// </summary>
-        public string CustomerName { get => _customerName; set => _customerName = value; }
+        public string CustomerName
+        { 
+            get => _customerName;
+            set
+            {
+                if (value.Length <= 40 && !string.IsNullOrEmpty(value))
+                {
+                    _customerName = value;
+                }
+                else
+                {
+                    throw new CustomerException("Customer Name should be not null and less than 40 characters long");
+                }
+            }
+        }
+
         /// <summary>
         /// Address of the customer
         /// </summary>
         public string Address { get => _address; set => _address = value; }
+
         /// <summary>
         /// Landmark of the customer
         /// </summary>
         public string Landmark { get => _landmark; set => _landmark = value; }
+
         /// <summary>
         /// City of the customer
         /// </summary>
         public string City { get => _city; set => _city = value; }
+
         /// <summary>
         /// Country of the customer
         /// </summary>
         public string Country { get => _country; set => _country = value; }
+
         /// <summary>
         /// Mobile of the customer
         /// </summary>
-        public string Mobile { get => _mobile; set => _mobile = value; }
+        public string Mobile
+        { 
+            get => _mobile; 
+            set
+            {
+                if (value.Length == 10)
+                {
+                    _mobile = value;
+                }
+                else
+                {
+                    throw new CustomerException("Mobile number must have 10 digits");
+                }
+            }
+               
+        }
         #endregion
     }
 }
