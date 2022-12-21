@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\bin\Debug\IComparableExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\bin\Debug\IComparableExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\bin\Debug\IComparableExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\obj\Debug\IComparableExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\obj\Debug\IComparableExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\obj\Debug\IComparableExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\obj\Debug\IComparableExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\IComparableExample\IComparableExample\obj\Debug\IComparableExample.pdb
