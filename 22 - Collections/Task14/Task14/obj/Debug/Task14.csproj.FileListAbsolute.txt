@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\bin\Debug\Task14.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\bin\Debug\Task14.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\bin\Debug\Task14.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\obj\Debug\Task14.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\obj\Debug\Task14.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\obj\Debug\Task14.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\obj\Debug\Task14.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\Task14\Task14\obj\Debug\Task14.pdb
