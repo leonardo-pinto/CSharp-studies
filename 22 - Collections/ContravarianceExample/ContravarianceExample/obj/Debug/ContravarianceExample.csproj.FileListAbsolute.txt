@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\bin\Debug\ContravarianceExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\bin\Debug\ContravarianceExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\bin\Debug\ContravarianceExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\obj\Debug\ContravarianceExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\obj\Debug\ContravarianceExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\obj\Debug\ContravarianceExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\obj\Debug\ContravarianceExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\22 - Collections\ContravarianceExample\ContravarianceExample\obj\Debug\ContravarianceExample.pdb

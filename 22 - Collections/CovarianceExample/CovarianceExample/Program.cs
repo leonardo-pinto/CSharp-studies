@@ -39,7 +39,10 @@ namespace CovarianceExample
     // real world scenario
     class Sample
     {
-        public void PrintValues(List<string>values)
+        // allows only string type
+        //public void PrintValues(List<string>values)
+        // IEnumerable implements covariance concept
+        public void PrintValues(IEnumerable<object>values)
         {
             foreach(var item in values)
             {
@@ -66,6 +69,8 @@ namespace CovarianceExample
 
             // real world scenario
             Sample s = new Sample();
+            // is not allowed when method parameter type is object
+            // even though object is parent class of string
             s.PrintValues(new List<string>() { "hello", "world" });
             Console.ReadKey();
         }
