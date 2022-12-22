@@ -91,6 +91,7 @@ class Program
             {
                 case 1: CustomersPresentation.AddCustomer(); break;
                 case 2: CustomersPresentation.DeleteCustomer(); break;
+                case 3: CustomersPresentation.UpdateCustomer(); break;
                 case 4: CustomersPresentation.ViewCustomers(); break;
                 default:
                     break;

@@ -125,5 +125,58 @@ namespace LABank.Presentation
                 Console.WriteLine(exception.GetType());
             }
         }
+
+        internal static void UpdateCustomer()
+        {
+            try
+            {
+                ICustomersBusinessLogicLayer customersBusinessLogicLayer = new CustomersBusinessLogicLayer();
+
+                Console.WriteLine("\n ****** UPDATE CUSTOMER ******");
+                Console.Write("Customer Code: ");
+                long currCustomerCode = System.Convert.ToInt32(Console.ReadLine());
+
+                List<Customer> matchingCustomers = customersBusinessLogicLayer.GetCustomersByCondition(item => item.CustomerCode == currCustomerCode);
+
+                if (matchingCustomers.Count >= 1)
+                {
+                    Customer updatedCustomer = matchingCustomers[0];
+
+                    Console.Write("Customer Name: ");
+                    updatedCustomer.CustomerName = Console.ReadLine();
+                    Console.Write("Address: ");
+                    updatedCustomer.Address = Console.ReadLine();
+                    Console.Write("Landmark: ");
+                    updatedCustomer.Landmark = Console.ReadLine();
+                    Console.Write("City: ");
+                    updatedCustomer.City = Console.ReadLine();
+                    Console.Write("Country: ");
+                    updatedCustomer.Country = Console.ReadLine();
+                    Console.Write("Mobile: ");
+                    updatedCustomer.Mobile = Console.ReadLine();
+
+                    bool isUserUpdate = customersBusinessLogicLayer.UpdateCustomer(updatedCustomer);
+                    if (isUserUpdate)
+                    {
+                        Console.WriteLine("User update successfully");
+                    }
+                    else
+                    {
+                        Console.WriteLine("User was not updated");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid customer code");
+                }
+            }
+            catch (Exception exception)
+            {
+                // Should not throw exception in presentation layer
+                // must display appropriate message to user
+                Console.WriteLine(exception.Message);
+                Console.WriteLine(exception.GetType());
+            }
+        }
     }
 }
