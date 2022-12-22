@@ -60,10 +60,10 @@ namespace LABank.DataAccessLayer.DALContracts
             List<Customer> customersList = new List<Customer>();
 
             // filter the collection
-            List<Customer> filteredCustomers = customersList.FindAll(predicate);
+            List<Customer> filteredCustomers = Customers.FindAll(predicate);
             
             // copy all customers from the source collection into the new customers list
-            Customers.ForEach(customer => filteredCustomers.Add(customer.Clone() as Customer));
+            filteredCustomers.ForEach(customer => customersList.Add(customer.Clone() as Customer));
             return customersList;
         }
 
