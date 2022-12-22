@@ -1,6 +1,7 @@
 ﻿using LABank.BusinessLogicLayer;
 using LABank.BusinessLogicLayer.ContractsBAL;
 using LABank.Entities;
+using LABank.Entities.Contracts;
 using System;
 using System.Collections.Generic;
 
@@ -76,6 +77,44 @@ namespace LABank.Presentation
                     Console.WriteLine("Customer Country: " + customer.Country);
                     Console.WriteLine("Customer Mobile: " + customer.Mobile);
                     Console.WriteLine();
+                }
+            }
+            catch (Exception exception)
+            {
+                // Should not throw exception in presentation layer
+                // must display appropriate message to user
+                Console.WriteLine(exception.Message);
+                Console.WriteLine(exception.GetType());
+            }
+        }
+
+        internal static void DeleteCustomer()
+        {
+            try
+            {
+                ICustomersBusinessLogicLayer customersBusinessLogicLayer = new CustomersBusinessLogicLayer();
+
+                Console.WriteLine("\n ****** DELETE CUSTOMER ******");
+                Console.Write("Customer Code: ");
+                long currCustomerCode = System.Convert.ToInt32(Console.ReadLine());
+
+                List<Customer> matchingCustomers = customersBusinessLogicLayer.GetCustomersByCondition(item => item.CustomerCode == currCustomerCode);
+
+                if (matchingCustomers.Count >= 1)
+                {
+                    bool isCustomerDeleted = customersBusinessLogicLayer.DeleteCustomer(matchingCustomers[0].CustomerId);
+                    if (isCustomerDeleted)
+                    {
+                        Console.WriteLine("Customer deleted successfully");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Customer not deleted. \n");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid customer code");
                 }
             }
             catch (Exception exception)

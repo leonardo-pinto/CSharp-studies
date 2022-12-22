@@ -90,6 +90,7 @@ class Program
             switch (customerMenuChoice)
             {
                 case 1: CustomersPresentation.AddCustomer(); break;
+                case 2: CustomersPresentation.DeleteCustomer(); break;
                 case 4: CustomersPresentation.ViewCustomers(); break;
                 default:
                     break;
