@@ -40,13 +40,28 @@ namespace LABank.DataAccessLayer.DALContracts
         /// <returns>Customers list</returns>
         public List<Customer> GetCustomers()
         {
-            // create a new customers list
-            // if any changes are made to Customers in the presentation
-            // later, it would affect the current Customers list
-            // to avoid this, we use the Clone method
-            List<Customer> customersList = new List<Customer>();
-            Customers.ForEach(customer => customersList.Add(customer.Clone() as Customer));
-            return customersList;
+            try
+            {
+                // create a new customers list
+                // if any changes are made to Customers in the presentation
+                // later, it would affect the current Customers list
+                // to avoid this, we use the Clone method
+                List<Customer> customersList = new List<Customer>();
+                Customers.ForEach(customer => customersList.Add(customer.Clone() as Customer));
+                return customersList;
+            }
+            // separate catch blocks for each context
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                // if we assign a new exception, we lose track
+                // of where the exception was originally thrown
+                // e.g. catch (Exception exception) { throw exception }
+                throw;
+            }
         }
 
         /// <summary>
@@ -56,15 +71,26 @@ namespace LABank.DataAccessLayer.DALContracts
         /// <returns>List of matching customers</returns>
         public List<Customer> GetCustomersByCondition(Predicate <Customer> predicate)
         {
-            // create a new customers list
-            List<Customer> customersList = new List<Customer>();
+            try
+            {
+                // create a new customers list
+                List<Customer> customersList = new List<Customer>();
 
-            // filter the collection
-            List<Customer> filteredCustomers = Customers.FindAll(predicate);
+                // filter the collection
+                List<Customer> filteredCustomers = Customers.FindAll(predicate);
             
-            // copy all customers from the source collection into the new customers list
-            filteredCustomers.ForEach(customer => customersList.Add(customer.Clone() as Customer));
-            return customersList;
+                // copy all customers from the source collection into the new customers list
+                filteredCustomers.ForEach(customer => customersList.Add(customer.Clone() as Customer));
+                return customersList;
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -74,13 +100,24 @@ namespace LABank.DataAccessLayer.DALContracts
         /// <returns>Returns the id of the recently added customer</returns>
         public Guid AddCustomer(Customer customer)
         {
-            // generate new Guuid
-            customer.CustomerId = Guid.NewGuid();
+            try
+            {
+                // generate new Guuid
+                customer.CustomerId = Guid.NewGuid();
 
-            // add customer
-            Customers.Add(customer);
+                // add customer
+                Customers.Add(customer);
 
-            return customer.CustomerId;
+                return customer.CustomerId;
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -90,25 +127,37 @@ namespace LABank.DataAccessLayer.DALContracts
         /// <returns>Deteminers whether the customer is updated or not</returns>
         public bool UpdateCustomer(Customer customer)
         {
-            // find existing customer by CustomerId
-            Customer existingCustomer = Customers.Find(item => item.CustomerId == customer.CustomerId);
+            try
+            {
+                // find existing customer by CustomerId
+                Customer existingCustomer = Customers.Find(item => item.CustomerId == customer.CustomerId);
             
-            // update all details
-            if (existingCustomer != null)
-            {
-                existingCustomer.CustomerCode = customer.CustomerCode;
-                existingCustomer.CustomerName = customer.CustomerName;
-                existingCustomer.Address = customer.Address;
-                existingCustomer.City = customer.City;
-                existingCustomer.Country = customer.Country;
-                existingCustomer.Landmark = customer.Landmark;
-                existingCustomer.Mobile = customer.Mobile;
+                // update all details
+                if (existingCustomer != null)
+                {
+                    existingCustomer.CustomerCode = customer.CustomerCode;
+                    existingCustomer.CustomerName = customer.CustomerName;
+                    existingCustomer.Address = customer.Address;
+                    existingCustomer.City = customer.City;
+                    existingCustomer.Country = customer.Country;
+                    existingCustomer.Landmark = customer.Landmark;
+                    existingCustomer.Mobile = customer.Mobile;
 
-                return true;
-            } 
-            else
+                    return true;
+                } 
+                else
+                {
+                    return false;
+                }
+            }
+            catch (CustomerException)
             {
-                return false;
+                throw;
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
 
@@ -119,14 +168,26 @@ namespace LABank.DataAccessLayer.DALContracts
         /// <returns>Returns a bool indication if user is deleted successfully</returns>
         public bool DeleteCustomer(Guid customerId)
         {
-            // delete customer by CustomerId
-            if (Customers.RemoveAll(customer => customer.CustomerId == customerId) > 0)
+            try
             {
-                return true;
+                // delete customer by CustomerId
+                if (Customers.RemoveAll(customer => customer.CustomerId == customerId) > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch (CustomerException)
             {
-                return false;
+                throw;
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
         #endregion
