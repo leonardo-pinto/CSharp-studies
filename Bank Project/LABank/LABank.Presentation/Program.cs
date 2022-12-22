@@ -1,4 +1,6 @@
-﻿class Program
+﻿using LABank.Presentation;
+
+class Program
 {
     static void Main()
     {
@@ -78,11 +80,22 @@
             System.Console.WriteLine("2. Delete Customer");
             System.Console.WriteLine("3. Update Customer");
             System.Console.WriteLine("4. View Customers");
+            System.Console.WriteLine("5. Search Customer");
             System.Console.WriteLine("0. Back to Main Menu");
 
             // get customers menu choice
             System.Console.Write("Enther choice: ");
             customerMenuChoice = System.Convert.ToInt32(System.Console.ReadLine());
+
+            switch (customerMenuChoice)
+            {
+                case 1: CustomersPresentation.AddCustomer(); break;
+                case 4: CustomersPresentation.ViewCustomers(); break;
+                default:
+                    break;
+            }
+
+
         } while (customerMenuChoice != 0);
     }
 

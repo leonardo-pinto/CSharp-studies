@@ -12,11 +12,14 @@ namespace LABank.DataAccessLayer.DALContracts
     public class CustomersDataAccessLayer : ICustomersDataAccessLayer
     {
         #region Fields
-        private List<Customer> _customers;
+
+        // private fields are used to initializes only
+        // one time _customers field
+        private static List<Customer> _customers;
         #endregion
 
         #region Constructors
-        public CustomersDataAccessLayer()
+        static CustomersDataAccessLayer()
         {
             _customers = new List<Customer>();
         }
@@ -26,7 +29,7 @@ namespace LABank.DataAccessLayer.DALContracts
         /// <summary>
         /// Represents source customers collection
         /// </summary>
-        public List<Customer> Customers
+        private static List<Customer> Customers
         {
             get => _customers;
             set => _customers = value;

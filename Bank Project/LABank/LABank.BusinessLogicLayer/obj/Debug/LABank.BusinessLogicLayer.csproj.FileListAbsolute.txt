@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.BusinessLogicLayer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.BusinessLogicLayer.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.Configuration.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.DataAccessLayer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.Entities.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.Exceptions.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.Configuration.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.DataAccessLayer.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.Entities.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\bin\Debug\LABank.Exceptions.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\obj\Debug\LABank.BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\obj\Debug\LABank.BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\obj\Debug\LABank.BusinessLogicLayer.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\obj\Debug\LABank.BusinessLogicLayer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.BusinessLogicLayer\obj\Debug\LABank.BusinessLogicLayer.pdb

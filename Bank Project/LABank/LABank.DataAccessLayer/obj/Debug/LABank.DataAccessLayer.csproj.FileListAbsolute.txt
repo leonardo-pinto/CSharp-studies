@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\bin\Debug\LABank.DataAccessLayer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\bin\Debug\LABank.DataAccessLayer.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\bin\Debug\LABank.Entities.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\bin\Debug\LABank.Exceptions.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\bin\Debug\LABank.Entities.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\bin\Debug\LABank.Exceptions.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\obj\Debug\LABank.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\obj\Debug\LABank.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\obj\Debug\LABank.DataAccessLayer.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\obj\Debug\LABank.DataAccessLayer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.DataAccessLayer\obj\Debug\LABank.DataAccessLayer.pdb

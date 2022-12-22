@@ -43,11 +43,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomersPresentation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LABank.BusinessLogicLayer\LABank.BusinessLogicLayer.csproj">
+      <Project>{e1a6c1c9-ff14-4357-a835-2e2bae7ca04b}</Project>
+      <Name>LABank.BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LABank.Configuration\LABank.Configuration.csproj">
+      <Project>{fad34e5e-f2bf-44cc-8b17-1b9947913901}</Project>
+      <Name>LABank.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LABank.Entities\LABank.Entities.csproj">
+      <Project>{e1c7f5ff-09b0-43b6-8f94-ebcfb157dcf4}</Project>
+      <Name>LABank.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LABank.Exceptions\LABank.Exceptions.csproj">
+      <Project>{ef2b5083-0970-49d0-b231-97d9dbba336c}</Project>
+      <Name>LABank.Exceptions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

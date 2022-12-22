@@ -14,3 +14,14 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.P
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\obj\Debug\LABank.Presentation.csproj.CoreCompileInputs.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\obj\Debug\LABank.Presentation.exe
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\obj\Debug\LABank.Presentation.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.BusinessLogicLayer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.Configuration.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.Entities.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.Exceptions.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.DataAccessLayer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.BusinessLogicLayer.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.Configuration.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.Entities.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.Exceptions.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\bin\Debug\LABank.DataAccessLayer.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Presentation\obj\Debug\LABank.Presentation.csproj.CopyComplete

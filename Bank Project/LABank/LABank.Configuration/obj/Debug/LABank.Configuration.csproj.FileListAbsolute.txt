@@ -1,0 +1,6 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Configuration\bin\Debug\LABank.Configuration.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Configuration\bin\Debug\LABank.Configuration.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Configuration\obj\Debug\LABank.Configuration.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Configuration\obj\Debug\LABank.Configuration.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Configuration\obj\Debug\LABank.Configuration.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Configuration\obj\Debug\LABank.Configuration.pdb

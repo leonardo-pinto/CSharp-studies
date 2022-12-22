@@ -1,0 +1,6 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Exceptions\bin\Debug\LABank.Exceptions.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Exceptions\bin\Debug\LABank.Exceptions.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Exceptions\obj\Debug\LABank.Exceptions.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Exceptions\obj\Debug\LABank.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Exceptions\obj\Debug\LABank.Exceptions.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\Bank Project\LABank\LABank.Exceptions\obj\Debug\LABank.Exceptions.pdb
