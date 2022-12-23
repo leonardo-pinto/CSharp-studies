@@ -131,6 +131,14 @@ namespace LINQExample
                 Console.WriteLine(item.Name);
             }
 
+            // Min, Max, Sum, Average, Count
+            Console.WriteLine("Min salary: " + employees.Min(emp => emp.Salary));
+            Console.WriteLine("Max salary: " + employees.Max(emp => emp.Salary));
+            Console.WriteLine("Sum salary: " + employees.Sum(emp => emp.Salary));
+            Console.WriteLine("Average salary: " + employees.Average(emp => emp.Salary));
+            Console.WriteLine("Count salary: " + employees.Count());
+
+
             Console.ReadKey();
         }
     }
