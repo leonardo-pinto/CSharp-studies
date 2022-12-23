@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\bin\Debug\LINQExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\bin\Debug\LINQExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\bin\Debug\LINQExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\obj\Debug\LINQExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\obj\Debug\LINQExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\obj\Debug\LINQExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\obj\Debug\LINQExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\26 - LINQ\LINQExample\LINQExample\obj\Debug\LINQExample.pdb
