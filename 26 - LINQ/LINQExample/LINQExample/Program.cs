@@ -4,6 +4,12 @@ using System.Linq;
 
 namespace LINQExample
 {
+
+    class Person
+    {
+        public string Name { get; set; }
+    }
+
     class Employee
     { 
         public int Id { get; set; }
@@ -115,6 +121,15 @@ namespace LINQExample
             Employee singleExample = employees.Single(employee => employee.City == "Jundiai");
             Console.WriteLine("\nSingle example: ");
             Console.WriteLine(singleExample.Id + ", " + singleExample.Name + ", " + singleExample.City + ", " + singleExample.Job + ", " + singleExample.Salary);
+
+            // Select example
+            List<Person> selectExample = employees.Select(emp => new Person() { Name = emp.Name }).ToList();
+
+            Console.WriteLine("\nSelect example: ");
+            foreach (Person item in selectExample)
+            {
+                Console.WriteLine(item.Name);
+            }
 
             Console.ReadKey();
         }
