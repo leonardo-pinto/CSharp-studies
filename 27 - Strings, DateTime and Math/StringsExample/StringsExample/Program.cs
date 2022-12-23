@@ -41,6 +41,27 @@ namespace StringsExample
             // call Join with String.Join() because it is a static method
             Console.WriteLine("Join: " + string.Join("-", words));
 
+            string str1 = "Universe";
+            string str2 = "Universe";
+            Console.WriteLine("Equals example");
+            Console.WriteLine("Is " + str1 + " and " + str2 + " equal? " + str1.Equals(str2));
+            Console.WriteLine(str1 == str2);
+
+            // We can overload .Equals method to consider objects
+
+            Console.WriteLine("Does " + str1 + " starts with U? " + str1.StartsWith("U"));
+            Console.WriteLine("Does " + str1 + " starts with x? " + str1.StartsWith("x"));
+
+            Console.WriteLine("Does " + str1 + " ends with e? " + str1.EndsWith("e"));
+            Console.WriteLine("Does " + str1 + " ends with f? " + str1.EndsWith("f"));
+
+            Console.WriteLine("Does " + str1 + "contains s? " + str1.Contains("s"));
+            Console.WriteLine("Does " + str1 + "contains u? " + str1.Contains("u"));
+
+            Console.WriteLine("IndexOf 'e' in Universe: " + str1.IndexOf("e"));
+            Console.WriteLine("IndexOf 'z' in Universe: " + str1.IndexOf("e"));
+            Console.WriteLine("IndexOf 'e' in Universe starting from element 5: " + str1.IndexOf("e", 5));
+
             Console.ReadKey();
         }
     }
