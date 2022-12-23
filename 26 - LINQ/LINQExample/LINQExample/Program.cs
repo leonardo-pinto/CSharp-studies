@@ -72,6 +72,24 @@ namespace LINQExample
                 Console.WriteLine("No matching elments");
             }
 
+            // Last example
+            Employee lastExample = employees.Last(employee => employee.Job == "Developer");
+            Console.WriteLine("\nLast example: ");
+            Console.WriteLine(lastExample.Id + ", " + lastExample.Name + ", " + lastExample.City + ", " + lastExample.Job + ", " + lastExample.Salary);
+
+            // run-time error if no matching element is accessed
+            // should use first or default
+            Employee lastOrDefaultExample = employees.LastOrDefault(employee => employee.Job == "Product owner");
+            Console.WriteLine("\nLastOrDefault example: ");
+            if (lastOrDefaultExample != null)
+            {
+                Console.WriteLine(lastOrDefaultExample.Id + ", " + lastOrDefaultExample.Name + ", " + lastOrDefaultExample.City + ", " + lastOrDefaultExample.Job + ", " + lastOrDefaultExample.Salary);
+            }
+            else
+            {
+                Console.WriteLine("No matching elments");
+            }
+
             Console.ReadKey();
         }
     }
