@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\bin\Debug\StringsExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\bin\Debug\StringsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\bin\Debug\StringsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\obj\Debug\StringsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\obj\Debug\StringsExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\obj\Debug\StringsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\obj\Debug\StringsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsExample\StringsExample\obj\Debug\StringsExample.pdb
