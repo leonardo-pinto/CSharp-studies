@@ -78,7 +78,7 @@ namespace LINQExample
             Console.WriteLine(lastExample.Id + ", " + lastExample.Name + ", " + lastExample.City + ", " + lastExample.Job + ", " + lastExample.Salary);
 
             // run-time error if no matching element is accessed
-            // should use first or default
+            // should use LastOrDefault
             Employee lastOrDefaultExample = employees.LastOrDefault(employee => employee.Job == "Product owner");
             Console.WriteLine("\nLastOrDefault example: ");
             if (lastOrDefaultExample != null)
@@ -89,6 +89,27 @@ namespace LINQExample
             {
                 Console.WriteLine("No matching elments");
             }
+
+            // ElementAt example
+            // throws error if index dont exist
+            Employee elementAtExample = employees.ElementAt(2);
+            Console.WriteLine("\nElementAt example: ");
+            Console.WriteLine(elementAtExample.Id + ", " + elementAtExample.Name + ", " + elementAtExample.City + ", " + elementAtExample.Job + ", " + elementAtExample.Salary);
+
+            // ElementAtOrDefault
+            // returns null if index dont exist
+            // throws exception if tries to access null properties
+            Employee elementAtOrDefaultExample = employees.ElementAtOrDefault(20);
+            Console.WriteLine("\nElementAtOrDefault example: ");
+            if (elementAtOrDefaultExample != null)
+            {
+                Console.WriteLine(elementAtOrDefaultExample.Id + ", " + elementAtOrDefaultExample.Name + ", " + elementAtOrDefaultExample.City + ", " + elementAtOrDefaultExample.Job + ", " + elementAtOrDefaultExample.Salary);
+            }
+            else
+            {
+                Console.WriteLine("no element match");
+            }
+
 
             Console.ReadKey();
         }
