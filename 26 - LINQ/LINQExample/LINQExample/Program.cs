@@ -110,6 +110,11 @@ namespace LINQExample
                 Console.WriteLine("no element match");
             }
 
+            // Single example
+            // throws exception if collection contains no or more than one matching element
+            Employee singleExample = employees.Single(employee => employee.City == "Jundiai");
+            Console.WriteLine("\nSingle example: ");
+            Console.WriteLine(singleExample.Id + ", " + singleExample.Name + ", " + singleExample.City + ", " + singleExample.Job + ", " + singleExample.Salary);
 
             Console.ReadKey();
         }
