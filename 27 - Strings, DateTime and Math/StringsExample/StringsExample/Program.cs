@@ -62,6 +62,13 @@ namespace StringsExample
             Console.WriteLine("IndexOf 'z' in Universe: " + str1.IndexOf("e"));
             Console.WriteLine("IndexOf 'e' in Universe starting from element 5: " + str1.IndexOf("e", 5));
 
+
+            // static method is called from the class
+            // use IsNullOrEmpty in the set accessor
+            Console.WriteLine("Is " + str1 + " null of empty?: " + string.IsNullOrEmpty(str1));
+
+            // isNullOrWhiteSpace
+            // allows spaces value
             Console.ReadKey();
         }
     }
