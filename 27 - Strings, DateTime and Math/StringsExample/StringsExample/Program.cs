@@ -36,6 +36,11 @@ namespace StringsExample
                 Console.WriteLine(item);
             }
 
+
+            string[] words = new string[] { "Hello", ",", "how", "are", "you", "?" };
+            // call Join with String.Join() because it is a static method
+            Console.WriteLine("Join: " + string.Join("-", words));
+
             Console.ReadKey();
         }
     }
