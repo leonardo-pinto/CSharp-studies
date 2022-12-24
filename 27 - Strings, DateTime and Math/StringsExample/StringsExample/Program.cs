@@ -66,9 +66,15 @@ namespace StringsExample
             // static method is called from the class
             // use IsNullOrEmpty in the set accessor
             Console.WriteLine("Is " + str1 + " null of empty?: " + string.IsNullOrEmpty(str1));
-
             // isNullOrWhiteSpace
             // allows spaces value
+
+            // example of string interpolation
+            string name = "Leonardo";
+            string message = $"My name is {name}";
+            Console.WriteLine(message);
+            Console.WriteLine($"Using interpolate strings, my name is {name}");
+
             Console.ReadKey();
         }
     }
