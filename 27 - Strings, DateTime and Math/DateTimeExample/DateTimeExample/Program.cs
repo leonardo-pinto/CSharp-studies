@@ -29,6 +29,17 @@ namespace DateTimeExample
             Console.WriteLine($"Day of week: {DateTime.Parse("2022-12-24").DayOfWeek}");
             Console.WriteLine($"Now: {DateTime.Now}");
 
+
+            Console.WriteLine("********* DateTime Formats *********");
+            DateTime timeExample = DateTime.Parse("2020-12-31 11:59:59.999");
+    
+            // values depends on windows configuration
+            Console.WriteLine("ToString: " + timeExample.ToString());
+            Console.WriteLine("ToShortDateString: " + timeExample.ToShortDateString());
+            Console.WriteLine("ToLongDateString: " + timeExample.ToLongDateString());
+            Console.WriteLine("ToShortTimeString: " + timeExample.ToShortTimeString());
+            Console.WriteLine("ToLongTimeString: " + timeExample.ToLongTimeString());
+
             Console.ReadKey();
         }
     }
