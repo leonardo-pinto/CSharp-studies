@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\bin\Debug\StringsWithLoops.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\bin\Debug\StringsWithLoops.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\bin\Debug\StringsWithLoops.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\obj\Debug\StringsWithLoops.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\obj\Debug\StringsWithLoops.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\obj\Debug\StringsWithLoops.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\obj\Debug\StringsWithLoops.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringsWithLoops\StringsWithLoops\obj\Debug\StringsWithLoops.pdb
