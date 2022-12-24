@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\bin\Debug\StringBuilderExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\bin\Debug\StringBuilderExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\bin\Debug\StringBuilderExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\obj\Debug\StringBuilderExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\obj\Debug\StringBuilderExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\obj\Debug\StringBuilderExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\obj\Debug\StringBuilderExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\StringBuilderExample\StringBuilderExample\obj\Debug\StringBuilderExample.pdb
