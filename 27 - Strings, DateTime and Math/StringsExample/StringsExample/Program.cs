@@ -75,6 +75,11 @@ namespace StringsExample
             Console.WriteLine(message);
             Console.WriteLine($"Using interpolate strings, my name is {name}");
 
+            // Modifying strings
+            // Insert method
+            Console.WriteLine($"Modified Leonardo: {name.Insert(2, "abluble")}");
+            // Remove method
+            Console.WriteLine($"Remove modified Leonardo: {name.Remove(3, 4)}");
             Console.ReadKey();
         }
     }
