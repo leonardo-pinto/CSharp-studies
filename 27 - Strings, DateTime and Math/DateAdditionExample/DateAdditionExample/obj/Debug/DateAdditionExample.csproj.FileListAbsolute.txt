@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\bin\Debug\DateAdditionExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\bin\Debug\DateAdditionExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\bin\Debug\DateAdditionExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\obj\Debug\DateAdditionExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\obj\Debug\DateAdditionExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\obj\Debug\DateAdditionExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\obj\Debug\DateAdditionExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\DateAdditionExample\DateAdditionExample\obj\Debug\DateAdditionExample.pdb
