@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\bin\Debug\RegExpExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\bin\Debug\RegExpExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\bin\Debug\RegExpExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\obj\Debug\RegExpExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\obj\Debug\RegExpExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\obj\Debug\RegExpExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\obj\Debug\RegExpExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\27 - Strings, DateTime and Math\RegExpExample\RegExpExample\obj\Debug\RegExpExample.pdb
