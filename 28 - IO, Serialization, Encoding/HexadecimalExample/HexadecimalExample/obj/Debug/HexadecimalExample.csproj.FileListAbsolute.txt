@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\bin\Debug\HexadecimalExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\bin\Debug\HexadecimalExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\bin\Debug\HexadecimalExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\obj\Debug\HexadecimalExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\obj\Debug\HexadecimalExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\obj\Debug\HexadecimalExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\obj\Debug\HexadecimalExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\HexadecimalExample\HexadecimalExample\obj\Debug\HexadecimalExample.pdb
