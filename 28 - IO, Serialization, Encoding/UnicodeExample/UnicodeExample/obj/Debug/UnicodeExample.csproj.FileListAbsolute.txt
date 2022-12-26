@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\bin\Debug\UnicodeExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\bin\Debug\UnicodeExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\bin\Debug\UnicodeExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\obj\Debug\UnicodeExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\obj\Debug\UnicodeExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\obj\Debug\UnicodeExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\obj\Debug\UnicodeExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\UnicodeExample\UnicodeExample\obj\Debug\UnicodeExample.pdb
