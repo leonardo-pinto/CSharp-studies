@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\bin\Debug\DirectoryInfoExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\bin\Debug\DirectoryInfoExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\bin\Debug\DirectoryInfoExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\obj\Debug\DirectoryInfoExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\obj\Debug\DirectoryInfoExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\obj\Debug\DirectoryInfoExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\obj\Debug\DirectoryInfoExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DirectoryInfoExample\DirectoryInfoExample\obj\Debug\DirectoryInfoExample.pdb
