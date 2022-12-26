@@ -69,6 +69,7 @@ namespace FileExample
             string filePath = "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\28 - IO, Serialization, Encoding\\practice\\countries.txt";
             File.WriteAllLines(filePath, countries);
 
+            // ReadAllLines method
             string[] lineContent = File.ReadAllLines(filePath);
             foreach(string line in lineContent)
             {

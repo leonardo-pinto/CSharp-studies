@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\bin\Debug\FIleInfoExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\bin\Debug\FIleInfoExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\bin\Debug\FIleInfoExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\obj\Debug\FIleInfoExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\obj\Debug\FIleInfoExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\obj\Debug\FIleInfoExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\obj\Debug\FIleInfoExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\FIleInfoExample\FIleInfoExample\obj\Debug\FIleInfoExample.pdb
