@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\bin\Debug\DriveInfoExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\bin\Debug\DriveInfoExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\bin\Debug\DriveInfoExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\obj\Debug\DriveInfoExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\obj\Debug\DriveInfoExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\obj\Debug\DriveInfoExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\obj\Debug\DriveInfoExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\DriveInfoExample\DriveInfoExample\obj\Debug\DriveInfoExample.pdb
