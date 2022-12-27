@@ -20,8 +20,25 @@ namespace StreamWriterReaderExample
                 streamWriter.WriteLine("Halo");
 
                 streamWriter.WriteLine("how are you?");
+            }
 
-            };
+            // Reader
+
+            using (StreamReader streamReader = new StreamReader(filePath))
+            {
+                // to read full file
+                //string fileContent = streamReader.ReadToEnd();
+                //Console.WriteLine("File content");
+                //Console.WriteLine(fileContent);
+
+                // to read file part by part (10 characters)
+                char[] buffer = new char[10];
+                streamReader.Read(buffer, 0, buffer.Length);
+                Console.WriteLine(new string(buffer));
+            }
+            // use a do-while loop 
+
+            Console.ReadKey();
         }
     }
 }
