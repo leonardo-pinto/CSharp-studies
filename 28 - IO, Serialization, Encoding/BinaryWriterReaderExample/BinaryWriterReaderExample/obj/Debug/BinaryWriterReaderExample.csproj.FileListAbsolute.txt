@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\bin\Debug\BinaryWriterReaderExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\bin\Debug\BinaryWriterReaderExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\bin\Debug\BinaryWriterReaderExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\obj\Debug\BinaryWriterReaderExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\obj\Debug\BinaryWriterReaderExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\obj\Debug\BinaryWriterReaderExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\obj\Debug\BinaryWriterReaderExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinaryWriterReaderExample\BinaryWriterReaderExample\obj\Debug\BinaryWriterReaderExample.pdb
