@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\bin\Debug\BinarySerializationExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\bin\Debug\BinarySerializationExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\bin\Debug\BinarySerializationExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\obj\Debug\BinarySerializationExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\obj\Debug\BinarySerializationExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\obj\Debug\BinarySerializationExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\obj\Debug\BinarySerializationExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\BinarySerializationExample\BinarySerializationExample\obj\Debug\BinarySerializationExample.pdb
