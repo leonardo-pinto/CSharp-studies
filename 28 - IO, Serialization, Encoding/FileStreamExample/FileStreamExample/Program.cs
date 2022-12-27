@@ -32,6 +32,23 @@ namespace FileStreamExample
             Console.WriteLine("cat.txt was created");
             fileStream.Close();
 
+            // good practice to create separate
+            // file streams to read and write
+
+            // File reading
+            FileStream fileStream2 = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Read);
+
+            // create empty byte[] with tie given file length
+            byte[] readBytes = new byte[fileStream2.Length];
+            fileStream2.Read(readBytes, 0, (int)fileStream2.Length);
+
+            // convert byte[] to string
+            string readContent = Encoding.ASCII.GetString(readBytes);
+
+            fileStream2.Close();
+
+            Console.WriteLine("File content: \n" + readContent);
+
             Console.ReadKey();
         }
     }
