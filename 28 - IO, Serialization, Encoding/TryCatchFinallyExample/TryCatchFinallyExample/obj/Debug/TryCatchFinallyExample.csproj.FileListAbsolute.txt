@@ -1,0 +1,8 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\bin\Debug\TryCatchFinallyExample.exe.config
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\bin\Debug\TryCatchFinallyExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\bin\Debug\TryCatchFinallyExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\obj\Debug\TryCatchFinallyExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\obj\Debug\TryCatchFinallyExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\obj\Debug\TryCatchFinallyExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\obj\Debug\TryCatchFinallyExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\28 - IO, Serialization, Encoding\TryCatchFinallyExample\TryCatchFinallyExample\obj\Debug\TryCatchFinallyExample.pdb
