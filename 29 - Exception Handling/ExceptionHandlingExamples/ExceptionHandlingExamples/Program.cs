@@ -13,7 +13,7 @@ namespace ExceptionHandlingExamples
         public double CurrentBalance { get; set; }
     }
 
-    class FundasTranfer
+    class FundsTranfer
     {
         public void Transfer(BankAccount sourceAccount, BankAccount destinationAccount, double amount)
         {
@@ -22,13 +22,14 @@ namespace ExceptionHandlingExamples
             {
                 // if source or destinationAccount is null
                 // it throws a NullReferenceException
+                // it is handle as a InnerException
                 sourceAccount.CurrentBalance -= amount;
                 destinationAccount.CurrentBalance += amount;
             }
-            catch (NullReferenceException)
+            catch (NullReferenceException ex)
             {
                 // proper information to the method caller
-                throw new ArgumentNullException("sourceAccount", "Null parameters were entered");
+                throw new ArgumentNullException("You have supplied null values", ex);
             }
         }
     }
@@ -44,7 +45,7 @@ namespace ExceptionHandlingExamples
                 // will result in a NullReferenceException
                 BankAccount account3 = null;
 
-                FundasTranfer fundsTranfers = new FundasTranfer();
+                FundsTranfer fundsTranfers = new FundsTranfer();
                 fundsTranfers.Transfer(account2, account1, 500);
                 // throws NullReferenceException
                 // we throw ArgumentNullException to the client
@@ -55,7 +56,10 @@ namespace ExceptionHandlingExamples
             }
             catch (ArgumentNullException exc)
             {
+                // message from ArgumentNullException
                 Console.WriteLine(exc.Message);
+                // message from NullReferenceException
+                Console.WriteLine(exc.InnerException.Message);
             }
             Console.ReadKey();
         }
