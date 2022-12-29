@@ -145,6 +145,11 @@ namespace ExceptionHandlingExamples
                 Console.WriteLine(ex.Message);
                 ExceptionLogger.AddException(ex);
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                ExceptionLogger.AddException(ex);
+            }
             Console.ReadKey();
         }
     }
