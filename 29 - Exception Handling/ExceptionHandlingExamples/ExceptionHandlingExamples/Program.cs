@@ -104,7 +104,7 @@ namespace ExceptionHandlingExamples
                 BankAccount account3 = null;
 
                 FundsTranfer fundsTranfers = new FundsTranfer();
-                fundsTranfers.Transfer(account2, account1, 999999999);
+                fundsTranfers.Transfer(account2, account1, -10);
                 // throws NullReferenceException
                 // we throw ArgumentNullException to the client
                 fundsTranfers.Transfer(account3, account1, 90);
@@ -124,8 +124,9 @@ namespace ExceptionHandlingExamples
                     Console.WriteLine(ex.InnerException.Message);
                 }
             }
-            catch (ArgumentOutOfRangeException ex)
+            catch (ArgumentOutOfRangeException ex) when (ex.ParamName == "amount")
             {
+                Console.WriteLine("Paramname: " + ex.ParamName);
                 Console.WriteLine(ex.Message);
                 ExceptionLogger.AddException(ex);
             }

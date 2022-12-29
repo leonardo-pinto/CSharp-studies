@@ -8,3 +8,50 @@ ExceptionHandlingExamples.InsufficientFundsException
    em ExceptionHandlingExamples.FundsTranfer.Transfer(BankAccount sourceAccount, BankAccount destinationAccount, Double amount) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 79
    em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 107
 A operação não é válida devido ao estado atual do objeto.
+Exception on 29/12/2022 12:41:04
+System.ArgumentException
+   em ExceptionHandlingExamples.BankAccount.set_CurrentBalance(Double value) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 22
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 101
+Current balance value must be positive
+Exception on 29/12/2022 12:41:24
+System.ArgumentException
+   em ExceptionHandlingExamples.BankAccount.set_CurrentBalance(Double value) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 22
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 101
+Current balance value must be positive
+Exception on 29/12/2022 12:42:13
+System.ArgumentException
+   em ExceptionHandlingExamples.BankAccount.set_CurrentBalance(Double value) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 22
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 101
+Current balance value must be positive
+Exception on 29/12/2022 12:44:02
+System.ArgumentException
+   em ExceptionHandlingExamples.BankAccount.set_CurrentBalance(Double value) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 22
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 103
+Current balance value must be positive
+Exception on 29/12/2022 12:44:19
+System.ArgumentException
+   em ExceptionHandlingExamples.BankAccount.set_CurrentBalance(Double value) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 22
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 103
+Current balance value must be positive
+Exception on 29/12/2022 12:45:24
+System.ArgumentException
+   em ExceptionHandlingExamples.BankAccount.set_CurrentBalance(Double value) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 22
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 103
+Current balance value must be positive
+Exception on 29/12/2022 12:45:39
+System.ArgumentException
+   em ExceptionHandlingExamples.BankAccount.set_CurrentBalance(Double value) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 22
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 103
+Current balance value must be positive
+Exception on 29/12/2022 12:46:17
+System.ArgumentOutOfRangeException
+   em ExceptionHandlingExamples.FundsTranfer.Transfer(BankAccount sourceAccount, BankAccount destinationAccount, Double amount) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 72
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 109
+Argumento especificado estava fora do intervalo de valores válidos.
+Nome do parâmetro: amount
+Exception on 29/12/2022 12:46:26
+System.ArgumentOutOfRangeException
+   em ExceptionHandlingExamples.FundsTranfer.Transfer(BankAccount sourceAccount, BankAccount destinationAccount, Double amount) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 72
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 109
+Argumento especificado estava fora do intervalo de valores válidos.
+Nome do parâmetro: amount
