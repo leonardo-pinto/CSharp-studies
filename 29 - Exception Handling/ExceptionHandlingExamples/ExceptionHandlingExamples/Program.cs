@@ -20,6 +20,11 @@ namespace ExceptionHandlingExamples
             // can use one try block to personalize each throw statement
             try
             {
+                if (amount <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("amount", "Amount must a positive value");
+                }
+
                 // if source or destinationAccount is null
                 // it throws a NullReferenceException
                 // it is handle as a InnerException
@@ -46,7 +51,7 @@ namespace ExceptionHandlingExamples
                 BankAccount account3 = null;
 
                 FundsTranfer fundsTranfers = new FundsTranfer();
-                fundsTranfers.Transfer(account2, account1, 500);
+                fundsTranfers.Transfer(account2, account1, 0);
                 // throws NullReferenceException
                 // we throw ArgumentNullException to the client
                 fundsTranfers.Transfer(account3, account1, 90);
@@ -54,12 +59,21 @@ namespace ExceptionHandlingExamples
                 Console.WriteLine(account1.AccountHolderName + ", " + account1.CurrentBalance);
                 Console.WriteLine(account2.AccountHolderName + ", " + account2.CurrentBalance);
             }
-            catch (ArgumentNullException exc)
+            catch (ArgumentNullException ex)
             {
                 // message from ArgumentNullException
-                Console.WriteLine(exc.Message);
-                // message from NullReferenceException
-                Console.WriteLine(exc.InnerException.Message);
+                Console.WriteLine(ex.Message);
+
+                // better to check if InnerException exists
+                if (ex.InnerException != null)
+                {
+                    // message from NullReferenceException
+                    Console.WriteLine(ex.InnerException.Message);
+                }
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
             }
             Console.ReadKey();
         }
