@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,23 @@ namespace ExceptionHandlingExamples
 
         public InsufficientFundsException(string message, Exception innerException) : base(message, innerException)
         {
+        }
+    }
+
+    class ExceptionLogger
+    {
+        public static void AddException(Exception exception)
+        {
+            string filePath = "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\29 - Exception Handling\\practice\\exception_logger.txt";
+            
+            // AppendText dont overwrite file, only adds more text
+            using (StreamWriter streamWritter = File.AppendText(filePath))
+            {
+                streamWritter.WriteLine("Exception on " + DateTime.Now);
+                streamWritter.WriteLine(exception.GetType().ToString());
+                streamWritter.WriteLine(exception.StackTrace);
+                streamWritter.WriteLine(exception.Message);
+            }
         }
     }
 
@@ -109,19 +127,23 @@ namespace ExceptionHandlingExamples
             catch (ArgumentOutOfRangeException ex)
             {
                 Console.WriteLine(ex.Message);
+                ExceptionLogger.AddException(ex);
             }
             catch (InsufficientFundsException ex)
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine(ex.StackTrace);
+                ExceptionLogger.AddException(ex);
             }
             catch (InvalidOperationException ex)
             {
                 Console.WriteLine(ex.Message);
+                ExceptionLogger.AddException(ex);
             }
             catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
+                ExceptionLogger.AddException(ex);
             }
             Console.ReadKey();
         }

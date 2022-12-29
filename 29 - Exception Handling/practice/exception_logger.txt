@@ -1,0 +1,10 @@
+Exception on 29/12/2022 12:27:12
+ExceptionHandlingExamples.InsufficientFundsException
+   em ExceptionHandlingExamples.FundsTranfer.Transfer(BankAccount sourceAccount, BankAccount destinationAccount, Double amount) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 79
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 107
+A operação não é válida devido ao estado atual do objeto.
+Exception on 29/12/2022 12:29:30
+ExceptionHandlingExamples.InsufficientFundsException
+   em ExceptionHandlingExamples.FundsTranfer.Transfer(BankAccount sourceAccount, BankAccount destinationAccount, Double amount) na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 79
+   em ExceptionHandlingExamples.Program.Main() na C:\Users\Leonardo\Documents\Projects\CSharp-studies\29 - Exception Handling\ExceptionHandlingExamples\ExceptionHandlingExamples\Program.cs:linha 107
+A operação não é válida devido ao estado atual do objeto.
