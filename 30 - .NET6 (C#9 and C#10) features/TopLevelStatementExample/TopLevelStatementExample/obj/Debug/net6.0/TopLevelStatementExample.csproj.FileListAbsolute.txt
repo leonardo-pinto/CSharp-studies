@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\bin\Debug\net6.0\TopLevelStatementExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\bin\Debug\net6.0\TopLevelStatementExample.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\bin\Debug\net6.0\TopLevelStatementExample.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\bin\Debug\net6.0\TopLevelStatementExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\bin\Debug\net6.0\TopLevelStatementExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\refint\TopLevelStatementExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\TopLevelStatementExample.genruntimeconfig.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\TopLevelStatementExample\TopLevelStatementExample\obj\Debug\net6.0\ref\TopLevelStatementExample.dll
