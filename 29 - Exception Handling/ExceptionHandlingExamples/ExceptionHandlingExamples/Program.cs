@@ -8,9 +8,21 @@ namespace ExceptionHandlingExamples
 {
     class BankAccount
     {
+        private double _currentBalance;
+
         public int AccountNumber { get; set; }
         public string AccountHolderName { get; set; }
-        public double CurrentBalance { get; set; }
+        public double CurrentBalance {
+            get => _currentBalance;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Current balance value must be positive");
+                }
+                _currentBalance = value;
+            }
+        }
     }
 
     class FundsTranfer
@@ -45,7 +57,7 @@ namespace ExceptionHandlingExamples
         {
             try
             {
-                BankAccount account1 = new BankAccount() { AccountNumber = 1, AccountHolderName = "Bob", CurrentBalance = 10000 };
+                BankAccount account1 = new BankAccount() { AccountNumber = 1, AccountHolderName = "Bob", CurrentBalance = -10000 };
                 BankAccount account2 = new BankAccount() { AccountNumber = 2, AccountHolderName = "Jose", CurrentBalance = 40000 };
                 // will result in a NullReferenceException
                 BankAccount account3 = null;
@@ -72,6 +84,10 @@ namespace ExceptionHandlingExamples
                 }
             }
             catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }
