@@ -25,6 +25,21 @@ namespace ExceptionHandlingExamples
         }
     }
 
+    class InsufficientFundsException: InvalidOperationException
+    {
+        public InsufficientFundsException()
+        {
+        }
+
+        public InsufficientFundsException(string message) : base(message) 
+        {
+        }
+
+        public InsufficientFundsException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+    }
+
     class FundsTranfer
     {
         public void Transfer(BankAccount sourceAccount, BankAccount destinationAccount, double amount)
@@ -39,7 +54,11 @@ namespace ExceptionHandlingExamples
 
                 if (sourceAccount.CurrentBalance < amount)
                 {
-                    throw new InvalidOperationException($"Insufficient balance: {sourceAccount.CurrentBalance}");
+                    // example of InvalidOperationException
+                    //throw new InvalidOperationException($"Insufficient balance: {sourceAccount.CurrentBalance}");
+
+                    // example of Custom exception
+                    throw new InsufficientFundsException();
                 }
                 // if source or destinationAccount is null
                 // it throws a NullReferenceException
@@ -88,6 +107,10 @@ namespace ExceptionHandlingExamples
                 }
             }
             catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (InsufficientFundsException ex)
             {
                 Console.WriteLine(ex.Message);
             }
