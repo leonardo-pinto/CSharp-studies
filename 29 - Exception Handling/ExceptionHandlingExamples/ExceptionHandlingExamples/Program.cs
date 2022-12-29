@@ -113,6 +113,7 @@ namespace ExceptionHandlingExamples
             catch (InsufficientFundsException ex)
             {
                 Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
             }
             catch (InvalidOperationException ex)
             {
