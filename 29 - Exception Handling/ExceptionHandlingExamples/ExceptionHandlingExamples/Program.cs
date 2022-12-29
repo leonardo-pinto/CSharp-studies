@@ -37,6 +37,10 @@ namespace ExceptionHandlingExamples
                     throw new ArgumentOutOfRangeException("amount", "Amount must a positive value");
                 }
 
+                if (sourceAccount.CurrentBalance < amount)
+                {
+                    throw new InvalidOperationException($"Insufficient balance: {sourceAccount.CurrentBalance}");
+                }
                 // if source or destinationAccount is null
                 // it throws a NullReferenceException
                 // it is handle as a InnerException
@@ -57,13 +61,13 @@ namespace ExceptionHandlingExamples
         {
             try
             {
-                BankAccount account1 = new BankAccount() { AccountNumber = 1, AccountHolderName = "Bob", CurrentBalance = -10000 };
+                BankAccount account1 = new BankAccount() { AccountNumber = 1, AccountHolderName = "Bob", CurrentBalance = 10000 };
                 BankAccount account2 = new BankAccount() { AccountNumber = 2, AccountHolderName = "Jose", CurrentBalance = 40000 };
                 // will result in a NullReferenceException
                 BankAccount account3 = null;
 
                 FundsTranfer fundsTranfers = new FundsTranfer();
-                fundsTranfers.Transfer(account2, account1, 0);
+                fundsTranfers.Transfer(account2, account1, 999999999);
                 // throws NullReferenceException
                 // we throw ArgumentNullException to the client
                 fundsTranfers.Transfer(account3, account1, 90);
@@ -84,6 +88,10 @@ namespace ExceptionHandlingExamples
                 }
             }
             catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (InvalidOperationException ex)
             {
                 Console.WriteLine(ex.Message);
             }
