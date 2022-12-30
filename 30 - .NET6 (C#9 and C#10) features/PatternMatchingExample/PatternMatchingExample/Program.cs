@@ -29,14 +29,33 @@ class Descripter
     public static string GetDescription(Person person)
     {
         // must specify for each type of input e.g. Customer, Supplier, Manager
-        if (person.GetType() == typeof(Manager))
+        //if (person.GetType() == typeof(Manager))
+        //{
+        //    Employee emp = (Employee)person;
+        //    return $"{person.Name}, {person.Age}, {emp.Salary}";
+        //}
+
+        // type pattern matching
+        //if (person is Manager manager)
+        //{
+        //    return $"{manager.Name}, {manager.Age}, {manager.Salary}";
+        //}
+        //else
+        //{
+        //    return $"{person.Name}, {person.Age}";
+        //}
+
+        // switch pattern
+        switch(person)
         {
-            Employee emp = (Employee)person;
-            return $"{person.Name}, {person.Age}, {emp.Salary}";
-        }
-        else
-        {
-            return $"{person.Name}, {person.Age}";
+            case Employee emp:
+                return $"{person.Name}, {person.Age}, {emp.Salary}";
+            case Supplier sup:
+                return $"{person.Name}, {person.Age}, {sup.SupplierBalance}";
+            case Customer cus:
+                return $"{person.Name}, {person.Age}, {cus.CustomerBalance}";
+            default:
+                return $"{person.Name}, {person.Age}";
         }
     }
 }
@@ -46,9 +65,11 @@ class Program
     static void Main()
     {
         Manager manager = new() { Name = "John", Age = 45, Salary = 1500 };
-        Supplier supplier = new() { Name = "John", Age = 45, SupplierBalance = 1500 };
+        Supplier supplier = new() { Name = "John", Age = 45, SupplierBalance = 1200 };
         Console.WriteLine(Descripter.GetDescription(manager));
         Console.WriteLine(Descripter.GetDescription(supplier));
+
+        Console.ReadKey();
     }
 }
 
