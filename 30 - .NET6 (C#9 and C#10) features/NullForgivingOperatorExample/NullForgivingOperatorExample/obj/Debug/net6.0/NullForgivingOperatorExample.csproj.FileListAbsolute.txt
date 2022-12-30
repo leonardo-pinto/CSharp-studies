@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\bin\Debug\net6.0\NullForgivingOperatorExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\bin\Debug\net6.0\NullForgivingOperatorExample.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\bin\Debug\net6.0\NullForgivingOperatorExample.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\bin\Debug\net6.0\NullForgivingOperatorExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\bin\Debug\net6.0\NullForgivingOperatorExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\refint\NullForgivingOperatorExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\NullForgivingOperatorExample.genruntimeconfig.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullForgivingOperatorExample\NullForgivingOperatorExample\obj\Debug\net6.0\ref\NullForgivingOperatorExample.dll
