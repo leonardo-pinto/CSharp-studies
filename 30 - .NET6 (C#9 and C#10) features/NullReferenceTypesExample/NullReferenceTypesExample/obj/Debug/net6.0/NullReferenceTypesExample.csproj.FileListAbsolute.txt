@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\bin\Debug\net6.0\NullReferenceTypesExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\bin\Debug\net6.0\NullReferenceTypesExample.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\bin\Debug\net6.0\NullReferenceTypesExample.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\bin\Debug\net6.0\NullReferenceTypesExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\bin\Debug\net6.0\NullReferenceTypesExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\refint\NullReferenceTypesExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\NullReferenceTypesExample.genruntimeconfig.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\NullReferenceTypesExample\NullReferenceTypesExample\obj\Debug\net6.0\ref\NullReferenceTypesExample.dll
