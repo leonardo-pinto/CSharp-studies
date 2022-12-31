@@ -1,4 +1,14 @@
-﻿public record Person(string Name, int Age);
+﻿using recordsExample;
+using System.Net.Sockets;
+
+namespace recordsExample
+{
+    public record Person(string Name, int Age, Address PersonalAddress);
+    public record Address(string City);
+
+
+}
+
 
 //class Person
 //{
@@ -16,7 +26,7 @@ class Program
 {
     static void Main()
     {
-        Person person = new("Joseph Richards", 50);
-        Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+        Person person = new("Joseph Richards", 50, new Address("Jundiai"));
+        Console.WriteLine($" {person.Name}, {person.Age}, {person.PersonalAddress.City}");
     }
 }
