@@ -90,21 +90,34 @@ class Descripter
         //};
 
         // Property Pattern example
-        return person switch
-        {
-            // first tries to cast type, then checks conditions
-            // then assigns p value and return
-            { Age: <= 13 } p => $"{person.Name} is a child",
-            //Person p when p.Age is <= 13 => $"{person.Name} is a child",
+        //return person switch
+        //{
+        //    // first tries to cast type, then checks conditions
+        //    // then assigns p value and return
+        //    { Age: <= 13 } p => $"{person.Name} is a child",
+        //    //Person p when p.Age is <= 13 => $"{person.Name} is a child",
            
-            Person { Age: > 13 and <= 18 } p => $"{person.Name} is a teenager",
+        //    Person { Age: > 13 and <= 18 } p => $"{person.Name} is a teenager",
            
-            Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
-            Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Married } p => $"{person.Name} is a sad adult",
+        //    Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
+        //    Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Married } p => $"{person.Name} is a sad adult",
 
-            Person { Age: >= 60 and < 100 } p => $"{person.Name} is a senior",
+        //    Person { Age: >= 60 and < 100 } p => $"{person.Name} is a senior",
          
-            Person { Age: 100 or 200 } p => $"{person.Name} is a centenarian",
+        //    Person { Age: 100 or 200 } p => $"{person.Name} is a centenarian",
+        //    _ => $"{person.Name} is {person.Age} years old",
+        //};
+
+        // Tuple pattern example
+        return (person, person.Age, person.PersonMaritalStatus) switch
+        {
+            (Person, <= 13, _) p => $"{person.Name} is a child",
+            (Person, > 13 and <= 18, _ ) p => $"{person.Name} is a teenager",
+            (Person, > 18 and < 60, MaritalStatus.Single) p => $"{person.Name} is a happy adult",
+            //Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
+            (Person, > 18 and < 60, MaritalStatus.Married) p => $"{person.Name} is a sad adult",
+            (Person, >= 60 and < 100, _) p => $"{person.Name} is a senior",
+            (Person, 100 or 200, _) p => $"{person.Name} is a centenarian",
             _ => $"{person.Name} is {person.Age} years old",
         };
     }
