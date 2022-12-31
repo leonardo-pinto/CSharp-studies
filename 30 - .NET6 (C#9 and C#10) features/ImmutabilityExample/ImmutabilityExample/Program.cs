@@ -3,14 +3,24 @@
     private readonly int _accountNumber;
     private readonly double _currentBalance;
 
-    public int AccountNumber { get => _accountNumber; }
-    public double CurrentBalance { get => _currentBalance; } 
+    public int AccountNumber
+    { 
+        get => _accountNumber;
+        init => _accountNumber = value;
+    }
+    public double CurrentBalance
+    { 
+        get => _currentBalance;
+        init => _currentBalance = value;
+    } 
 
     public BankAccount(int accountNumber, double currentBalance)
     {
         _accountNumber = accountNumber;
         _currentBalance = currentBalance;
     }
+
+    public BankAccount() { }
 }
 
 class DataStorage
@@ -23,6 +33,10 @@ class DataStorage
         {
             new BankAccount(1, 1000),
             new BankAccount(2, 2000),
+            // readonly properties can not be initialized
+            // in empty constructors
+            /// init property enables in line, but not set changes
+            new BankAccount(){ AccountNumber = 3, CurrentBalance = 3000 }
         };
     }
 
