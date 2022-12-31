@@ -9,6 +9,11 @@ class Person
     public string? Name { get; set; }
     public int? Age { get; set; }
     public MaritalStatus PersonMaritalStatus { get; set; }
+
+    public void Deconstruct(out Person person, out int? age, out MaritalStatus? personMaritalStatus)
+    {
+        (person, age, personMaritalStatus) = (this, this.Age, this.PersonMaritalStatus);
+    }
 }
 
 class Employee : Person
@@ -109,10 +114,25 @@ class Descripter
         //};
 
         // Tuple pattern example
-        return (person, person.Age, person.PersonMaritalStatus) switch
+        //return (person, person.Age, person.PersonMaritalStatus) switch
+        //{
+        //    (Person, <= 13, _) p => $"{person.Name} is a child",
+        //    (Person, > 13 and <= 18, _ ) p => $"{person.Name} is a teenager",
+        //    (Person, > 18 and < 60, MaritalStatus.Single) p => $"{person.Name} is a happy adult",
+        //    //Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
+        //    (Person, > 18 and < 60, MaritalStatus.Married) p => $"{person.Name} is a sad adult",
+        //    (Person, >= 60 and < 100, _) p => $"{person.Name} is a senior",
+        //    (Person, 100 or 200, _) p => $"{person.Name} is a centenarian",
+        //    _ => $"{person.Name} is {person.Age} years old",
+        //};
+
+        // Positional pattern example
+        // alternative for tuple repetition
+        // create Deconstruct method in class
+        return person switch
         {
             (Person, <= 13, _) p => $"{person.Name} is a child",
-            (Person, > 13 and <= 18, _ ) p => $"{person.Name} is a teenager",
+            (Person, > 13 and <= 18, _) p => $"{person.Name} is a teenager",
             (Person, > 18 and < 60, MaritalStatus.Single) p => $"{person.Name} is a happy adult",
             //Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
             (Person, > 18 and < 60, MaritalStatus.Married) p => $"{person.Name} is a sad adult",
