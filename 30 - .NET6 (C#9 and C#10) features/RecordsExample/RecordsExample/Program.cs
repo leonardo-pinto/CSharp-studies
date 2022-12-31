@@ -3,7 +3,11 @@ using System.Net.Sockets;
 
 namespace recordsExample
 {
-    public record Person(string Name, int Age, Address PersonalAddress);
+    public record Person(string Name, int Age, Address PersonalAddress)
+    {
+        public string? Gender { get; set; }
+    }
+
     public record Address(string City);
 
 
@@ -26,7 +30,10 @@ class Program
 {
     static void Main()
     {
-        Person person = new("Joseph Richards", 50, new Address("Jundiai"));
+        Person person = new("Joseph Richards", 50, new Address("Jundiai"))
+        {
+            Gender = "Elu"
+        };
         Console.WriteLine($" {person.Name}, {person.Age}, {person.PersonalAddress.City}");
     }
 }
