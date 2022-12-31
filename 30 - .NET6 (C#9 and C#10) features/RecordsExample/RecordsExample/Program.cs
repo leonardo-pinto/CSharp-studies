@@ -1,0 +1,22 @@
+﻿public record Person(string Name, int Age);
+
+//class Person
+//{
+//    public string Name { get; init; }
+//    public int Age { get; init; }
+
+//    public Person(string name, int age)
+//    {
+//        this.Name = name;
+//        this.Age = age;
+//    }
+//}
+
+class Program
+{
+    static void Main()
+    {
+        Person person = new("Joseph Richards", 50);
+        Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+    }
+}
