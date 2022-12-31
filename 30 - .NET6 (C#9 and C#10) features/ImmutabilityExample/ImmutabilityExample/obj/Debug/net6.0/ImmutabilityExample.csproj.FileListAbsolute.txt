@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\bin\Debug\net6.0\ImmutabilityExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\bin\Debug\net6.0\ImmutabilityExample.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\bin\Debug\net6.0\ImmutabilityExample.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\bin\Debug\net6.0\ImmutabilityExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\bin\Debug\net6.0\ImmutabilityExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\refint\ImmutabilityExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ImmutabilityExample.genruntimeconfig.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\ImmutabilityExample\ImmutabilityExample\obj\Debug\net6.0\ref\ImmutabilityExample.dll
