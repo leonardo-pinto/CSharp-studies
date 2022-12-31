@@ -3,6 +3,11 @@
     Single, Married
 }
 
+class BirthDateInfo
+{
+    public DateTime DateOfBirth { get; set; }
+}
+
 class Person
 {
     // allow null values
@@ -10,10 +15,12 @@ class Person
     public int? Age { get; set; }
     public MaritalStatus PersonMaritalStatus { get; set; }
 
-    public void Deconstruct(out Person person, out int? age, out MaritalStatus? personMaritalStatus)
-    {
-        (person, age, personMaritalStatus) = (this, this.Age, this.PersonMaritalStatus);
-    }
+    public BirthDateInfo? BirthDate { get; set; }
+
+    //public void Deconstruct(out Person person, out int? age, out MaritalStatus? personMaritalStatus)
+    //{
+    //    (person, age, personMaritalStatus) = (this, this.Age, this.PersonMaritalStatus);
+    //}
 }
 
 class Employee : Person
@@ -101,14 +108,14 @@ class Descripter
         //    // then assigns p value and return
         //    { Age: <= 13 } p => $"{person.Name} is a child",
         //    //Person p when p.Age is <= 13 => $"{person.Name} is a child",
-           
+
         //    Person { Age: > 13 and <= 18 } p => $"{person.Name} is a teenager",
-           
+
         //    Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
         //    Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Married } p => $"{person.Name} is a sad adult",
 
         //    Person { Age: >= 60 and < 100 } p => $"{person.Name} is a senior",
-         
+
         //    Person { Age: 100 or 200 } p => $"{person.Name} is a centenarian",
         //    _ => $"{person.Name} is {person.Age} years old",
         //};
@@ -129,15 +136,24 @@ class Descripter
         // Positional pattern example
         // alternative for tuple repetition
         // create Deconstruct method in class
+        //return person switch
+        //{
+        //    (Person, <= 13, _) p => $"{person.Name} is a child",
+        //    (Person, > 13 and <= 18, _) p => $"{person.Name} is a teenager",
+        //    (Person, > 18 and < 60, MaritalStatus.Single) p => $"{person.Name} is a happy adult",
+        //    //Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
+        //    (Person, > 18 and < 60, MaritalStatus.Married) p => $"{person.Name} is a sad adult",
+        //    (Person, >= 60 and < 100, _) p => $"{person.Name} is a senior",
+        //    (Person, 100 or 200, _) p => $"{person.Name} is a centenarian",
+        //    _ => $"{person.Name} is {person.Age} years old",
+        //};
         return person switch
         {
-            (Person, <= 13, _) p => $"{person.Name} is a child",
-            (Person, > 13 and <= 18, _) p => $"{person.Name} is a teenager",
-            (Person, > 18 and < 60, MaritalStatus.Single) p => $"{person.Name} is a happy adult",
-            //Person { Age: > 18 and < 60, PersonMaritalStatus: MaritalStatus.Single } p => $"{person.Name} is a happy adult",
-            (Person, > 18 and < 60, MaritalStatus.Married) p => $"{person.Name} is a sad adult",
-            (Person, >= 60 and < 100, _) p => $"{person.Name} is a senior",
-            (Person, 100 or 200, _) p => $"{person.Name} is a centenarian",
+            Person { Age: <= 13, BirthDate.DateOfBirth.Year: > 2000 } p => $"{person.Name} is a millenial child",
+            Person { Age: > 13 and <= 18 } p => $"{person.Name} is a teenager",
+            Person { Age: > 18 and < 60 }p => $"{person.Name} is a sad adult",
+            Person { Age: >= 60 and < 100 } p => $"{person.Name} is a senior",
+            Person { Age: 100 or 200 } p => $"{person.Name} is a centenarian",
             _ => $"{person.Name} is {person.Age} years old",
         };
     }
@@ -147,7 +163,7 @@ class Program
 {
     static void Main()
     {
-        Manager manager = new() { Name = "Leonardo", Age = 6, Salary = 1500, PersonMaritalStatus = MaritalStatus.Married };
+        Manager manager = new() { Name = "Leonardo", Age = 6, Salary = 1500, PersonMaritalStatus = MaritalStatus.Married, BirthDate = new BirthDateInfo() { DateOfBirth = DateTime.Parse("2002-01-01") } };
         Supplier supplier = new() { Name = "Enzo", Age = 20, SupplierBalance = 120000, PersonMaritalStatus = MaritalStatus.Single };
         Employee emp = new() { Name = "John Doe", Age = 35, PersonMaritalStatus = MaritalStatus.Married };
         Employee emp2 = new() { Name = "Joseph Richards", Age = 100, PersonMaritalStatus = MaritalStatus.Married };
