@@ -1,7 +1,16 @@
 ﻿class BankAccount
 {
-    public int AccountNumber { get; set; }
-    public double CurrentBalance { get; set; } 
+    private readonly int _accountNumber;
+    private readonly double _currentBalance;
+
+    public int AccountNumber { get => _accountNumber; }
+    public double CurrentBalance { get => _currentBalance; } 
+
+    public BankAccount(int accountNumber, double currentBalance)
+    {
+        _accountNumber = accountNumber;
+        _currentBalance = currentBalance;
+    }
 }
 
 class DataStorage
@@ -12,15 +21,16 @@ class DataStorage
     {
         return new List<BankAccount>()
         {
-            new BankAccount() { AccountNumber = 1, CurrentBalance = 1000 },
-            new BankAccount() { AccountNumber = 2, CurrentBalance = 2000 },
+            new BankAccount(1, 1000),
+            new BankAccount(2, 2000),
         };
     }
 
     // developer 2
     public static double GetCurrentBalance(BankAccount bankAccount)
     {
-        bankAccount.AccountNumber = 100; // unexpected change
+        // compilation error if property is readonly
+        // bankAccount.AccountNumber = 100; // unexpected change
         return bankAccount.CurrentBalance;
     }
 }
