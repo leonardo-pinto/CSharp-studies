@@ -1,27 +1,50 @@
-﻿class BankAccount
+﻿readonly struct BankAccount
 {
     private readonly int _accountNumber;
     private readonly double _currentBalance;
 
     public int AccountNumber
-    { 
+    {
         get => _accountNumber;
         init => _accountNumber = value;
     }
     public double CurrentBalance
-    { 
+    {
         get => _currentBalance;
         init => _currentBalance = value;
-    } 
+    }
 
     public BankAccount(int accountNumber, double currentBalance)
     {
         _accountNumber = accountNumber;
         _currentBalance = currentBalance;
     }
-
-    public BankAccount() { }
 }
+
+//class BankAccount
+//{
+//    private readonly int _accountNumber;
+//    private readonly double _currentBalance;
+
+//    public int AccountNumber
+//    { 
+//        get => _accountNumber;
+//        init => _accountNumber = value;
+//    }
+//    public double CurrentBalance
+//    { 
+//        get => _currentBalance;
+//        init => _currentBalance = value;
+//    } 
+
+//    public BankAccount(int accountNumber, double currentBalance)
+//    {
+//        _accountNumber = accountNumber;
+//        _currentBalance = currentBalance;
+//    }
+
+//    public BankAccount() { }
+//}
 
 class DataStorage
 {
@@ -54,7 +77,7 @@ class Program
     static void Main()
     {
         List<BankAccount> bankAccounts = DataStorage.GetBankAccounts();
-        BankAccount firstBankAccount = bankAccounts[0];
+        BankAccount firstBankAccount = bankAccounts[2];
 
         Console.WriteLine($"Initial values: {firstBankAccount.AccountNumber}, {firstBankAccount.CurrentBalance}");
         double balance = DataStorage.GetCurrentBalance(firstBankAccount);
