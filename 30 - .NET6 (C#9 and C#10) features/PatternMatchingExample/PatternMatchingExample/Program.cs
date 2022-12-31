@@ -46,17 +46,27 @@ class Descripter
         //}
 
         // switch pattern
-        switch(person)
+
+        //switch(person)
+        //{
+        //    case Employee emp:
+        //        return $"{person.Name}, {person.Age}, {emp.Salary}";
+        //    case Supplier sup when(sup.SupplierBalance > 10000):
+        //        return $"{person.Name}, {person.Age}, {sup.SupplierBalance}";
+        //    case Customer cus:
+        //        return $"{person.Name}, {person.Age}, {cus.CustomerBalance}";
+        //    default:
+        //        return $"{person.Name}, {person.Age}";
+        //}
+        // switch expression to improve
+        return person switch
         {
-            case Employee emp:
-                return $"{person.Name}, {person.Age}, {emp.Salary}";
-            case Supplier sup:
-                return $"{person.Name}, {person.Age}, {sup.SupplierBalance}";
-            case Customer cus:
-                return $"{person.Name}, {person.Age}, {cus.CustomerBalance}";
-            default:
-                return $"{person.Name}, {person.Age}";
-        }
+            Manager man when (man.Salary > 1000) => $"{person.Name}, {person.Age}, {man.Salary}",
+            Employee emp => $"{person.Name}, {person.Age}, {emp.Salary}",
+            Supplier sup when (sup.SupplierBalance > 10000) => $"{person.Name}, {person.Age}, {sup.SupplierBalance}",
+            Customer cus => $"{person.Name}, {person.Age}, {cus.CustomerBalance}",
+            _ => $"{person.Name}, {person.Age}",
+        };
     }
 }
 
@@ -65,7 +75,7 @@ class Program
     static void Main()
     {
         Manager manager = new() { Name = "John", Age = 45, Salary = 1500 };
-        Supplier supplier = new() { Name = "John", Age = 45, SupplierBalance = 1200 };
+        Supplier supplier = new() { Name = "John", Age = 45, SupplierBalance = 120000 };
         Console.WriteLine(Descripter.GetDescription(manager));
         Console.WriteLine(Descripter.GetDescription(supplier));
 
