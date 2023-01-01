@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticAnonymousFunctionsExample", "StaticAnonymousFunctionsExample\StaticAnonymousFunctionsExample.csproj", "{FEDD2D2A-0D11-43DA-933B-F488D18AB827}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEDD2D2A-0D11-43DA-933B-F488D18AB827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDD2D2A-0D11-43DA-933B-F488D18AB827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDD2D2A-0D11-43DA-933B-F488D18AB827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDD2D2A-0D11-43DA-933B-F488D18AB827}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63D3ECED-F8CB-4CF4-8526-A84BE64C6214}
+	EndGlobalSection
+EndGlobal
