@@ -5,6 +5,12 @@
     internal string GetNameInLowerCase();
 
     internal int GetNameLength();
+
+    // static method
+    public static string GetNameTitle()
+    {
+        return "Mr./Ms.";
+    }
 }
 
 public class Manager: IEmployee
@@ -39,5 +45,6 @@ class Program
 
         Console.WriteLine(iEmpManager.GetNameInLowerCase());
         Console.WriteLine(manager.GetNameLength());
+        Console.WriteLine(IEmployee.GetNameTitle());
     }
 }
