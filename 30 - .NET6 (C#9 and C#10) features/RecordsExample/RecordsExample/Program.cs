@@ -25,6 +25,9 @@ namespace recordsExample
         }
     }
 
+    // Manager inherits from Employee
+    public record Manager(int? Id, int? Age, int? Salary): Employee(Id, Age);
+
  }
 
 
@@ -91,6 +94,11 @@ class Program
         Employee emp2 = new(100);
         Console.WriteLine($"Employee 1 age: {emp1.Age}");
         Console.WriteLine($"Employee 2 age: {emp2.Age}");
+
+
+        // Records Inheritance
+        Manager manager = new Manager(100, 35, 1000);
+        Console.WriteLine($"{manager.Id}, {manager.Age}, {manager.Salary}");
 
     }
 }
