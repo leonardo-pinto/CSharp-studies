@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\bin\Debug\net6.0\CommandLineExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\bin\Debug\net6.0\CommandLineExample.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\bin\Debug\net6.0\CommandLineExample.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\bin\Debug\net6.0\CommandLineExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\bin\Debug\net6.0\CommandLineExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\refint\CommandLineExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\CommandLineExample.genruntimeconfig.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\CommandLineExample\CommandLineExample\obj\Debug\net6.0\ref\CommandLineExample.dll
