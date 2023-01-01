@@ -8,13 +8,24 @@ namespace recordsExample
         public string? Name { get; set; }
     }
 
-    public record Address(string City) 
+    public record Address(string City)
     {
         public string? Country { get; set; }
     }
 
+    public record Employee(int? Id, int? Age)
+    { 
+        // allows values calculation to create user-defined constructor
+        public Employee(int empId):this(empId, null)
+        {
+          if (empId is not 100)
+            {
+                Age = 10;
+            }
+        }
+    }
 
-}
+ }
 
 
 //class Person
@@ -75,5 +86,11 @@ class Program
         // In classes, it compares the reference of the object in the heap
         //Console.WriteLine(person1 == person2);
         //Console.WriteLine(person1.Equals(person2));
+
+        Employee emp1 = new (99);
+        Employee emp2 = new(100);
+        Console.WriteLine($"Employee 1 age: {emp1.Age}");
+        Console.WriteLine($"Employee 2 age: {emp2.Age}");
+
     }
 }
