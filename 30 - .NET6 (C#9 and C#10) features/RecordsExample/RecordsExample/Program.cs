@@ -61,6 +61,12 @@ class Program
         //};
 
         //person1.Name = "Another name";
+
+        // Example of reconstruct
+        var (variable1, variable2, variable3) = person1;
+
+        Console.WriteLine($"Deconstruct example: {variable1}, {variable2}, {variable3}");
+
         Console.WriteLine($"Person1: {person1.Name}, {person1.Age}, {person1.PersonalAddress.City}, {person1.PersonalAddress.Country}");
         Console.WriteLine($"Person2: {person2.Name}, {person2.Age}, {person2.PersonalAddress.City}, {person2.PersonalAddress.Country}");
         Console.WriteLine($"Person3: {person3.Name}, {person3.Age}, {person3.PersonalAddress.City}, {person3.PersonalAddress.Country}");
