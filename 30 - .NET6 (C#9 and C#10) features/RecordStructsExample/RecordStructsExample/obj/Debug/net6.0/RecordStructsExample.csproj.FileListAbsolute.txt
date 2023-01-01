@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\bin\Debug\net6.0\RecordStructsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\bin\Debug\net6.0\RecordStructsExample.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\bin\Debug\net6.0\RecordStructsExample.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\bin\Debug\net6.0\RecordStructsExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\bin\Debug\net6.0\RecordStructsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\refint\RecordStructsExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\RecordStructsExample.genruntimeconfig.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\RecordStructsExample\RecordStructsExample\obj\Debug\net6.0\ref\RecordStructsExample.dll
