@@ -1,5 +1,4 @@
 ﻿using recordsExample;
-using System.Net.Sockets;
 
 namespace recordsExample
 {
@@ -8,7 +7,7 @@ namespace recordsExample
         public string? Gender { get; set; }
     }
 
-    public record Address(string City);
+    public record Address(string City, string Country);
 
 
 }
@@ -30,10 +29,19 @@ class Program
 {
     static void Main()
     {
-        Person person = new("Joseph Richards", 50, new Address("Jundiai"))
+        Person person1 = new("Joseph Richards", 50, new Address("Jundiai", "Brazil"))
         {
             Gender = "Elu"
         };
-        Console.WriteLine($" {person.Name}, {person.Age}, {person.PersonalAddress.City}");
+        Person person2 = new("Joseph Richards", 50, new Address("Jundiai", "Brazil"))
+        {
+            Gender = "Elu"
+        };
+        Console.WriteLine($"{person1.Name}, {person1.Age}, {person1.PersonalAddress.City}, {person1.PersonalAddress.Country}");
+
+        // Specific for records
+        // In classes, it compares the reference of the object in the heap
+        Console.WriteLine(person1 == person2);
+        Console.WriteLine(person1.Equals(person2));
     }
 }
