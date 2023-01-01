@@ -23,10 +23,22 @@ namespace recordsExample
                 Age = 10;
             }
         }
+
+        public sealed override string ToString()
+        {
+            return $"and my id is {Id}";
+        }
     }
 
     // Manager inherits from Employee
-    public record Manager(int? Id, int? Age, int? Salary): Employee(Id, Age);
+    public record Manager(int? Id, int? Age, int? Salary) : Employee(Id, Age)
+    {
+        //public override string ToString()
+        //{
+        //    return $"My age is {Age}, {base.ToString()}";
+        //}
+
+    }
 
  }
 
@@ -99,6 +111,7 @@ class Program
         // Records Inheritance
         Manager manager = new Manager(100, 35, 1000);
         Console.WriteLine($"{manager.Id}, {manager.Age}, {manager.Salary}");
+        Console.WriteLine(manager.ToString());
 
     }
 }
