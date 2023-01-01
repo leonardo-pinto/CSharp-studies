@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\bin\Debug\net6.0\LambdaExpressionsExample.exe
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\bin\Debug\net6.0\LambdaExpressionsExample.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\bin\Debug\net6.0\LambdaExpressionsExample.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\bin\Debug\net6.0\LambdaExpressionsExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\bin\Debug\net6.0\LambdaExpressionsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\refint\LambdaExpressionsExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\LambdaExpressionsExample.genruntimeconfig.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\30 - .NET6 (C#9 and C#10) features\LambdaExpressionsExample\LambdaExpressionsExample\obj\Debug\net6.0\ref\LambdaExpressionsExample.dll
