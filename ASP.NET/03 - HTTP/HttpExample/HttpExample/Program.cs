@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Primitives;
 using System.Security.Cryptography;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,18 @@ app.Run(async (HttpContext context) =>
         await context.Response.WriteAsync($"Auth header: {authHeader}");
     
     }
+
+    StreamReader reader = new(context.Request.Body);
+    string body = await reader.ReadToEndAsync();
+
+    Dictionary<string, StringValues> queryDict = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(body);
+
+    if (queryDict.ContainsKey("firstName"))
+    {
+        string firstName = queryDict["firstName"];
+        await context.Response.WriteAsync($"First name: ${firstName}");
+    }
+
     //string requestPath = context.Request.Path;
     //context.Response.Headers["MyKey"] = "my value";
     //context.Response.StatusCode = 200;
