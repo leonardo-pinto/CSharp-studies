@@ -9,10 +9,13 @@
   },
   "profiles": {
     "FirstApp": {
+      // Project: uses Kestrel only
       "commandName": "Project",
       "dotnetRunMessages": true,
+      // opens browser automatically
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5019",
+      // default port 
+      "applicationUrl": "http://localhost:5119",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
