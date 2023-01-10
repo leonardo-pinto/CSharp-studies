@@ -9,11 +9,18 @@ app.Run(async (HttpContext context) =>
     if (context.Request.Query.ContainsKey("id"))
     {
         string id = context.Request.Query["id"];
-        await context.Response.WriteAsync($"<h3>Id is {id}<h3/>");
+        await context.Response.WriteAsync($"<h3>Id is {id}</h3>");
+    }
+
+    if (context.Request.Headers.ContainsKey("Authorization"))
+    {
+        string authHeader = context.Request.Headers["Authorization"];
+        await context.Response.WriteAsync($"Auth header: {authHeader}");
+    
     }
     //string requestPath = context.Request.Path;
     //context.Response.Headers["MyKey"] = "my value";
-    context.Response.StatusCode = 200;
+    //context.Response.StatusCode = 200;
     await context.Response.WriteAsync("\n<h1>Testing</h1> statusCode");
     //await context.Response.WriteAsync($"Request path: <h2>{requestPath}</>");
 
