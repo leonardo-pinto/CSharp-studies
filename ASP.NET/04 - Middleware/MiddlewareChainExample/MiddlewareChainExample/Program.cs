@@ -11,7 +11,12 @@ app.Use(async (HttpContext context, RequestDelegate next) => {
     await context.Response.WriteAsync("Middleware 1 after");
 });
 
-app.UseMiddleware<MyCustomMiddleware>();
+
+// Using custom middleware as a class
+//app.UseMiddleware<MyCustomMiddleware>();
+
+// Using custom middleware as an extension method
+app.UseMyCustomMiddleware();
 
 app.Run(async (HttpContext context) => {
     await context.Response.WriteAsync("Middleware 3");
