@@ -1,4 +1,8 @@
+using Middlewares;
+
 var builder = WebApplication.CreateBuilder(args);
+// add middleware as a service
+builder.Services.AddTransient<MyCustomMiddleware, MyCustomMiddleware>();
 var app = builder.Build();
 
 app.Use(async (HttpContext context, RequestDelegate next) => {
@@ -7,11 +11,7 @@ app.Use(async (HttpContext context, RequestDelegate next) => {
     await context.Response.WriteAsync("Middleware 1 after");
 });
 
-app.Use(async (HttpContext context, RequestDelegate next) => {
-    await context.Response.WriteAsync("Middleware 2");
-    await next(context);
-    await context.Response.WriteAsync("Middleware 2 after");
-});
+app.UseMiddleware<MyCustomMiddleware>();
 
 app.Run(async (HttpContext context) => {
     await context.Response.WriteAsync("Middleware 3");
