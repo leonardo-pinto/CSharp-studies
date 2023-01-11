@@ -1,4 +1,5 @@
 using Middlewares;
+using MiddlewareChainExample.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 // add middleware as a service
@@ -16,7 +17,10 @@ app.Use(async (HttpContext context, RequestDelegate next) => {
 //app.UseMiddleware<MyCustomMiddleware>();
 
 // Using custom middleware as an extension method
-app.UseMyCustomMiddleware();
+//app.UseMyCustomMiddleware();
+
+// Using conventional middleware class
+app.UseMiddleware();
 
 app.Run(async (HttpContext context) => {
     await context.Response.WriteAsync("Middleware 3");
