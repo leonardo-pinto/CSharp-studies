@@ -20,6 +20,7 @@ app.Use(async (HttpContext context, RequestDelegate next) => {
 //app.UseMyCustomMiddleware();
 
 // Using conventional middleware class
+// Most indicated method to usa a middleware 
 app.UseMiddleware();
 
 app.Run(async (HttpContext context) => {
