@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "JwQJXG68mYRl+vv3U0T3XzvQ33qL7DyFt7GX0THtD0o=",
+  "Source": "StaticFilesExample",
+  "BasePath": "_content/StaticFilesExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StaticFilesExample\\wwwroot",
+      "Source": "StaticFilesExample",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\05 - Routing\\StaticFilesExample\\StaticFilesExample\\wwwroot\\",
+      "BasePath": "_content/StaticFilesExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\05 - Routing\\StaticFilesExample\\StaticFilesExample\\wwwroot\\example1.png",
+      "SourceId": "StaticFilesExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\05 - Routing\\StaticFilesExample\\StaticFilesExample\\wwwroot\\",
+      "BasePath": "_content/StaticFilesExample",
+      "RelativePath": "example1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\example1.png"
+    }
+  ]
+}
