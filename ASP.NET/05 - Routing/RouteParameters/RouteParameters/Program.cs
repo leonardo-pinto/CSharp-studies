@@ -6,6 +6,7 @@ app.UseRouting();
 
 app.UseEndpoints(endpoints =>
 {
+    // Route parameters
     endpoints.Map("files/{filename}.{extension}", async (HttpContext context) =>
     {
         string? filename = Convert.ToString(context.Request.RouteValues["filename"]);
@@ -15,11 +16,25 @@ app.UseEndpoints(endpoints =>
 
     });
 
-    // example of default value
+    // Default Parameters
     endpoints.Map("products/details/{id=1}", async (HttpContext context) =>
     {
         string? id = Convert.ToString(context.Request.RouteValues["id"]);
         await context.Response.WriteAsync($"id is {id}");
+    });
+
+    // Optional Parameters
+    endpoints.Map("employee/{id?}", async (HttpContext context) =>
+    {
+        // check if parameter exists
+        if (context.Request.RouteValues.ContainsKey("id")) { 
+            string? id = Convert.ToString(context.Request.RouteValues["id"]);
+            await context.Response.WriteAsync($"id is {id}");
+        }
+        else
+        {
+            await context.Response.WriteAsync("Id was not informed");
+        }
     });
 });
 
