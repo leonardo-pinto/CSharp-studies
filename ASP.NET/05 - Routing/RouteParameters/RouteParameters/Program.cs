@@ -24,17 +24,40 @@ app.UseEndpoints(endpoints =>
     });
 
     // Optional Parameters
-    endpoints.Map("employee/{id?}", async (HttpContext context) =>
+    //endpoints.Map("employee/{id?}", async (HttpContext context) =>
+    //{
+    //    // check if parameter exists
+    //    if (context.Request.RouteValues.ContainsKey("id")) { 
+    //        string? id = Convert.ToString(context.Request.RouteValues["id"]);
+    //        await context.Response.WriteAsync($"id is {id}");
+    //    }
+    //    else
+    //    {
+    //        await context.Response.WriteAsync("Id was not informed");
+    //    }
+    //});
+
+    // Route Constraints with int
+    endpoints.Map("employee/{id:int?}", async (HttpContext context) =>
     {
         // check if parameter exists
-        if (context.Request.RouteValues.ContainsKey("id")) { 
-            string? id = Convert.ToString(context.Request.RouteValues["id"]);
+        if (context.Request.RouteValues.ContainsKey("id"))
+        {
+            int? id = Convert.ToInt32(context.Request.RouteValues["id"]);
             await context.Response.WriteAsync($"id is {id}");
         }
         else
         {
             await context.Response.WriteAsync("Id was not informed");
         }
+    });
+
+    // Route Constraints with DateTime
+    // daily-digest-report/{reportdate}
+    endpoints.Map("daily-digest-report/{reportdate:datetime}", async (HttpContext context) =>
+    {
+        DateTime reportDate = Convert.ToDateTime(context.Request.RouteValues["reportdate"]);
+        await context.Response.WriteAsync($"In daily-digest-report - {reportDate.ToShortDateString()}");
     });
 });
 
