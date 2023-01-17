@@ -1,4 +1,12 @@
+using RouteParameters.CustomConstraints;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Register custom constraints
+builder.Services.AddRouting(options =>
+{
+    options.ConstraintMap.Add("months", typeof(MonthsCustomConstraint));
+});
 var app = builder.Build();
 
 // enable routing
@@ -76,11 +84,25 @@ app.UseEndpoints(endpoints =>
         string? username = Convert.ToString(context.Request.RouteValues["username"]);
         await context.Response.WriteAsync($"username is {username}");
     });
+
+    // Custom Constraints
+    endpoints.Map("sales-report/{year:int:min(1900)}/{month:months}", async (HttpContext context) =>
+    {
+        int year = Convert.ToInt32(context.Request.RouteValues["year"]);
+        string? month = Convert.ToString(context.Request.RouteValues["month"]);
+
+        // Substituted by Custom Class Constraint
+        //if (month == "apr" || month == "jul" || month == "oct" || month == "jan")
+        //{
+        //    // code
+        //}
+        await context.Response.WriteAsync($"Sales report from {year}/{month}");
+    });
 });
 
 app.Run(async (HttpContext context) =>
 {
-    await context.Response.WriteAsync($"Request received at {context.Request.Path}");
+    await context.Response.WriteAsync($"No routed matched at {context.Request.Path}");
 });
 
 app.Run();
