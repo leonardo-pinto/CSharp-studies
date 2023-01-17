@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\06 - Controllers and IActionResult\\ControllersExample\\ControllersExample\\wwwroot\\example0.png",
+      "PackagePath": "staticwebassets\\example0.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ControllersExample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ControllersExample.props",
+      "PackagePath": "build\\ControllersExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ControllersExample.props",
+      "PackagePath": "buildMultiTargeting\\ControllersExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ControllersExample.props",
+      "PackagePath": "buildTransitive\\ControllersExample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

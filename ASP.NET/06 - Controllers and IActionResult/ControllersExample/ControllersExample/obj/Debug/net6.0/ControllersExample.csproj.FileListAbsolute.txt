@@ -24,3 +24,4 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\06 - Controllers and
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\06 - Controllers and IActionResult\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\06 - Controllers and IActionResult\ControllersExample\ControllersExample\obj\Debug\net6.0\ControllersExample.genruntimeconfig.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\06 - Controllers and IActionResult\ControllersExample\ControllersExample\obj\Debug\net6.0\ref\ControllersExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\06 - Controllers and IActionResult\ControllersExample\ControllersExample\bin\Debug\net6.0\ControllersExample.staticwebassets.runtime.json

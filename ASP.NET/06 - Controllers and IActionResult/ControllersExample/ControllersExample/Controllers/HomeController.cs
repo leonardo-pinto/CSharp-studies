@@ -36,5 +36,19 @@ namespace ControllersExample.Controllers
         {
             return "Hello from Contact";
         }
+
+        // example of virtual file
+        [Route("/file-download")]
+        public VirtualFileResult FileDownload()
+        {
+            return new VirtualFileResult("/example0.png", "application/png");
+        }
+
+        // Example of physical file 
+        [Route("/file-download-physical")]
+        public PhysicalFileResult FileDownloadPhysical()
+        {
+            return new PhysicalFileResult("/example0.png", "application/png");
+        }
     }
 }
