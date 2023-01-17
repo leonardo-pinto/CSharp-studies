@@ -67,6 +67,15 @@ app.UseEndpoints(endpoints =>
         await context.Response.WriteAsync($"City id is {cityid}");
     });
 
+    // Route Constraints with Length
+    // min, max, range (values)
+    // minLength, maxLength, length (string)
+    // regex
+    endpoints.Map("login/{username:length(4,10)}", async (HttpContext context) =>
+    {
+        string? username = Convert.ToString(context.Request.RouteValues["username"]);
+        await context.Response.WriteAsync($"username is {username}");
+    });
 });
 
 app.Run(async (HttpContext context) =>
