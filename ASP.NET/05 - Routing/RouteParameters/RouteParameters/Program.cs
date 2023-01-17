@@ -14,6 +14,13 @@ app.UseEndpoints(endpoints =>
         await context.Response.WriteAsync($"extension is {extension}");
 
     });
+
+    // example of default value
+    endpoints.Map("products/details/{id=1}", async (HttpContext context) =>
+    {
+        string? id = Convert.ToString(context.Request.RouteValues["id"]);
+        await context.Response.WriteAsync($"id is {id}");
+    });
 });
 
 app.Run(async (HttpContext context) =>
