@@ -9,7 +9,8 @@ namespace ControllersExample.Controllers
     public class HomeController : Controller
    {
         [Route("/")]
-        public ContentResult Index()
+        // IActionResult is the parent of Content, Json, File, and etc...
+        public IActionResult Index()
         {
             //return new ContentResult() { Content = "Hello from Index", ContentType = "text/plain" };
             // alternative to the above by inheriting Controller class
