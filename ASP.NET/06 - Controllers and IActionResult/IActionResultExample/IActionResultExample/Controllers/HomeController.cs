@@ -44,7 +44,24 @@ namespace IActionResultExample.Controllers
             //return File("/example2.png", "application/png");
 
             // Redirection example
-            return new RedirectToActionResult("Books", "Store", new { }, true);
+            // 4th parameter true -> moved permanently (status code 301)
+            // temporary redirection false -> status code 302
+            // route values must be passed on 3rd argument
+            //return new RedirectToActionResult("Books", "Store", new { }, true);
+
+            // RedirectToAction may include request parameters
+            // Shortcut for temporary
+            //return RedirectToAction("Books", "Store", new { id = bookId });
+
+            // Shortcut for permanent
+            //return RedirectToActionPermanent("Books", "Store", new { id = bookId });
+
+            // Redirect without specifing the Controller and Method
+            // only the url
+            // 302 is default
+            // LocalRedirectPermanent is for 301
+            return LocalRedirect($"store/books/{bookId}");
         }
+
     }
 }
