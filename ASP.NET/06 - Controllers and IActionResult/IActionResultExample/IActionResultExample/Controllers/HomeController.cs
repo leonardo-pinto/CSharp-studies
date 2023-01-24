@@ -41,7 +41,10 @@ namespace IActionResultExample.Controllers
 
             // Here we have a problem declaring the method return type
             // ContentResult x FileResult
-            return File("/example2.png", "application/png");
+            //return File("/example2.png", "application/png");
+
+            // Redirection example
+            return new RedirectToActionResult("Books", "Store", new { }, true);
         }
     }
 }
