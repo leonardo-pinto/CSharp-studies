@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ModelBindingAndValidations.Models;
+
 
 namespace ModelBindingAndValidations.Controllers
 {
@@ -16,8 +18,12 @@ namespace ModelBindingAndValidations.Controllers
 
         // [FromRoute] int? bookid to use route
         // [FromQuery] int? bookid to use query instead of route
-        public IActionResult Index(int? bookid, bool? isLoggedIn)
+        public IActionResult Index(int? bookid, bool? isLoggedIn, Book book)
         {
+            // book is assigned through route data !!!
+            // it is NOT case sensitive
+
+            // must add [FromQuery] from Model Class !
             if (bookid.HasValue == false)
             {
                 return BadRequest("Book is was not supplied");
