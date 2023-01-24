@@ -13,6 +13,9 @@ namespace ModelBindingAndValidations.Controllers
         // Query String
         // method parameter is a shortcut
         // to Request.Query
+
+        // [FromRoute] int? bookid to use route
+        // [FromQuery] int? bookid to use query instead of route
         public IActionResult Index(int? bookid, bool? isLoggedIn)
         {
             if (bookid.HasValue == false)
