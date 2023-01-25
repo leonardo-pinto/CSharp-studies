@@ -10,6 +10,23 @@ namespace ModelValidationsExample.Controllers
         [Route("register")]
         public IActionResult Index(Person person)
         {
+            if (!ModelState.IsValid)
+            {
+                // using LINQ methods
+                string errors = string.Join("\n",
+                ModelState.Values.SelectMany(value => value.Errors)
+                .Select(error => error.ErrorMessage).ToList());
+
+                // without LINQ methods
+                //foreach (var value in ModelState.Values)
+                //{
+                //    foreach (var error in value.Errors)
+                //    {
+                //        errorsList.Add(error.ErrorMessage);
+                //    }
+                //}
+                return BadRequest(errors);
+            }
             return Content($"{person}");
         }
     }
