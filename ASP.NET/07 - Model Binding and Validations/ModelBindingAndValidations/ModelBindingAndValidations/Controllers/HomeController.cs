@@ -37,7 +37,7 @@ namespace ModelBindingAndValidations.Controllers
                 return StatusCode(401);
             }
 
-            return Content($"<h1>Bookstore {bookid}</h1>", "text/html");
+            return Content($"<h1>{book?.ToString()}</h1>", "text/html");
         }
     }
 }

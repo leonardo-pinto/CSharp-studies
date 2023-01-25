@@ -4,12 +4,12 @@
     {
         // add [FromQuery] to get only
         // specific properties from query string
-        public int? Id { get; set; }
+        public int? BookId { get; set; }
         public string? Author { get; set; }
 
         public override string ToString()
         {
-            return $"Book id: {Id} - Book Author: {Author}";
+            return $"Book id: {BookId} - Book Author: {Author}";
         }
     }
 }
