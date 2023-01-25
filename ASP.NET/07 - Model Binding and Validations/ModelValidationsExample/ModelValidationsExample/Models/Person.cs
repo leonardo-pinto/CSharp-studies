@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ModelValidationsExample.CustomValidators;
 
 namespace ModelValidationsExample.Models
 {
@@ -27,6 +28,10 @@ namespace ModelValidationsExample.Models
         [Display(Name = "Password confirmation")]
         public string? ConfirmPassword { get; set; }
 
+        // Example custom validation
+        [Required]
+        [MinimumYearValidator(1995, ErrorMessage = "Date of birth should be less than {0}")]
+        public DateTime? DateOfBirth { get; set; }
         public override string ToString()
         {
             return $"Person name: {PersonName}, Email: {Email}, Phone: {Phone}";
