@@ -3,7 +3,7 @@ using ModelValidationsExample.Models;
 
 namespace ModelValidationsExample.CustomModelBinder
 {
-    public class PersonModelBuilder : IModelBinder
+    public class PersonModelBinder : IModelBinder
     {
         public Task BindModelAsync(ModelBindingContext bindingContext)
         {
