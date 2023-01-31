@@ -8,7 +8,9 @@ namespace ModelValidationsExample.Controllers
         // model bindings automatically creates person object
         // and assigns into person variable
         [Route("register")]
-        public IActionResult Index(Person person)
+        //public IActionResult Index(Person person)
+        // Bind states which parameters should be validated
+        public IActionResult Index([Bind(nameof(Person.PersonName), nameof(Person.Email))] Person person)
         {
             if (!ModelState.IsValid)
             {

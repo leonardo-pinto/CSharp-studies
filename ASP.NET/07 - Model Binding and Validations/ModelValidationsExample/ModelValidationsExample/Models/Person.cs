@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using ModelValidationsExample.CustomValidators;
 
 namespace ModelValidationsExample.Models
@@ -31,6 +32,8 @@ namespace ModelValidationsExample.Models
         // Example custom validation
         [Required]
         [MinimumYearValidator(1995, ErrorMessage = "Date of birth should be less than {0}")]
+        // ignores this property for model binding
+        [BindNever]
         public DateTime? DateOfBirth { get; set; }
 
         public DateTime? FromDate { get; set; }
