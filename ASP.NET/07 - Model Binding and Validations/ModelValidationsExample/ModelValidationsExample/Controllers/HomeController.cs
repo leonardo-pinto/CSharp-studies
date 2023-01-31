@@ -14,8 +14,13 @@ namespace ModelValidationsExample.Controllers
         //public IActionResult Index([Bind(nameof(Person.PersonName), nameof(Person.Email))] Person person)
         // ModelBinder
         //public IActionResult Index([FromBody] [ModelBinder(BinderType = typeof(PersonModelBuilder))] Person person)
-        public IActionResult Index([FromBody]Person person)
+        public IActionResult Index([FromBody]Person person, [FromHeader(Name = "User-Agent")] string UserAgent)
         {
+            // accessing headers without model binding
+            //ControllerContext.HttpContext.Request.Headers["keyName"]
+
+
+
             if (!ModelState.IsValid)
             {
                 // using LINQ methods

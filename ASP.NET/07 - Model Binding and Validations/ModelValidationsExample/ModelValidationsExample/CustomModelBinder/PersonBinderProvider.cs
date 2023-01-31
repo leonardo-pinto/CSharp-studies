@@ -12,6 +12,7 @@ namespace ModelValidationsExample.CustomModelBinder
             {
                 return new BinderTypeModelBinder(typeof (PersonModelBinder));
             }
+            return null;
         }
     }
 }
