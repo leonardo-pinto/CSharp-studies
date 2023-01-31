@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ModelValidationsExample.CustomModelBinder;
 using ModelValidationsExample.Models;
 
 namespace ModelValidationsExample.Controllers
@@ -11,7 +12,9 @@ namespace ModelValidationsExample.Controllers
         //public IActionResult Index(Person person)
         // Bind states which parameters should be validated
         //public IActionResult Index([Bind(nameof(Person.PersonName), nameof(Person.Email))] Person person)
-        public IActionResult Index([FromBody] Person person)
+        // ModelBinder
+        //public IActionResult Index([FromBody] [ModelBinder(BinderType = typeof(PersonModelBuilder))] Person person)
+        public IActionResult Index([FromBody]Person person)
         {
             if (!ModelState.IsValid)
             {
