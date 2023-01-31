@@ -1,10 +1,22 @@
-﻿<!DOCTYPE html>
+﻿@using ViewsExample.Models;
+@{
+    // inside c# code
+    // multiple code blocks can be used
+    string appTitle = "ASP.NET Core Demo App";
+    Person person = new() { Name = "Jose", Age = 55 };
+
+}
+<!DOCTYPE html>
 <html>
     <head>
-        <title>ASP.NET App</title>
+        <title>@appTitle</title>
         <meta charset="utf-8" />
     </head>
     <body>
-        <h1>Welcome</h1>
+        <h1>Welcome, @person.Name</h1>
+        @{
+            person.Age++;
+        }
+        <p>@person.Age years old</p>
     </body>
 </html>
