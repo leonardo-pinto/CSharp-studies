@@ -3,7 +3,7 @@ using ModelValidationsExample.CustomValidators;
 
 namespace ModelValidationsExample.Models
 {
-    public class Person
+    public class Person : IValidatableObject
     {
         // Model validation
         // may be configured using the ErrorMessage attribute
@@ -17,8 +17,8 @@ namespace ModelValidationsExample.Models
         public string? Email { get; set; }
        
         public string? Phone { get; set; }
-        [Range(0, 120, ErrorMessage = "{0} should be between {1} and {2}")]
-        public int Age { get; set; }
+        //[Range(0, 120, ErrorMessage = "{0} should be between {1} and {2}")]
+        //public int Age { get; set; }
 
         [Required(ErrorMessage = "{0} can't be blank")]
         public string? Password { get; set; }
@@ -38,11 +38,29 @@ namespace ModelValidationsExample.Models
         [DateRangeValidator("FromDate", ErrorMessage = "'From Date' should be older than or equal to 'To Date'")]
         public DateTime? ToDate { get; set; }
 
+        public int? Age { get; set; }
+
+
 
 
         public override string ToString()
         {
             return $"Person name: {PersonName}, Email: {Email}, Phone: {Phone}";
+        }
+
+        // used when you want specific custom validation
+        // which sould not be re-utilized
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            if(DateOfBirth.HasValue == false && Age.HasValue == false)
+            {
+                yield return new ValidationResult("Either date of birth or age must be supplied", new[] { nameof(Age) });
+            }
+
+            // allows multiple return validations
+            // only when using "yield" keyboard
+            // which converts to a IEnumerable
+            // only executes when all validations passes
         }
     }
 }
