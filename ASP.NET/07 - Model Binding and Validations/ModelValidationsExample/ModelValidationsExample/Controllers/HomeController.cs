@@ -10,7 +10,8 @@ namespace ModelValidationsExample.Controllers
         [Route("register")]
         //public IActionResult Index(Person person)
         // Bind states which parameters should be validated
-        public IActionResult Index([Bind(nameof(Person.PersonName), nameof(Person.Email))] Person person)
+        //public IActionResult Index([Bind(nameof(Person.PersonName), nameof(Person.Email))] Person person)
+        public IActionResult Index([FromBody] Person person)
         {
             if (!ModelState.IsValid)
             {
