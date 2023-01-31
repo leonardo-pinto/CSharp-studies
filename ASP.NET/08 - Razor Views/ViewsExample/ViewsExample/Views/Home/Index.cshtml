@@ -3,7 +3,7 @@
     // inside c# code
     // multiple code blocks can be used
     string appTitle = "ASP.NET Core Demo App";
-    Person person = new() { Name = "Jose", Age = null };
+    Person person = new() { Name = "Jose", Age = null, Gender = Gender.Male };
 
 }
 <!DOCTYPE html>
@@ -13,7 +13,21 @@
         <meta charset="utf-8" />
     </head>
     <body>
-        <h1>Welcome, @person.Name</h1>
+        @switch(person.Gender)
+        {
+            case Gender.Male:
+                <h1>Welcome, Mr. @person.Name</h1>
+                ;
+                break;
+            case Gender.Female:
+                <h1>Welcome, Mss. @person.Name</h1>
+                ;
+                break;
+            case Gender.Unknown:
+                <h1>Welcome, @person.Name</h1>
+                ;
+                break;
+        }
     @if (person.Age.HasValue)
     {
         <p>@person.Age years old</p>
@@ -22,5 +36,7 @@
     {
         <p>Age is unknown</p>
     }
+
+   
 </body>
 </html>
