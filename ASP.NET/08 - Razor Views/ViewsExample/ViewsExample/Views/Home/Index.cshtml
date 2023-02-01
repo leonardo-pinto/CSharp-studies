@@ -13,6 +13,20 @@
 
     };
 }
+
+@{
+    // local function
+    string GetAgeMessage(int age)
+    {
+        if (age < 120)
+        {
+            return $"{age} years old";
+        }
+        return "an ancient human";
+    }
+
+    string alertMessage = $"<script>alert('{people.Count} people found')</script>";
+}
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,8 +34,9 @@
         <meta charset="utf-8" />
     </head>
     <body>
+        @Html.Raw(alertMessage)
         <h1>Welcome</h1>
-        @for (int index = 0; index < 2; index++)
+        @for (int index = 0; index < 3; index++)
         {
             Person person = people[index];
             @*
@@ -32,10 +47,7 @@
             <div>
                 @person.Name,
                 <span>@person.Gender</span>
-                @if (person.Age != null)
-                    {
-                        <span>@person.Age years old</span>
-                    }
+                <span>@GetAgeMessage(person.Age)</span>
             </div>
         }
     @*@foreach (Person person in people)
