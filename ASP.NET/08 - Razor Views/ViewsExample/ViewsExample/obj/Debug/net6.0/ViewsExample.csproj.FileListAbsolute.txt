@@ -26,3 +26,4 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\08 - Razor Views\Vie
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\08 - Razor Views\ViewsExample\ViewsExample\obj\Debug\net6.0\ViewsExample.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\08 - Razor Views\ViewsExample\ViewsExample\obj\Debug\net6.0\ViewsExample.genruntimeconfig.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\08 - Razor Views\ViewsExample\ViewsExample\obj\Debug\net6.0\ref\ViewsExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\08 - Razor Views\ViewsExample\ViewsExample\bin\Debug\net6.0\ViewsExample.staticwebassets.runtime.json
