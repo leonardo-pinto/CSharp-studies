@@ -3,8 +3,13 @@
     // inside c# code
     // multiple code blocks can be used
     string appTitle = "ASP.NET Core Demo App";
-    Person person = new() { Name = "Jose", Age = null, Gender = Gender.Male };
-
+    @*Person person = new() { Name = "Jose", Age = null, Gender = Gender.Male };
+    *@
+    List<Person> people = new List<Person>()
+    {
+        new Person() { Name = "John Doe", Age=40, Gender=Gender.Male },
+    new Person() { Name = "Jane Doe", Age=30, Gender=Gender.Female },
+    };
 }
 <!DOCTYPE html>
 <html>
@@ -13,7 +18,19 @@
         <meta charset="utf-8" />
     </head>
     <body>
-        @switch(person.Gender)
+        <h1>Welcome</h1>
+    @foreach (Person person in people)
+    {
+        <div>
+            @person.Name,
+            <span>@person.Gender</span>
+            @if(person.Age != null)
+            {
+                <span>@person.Age years old</span>
+            }
+        </div>
+    }
+    @* //    @switch(person.Gender)
         {
             case Gender.Male:
                 <h1>Welcome, Mr. @person.Name</h1>
@@ -36,7 +53,7 @@
     {
         <p>Age is unknown</p>
     }
-
+    *@
    
 </body>
 </html>
