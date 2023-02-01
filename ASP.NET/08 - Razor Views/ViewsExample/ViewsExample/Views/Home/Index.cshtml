@@ -8,7 +8,9 @@
     List<Person> people = new List<Person>()
     {
         new Person() { Name = "John Doe", Age=40, Gender=Gender.Male },
-    new Person() { Name = "Jane Doe", Age=30, Gender=Gender.Female },
+        new Person() { Name = "Jane Doe", Age=30, Gender=Gender.Female },
+        new Person() { Name = "Jimmy Doe", Age=15, Gender=Gender.Male },
+
     };
 }
 <!DOCTYPE html>
@@ -19,7 +21,19 @@
     </head>
     <body>
         <h1>Welcome</h1>
-    @foreach (Person person in people)
+        @for (int index = 0; index < 2; index++)
+        {
+            Person person = people[index];
+            <div>
+                @person.Name,
+                <span>@person.Gender</span>
+                @if (person.Age != null)
+                    {
+                        <span>@person.Age years old</span>
+                    }
+            </div>
+        }
+    @*@foreach (Person person in people)
     {
         <div>
             @person.Name,
@@ -29,7 +43,7 @@
                 <span>@person.Age years old</span>
             }
         </div>
-    }
+    }*@
     @* //    @switch(person.Gender)
         {
             case Gender.Male:
