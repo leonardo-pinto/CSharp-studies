@@ -24,6 +24,11 @@
         @for (int index = 0; index < 2; index++)
         {
             Person person = people[index];
+            @*
+                @:Hello to
+                static text to be used inside of @
+            *@
+            
             <div>
                 @person.Name,
                 <span>@person.Gender</span>
