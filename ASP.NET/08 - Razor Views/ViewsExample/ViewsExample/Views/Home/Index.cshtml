@@ -2,16 +2,16 @@
 @{
     // inside c# code
     // multiple code blocks can be used
-    string appTitle = "ASP.NET Core Demo App";
+    //string appTitle = "ASP.NET Core Demo App";
     @*Person person = new() { Name = "Jose", Age = null, Gender = Gender.Male };
     *@
-    List<Person> people = new List<Person>()
-    {
-        new Person() { Name = "John Doe", Age=40, Gender=Gender.Male },
-        new Person() { Name = "Jane Doe", Age=30, Gender=Gender.Female },
-        new Person() { Name = "Jimmy Doe", Age=15, Gender=Gender.Male },
+    //List<Person> people = new List<Person>()
+    //{
+    //    new Person() { Name = "John Doe", Age=40, Gender=Gender.Male },
+    //    new Person() { Name = "Jane Doe", Age=30, Gender=Gender.Female },
+    //    new Person() { Name = "Jimmy Doe", Age=15, Gender=Gender.Male },
 
-    };
+    //};
 }
 
 @{
@@ -25,21 +25,24 @@
         return "an ancient human";
     }
 
-    string alertMessage = $"<script>alert('{people.Count} people found')</script>";
+    //string alertMessage = $"<script>alert('{people.Count} people found')</script>";
 }
 <!DOCTYPE html>
 <html>
     <head>
-        <title>@appTitle</title>
+        <title>@ViewData["appTitle"]</title>
         <meta charset="utf-8" />
     </head>
     <body>
-        @Html.Raw(alertMessage)
+       @* @Html.Raw(alertMessage)*@
         <h1>Welcome</h1>
+        @{
+            List<Person>? people = (List<Person>)ViewData["people"];
+        }
         @for (int index = 0; index < 3; index++)
         {
-            Person person = people[index];
-            @*
+        Person person = people[index];
+        @*
                 @:Hello to
                 static text to be used inside of @
             *@
