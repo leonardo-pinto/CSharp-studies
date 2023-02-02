@@ -1,0 +1,31 @@
+﻿@using ViewsExample.Models;
+@model Person
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Person Details</title>
+        <meta charset="utf-8" />
+        <link href="~/StyleSheet.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="page-content">
+            <h1>Person Details</h1>
+            <h3>@Model.Name</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Gender</td>
+                        <td>@Model.Gender</td>
+                    </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>@Model.Age</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <a href="/">Back to home</a>
+    </body>
+</html>
