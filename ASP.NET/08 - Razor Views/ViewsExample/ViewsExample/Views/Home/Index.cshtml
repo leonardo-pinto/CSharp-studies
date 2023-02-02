@@ -40,7 +40,7 @@
     <body>
        @* @Html.Raw(alertMessage)*@
        <div class="page-content">
-            <h1>Welcome</h1>
+            <h1>Persons</h1>
             @{
                 // Needs to typecast view data
                 // ViewBag isa shortcut
@@ -63,7 +63,13 @@
                                 </tr>
                             </tbody>
                     </table>
-                    <a href="/person-details/@person.Name">Details</a>
+                    <div>
+                        <a href="/person-details/@person.Name">Details</a>
+                    </div>
+                    <div>
+                        <a href="person-with-product">Person with product</a>
+                    </div>
+                
                 </div>
             }
            @* @for (int index = 0; index < 3; index++)

@@ -1,0 +1,42 @@
+﻿@using ViewsExample.Models;
+@model PersonAndProductWrapperModel;
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Person and Product</title>
+        <meta charset="utf-8" />
+        <link href="~/StyleSheet.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="page-content">
+            <h1>Person and Product</h1>
+            <div class="box w-100">
+                <table class="table w-50">
+                    <tbody>
+                        <tr>
+                            <td>Person Name</td>
+                            <td>@Model.PersonData.Name</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>@Model.PersonData.Gender</td>
+                        </tr>
+                    <tr>
+                        <td>Product ID</td>
+                        <td>@Model.ProductData.Id</td>
+                    </tr>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>@Model.ProductData.Name</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="box w-100">
+
+            </div>
+        </div>
+    </body>
+</html>

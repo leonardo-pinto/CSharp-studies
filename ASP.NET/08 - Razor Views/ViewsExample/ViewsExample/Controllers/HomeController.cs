@@ -46,5 +46,15 @@ namespace ViewsExample.Controllers
                 return View(matchingPerson);
             }
         }
+
+        [Route("person-with-product")]
+        public IActionResult PersonAndProduct()
+        {
+            Person person = new() { Name = "jimmy", Age = 15, Gender = Gender.Male };
+            Product product = new() { Id = 1, Name = "Dell  notebook" };
+
+            PersonAndProductWrapperModel personAndProductWrapperModel = new() { PersonData = person, ProductData = product };
+            return View(personAndProductWrapperModel);
+        }
     }
 }
