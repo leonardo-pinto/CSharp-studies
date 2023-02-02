@@ -1,4 +1,7 @@
 ﻿@using ViewsExample.Models;
+@*binds this view with a specific model*@
+@model List<Person>
+
 @{
     // inside c# code
     // multiple code blocks can be used
@@ -43,14 +46,9 @@
                 // ViewBag isa shortcut
                 //List<Person>? people = (List<Person>)ViewData["people"];
             }
-            @for (int index = 0; index < 3; index++)
+
+            @foreach(Person person in Model)
             {
-            Person person = ViewBag.people[index];
-            @*
-                    @:Hello to
-                    static text to be used inside of @
-                *@
-            
                 <div class="box float-left w-50">
                     <h3>@person.Name</h3>
                     <table class="table w-100">
@@ -67,6 +65,15 @@
                     </table>
                 </div>
             }
+           @* @for (int index = 0; index < 3; index++)
+            {
+            Person person = ViewBag.people[index];*@
+            @*
+                    @:Hello to
+                    static text to be used inside of @
+                *@
+            
+            @*}*@
        </div>
     @*@foreach (Person person in people)
     {

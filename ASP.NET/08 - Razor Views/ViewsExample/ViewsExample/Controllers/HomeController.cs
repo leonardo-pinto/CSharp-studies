@@ -17,12 +17,12 @@ namespace ViewsExample.Controllers
                 new Person() { Name = "John Doe", Age=40, Gender=Gender.Male },
                 new Person() { Name = "Jane Doe", Age=30, Gender=Gender.Female },
                 new Person() { Name = "Jimmy Doe", Age=15, Gender=Gender.Male },
-
             };
 
-            ViewData["people"] = people;
+            //ViewData["people"] = people;
+            //ViewBag.people = people;
 
-            return View(); // /Views/Home/Index.cshtml
+            return View(people); // /Views/Home/Index.cshtml
         }
     }
 }
