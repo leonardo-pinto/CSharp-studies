@@ -1,4 +1,20 @@
 ﻿<h1>Home</h1>
+
+@{
+    // makes that the file can only read properties from this view data
+    // requires view-data property
+    var myViewData = new ViewDataDictionary(ViewData);
+
+
+    myViewData["ListTitle"] = "Countries";
+    myViewData["ListItems"] = new List<string>()
+        {
+                "Canada",
+                "Brazil",
+                "Colombia"
+        };
+}
+
 <div class="box">
-    <partial name="_ListPartialView"></partial>
+    <partial name="_ListPartialView" view-data="myViewData"></partial>
 </div>
