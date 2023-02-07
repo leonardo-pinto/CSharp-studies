@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "ommFheMdjdoY23xKa4bVekijdg1fO7pBFZ9UAh3J05k=",
+  "Source": "PartialViewsExample",
+  "BasePath": "_content/PartialViewsExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PartialViewsExample\\wwwroot",
+      "Source": "PartialViewsExample",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\10 - Partial Views\\PartialViewsExample\\PartialViewsExample\\wwwroot\\",
+      "BasePath": "_content/PartialViewsExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\10 - Partial Views\\PartialViewsExample\\PartialViewsExample\\wwwroot\\StyleSheet.css",
+      "SourceId": "PartialViewsExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\10 - Partial Views\\PartialViewsExample\\PartialViewsExample\\wwwroot\\",
+      "BasePath": "_content/PartialViewsExample",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
