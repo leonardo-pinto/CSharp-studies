@@ -1,4 +1,18 @@
 ﻿<h1>About</h1>
 <h2>About company here</h2>
 <p>This is a dummy text</p>
-<partial name="_ListPartialView"></partial>
+
+@{
+    ListModel listModel = new ListModel();
+    listModel.ListTitle = "Cities";
+    listModel.ListItems = new List<string>()
+        {
+                "Jundiai",
+                "Etobicoke",
+                "Hamilton"
+        };
+}
+
+<div class="box">
+    <partial name="_ListPartialView" model="listModel"></partial>
+</div>

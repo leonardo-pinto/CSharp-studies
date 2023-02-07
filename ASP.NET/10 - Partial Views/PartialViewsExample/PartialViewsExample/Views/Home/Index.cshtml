@@ -1,6 +1,21 @@
 ﻿<h1>Home</h1>
 
 @{
+    ListModel listModel = new ListModel();
+    listModel.ListTitle = "Countries";
+    listModel.ListItems = new List<string>()
+        {
+                "Canada",
+                "Brazil",
+                "Colombia"
+        };
+}
+
+<div class="box">
+    <partial name="_ListPartialView" model="listModel"></partial>
+</div>
+
+@*@{
     // makes that the file can only read properties from this view data
     // requires view-data property
     var myViewData = new ViewDataDictionary(ViewData);
@@ -17,4 +32,4 @@
 
 <div class="box">
     <partial name="_ListPartialView" view-data="myViewData"></partial>
-</div>
+</div>*@
