@@ -4,7 +4,7 @@
 
 <h1>Home</h1>
 
-@{
+@*@{
     PersonGridModel personGridModel = new()
             {
                 GridTitle = "Persons",
@@ -18,4 +18,13 @@
 
 @await Component.InvokeAsync("Grid", new  {
     grid = personGridModel
-});
+});*@
+
+<button type="button" id="load-friends-button" class="button button-blue-back">
+    Load Friends
+</button>
+
+<div id="list"></div>
+
+<script src="~/friends.js">
+</script>

@@ -8,3 +8,23 @@
 @*example of tag helper for view components*@
 
 <vc:grid></vc:grid>
+
+@*@{
+
+    Example using parameter and tag helper
+
+
+    PersonGridModel personGridModel = new()
+            {
+                GridTitle = "Persons",
+                Persons = new List<Person>()
+        {
+            new Person(){ Id = 1, Name = "Jane" },
+            new Person(){ Id = 2, Name = "Jimmy" }
+        }
+            };
+}
+
+
+<vc:grid grid="personGridModel"></vc:grid>
+*@

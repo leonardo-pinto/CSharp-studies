@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O/zIA8d0iRZc9FT0iIr/ectdJ5ISJtbPMBVruG3/XO0=",
+  "Hash": "7mxrg9DxacmkS3u8w7L4GzV9KAUnlbLBCZRTk5ZDteI=",
   "Source": "ViewComponentsExample",
   "BasePath": "_content/ViewComponentsExample",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\11 - View Components\\ViewComponentsExample\\ViewComponentsExample\\wwwroot\\friends.js",
+      "SourceId": "ViewComponentsExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\11 - View Components\\ViewComponentsExample\\ViewComponentsExample\\wwwroot\\",
+      "BasePath": "_content/ViewComponentsExample",
+      "RelativePath": "friends.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\friends.js"
+    },
     {
       "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\11 - View Components\\ViewComponentsExample\\ViewComponentsExample\\wwwroot\\StyleSheet.css",
       "SourceId": "ViewComponentsExample",
