@@ -11,7 +11,7 @@ namespace ViewComponentsExample.ViewComponents
         // method must be public and async
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            PersonGridModel model = new()
+            PersonGridModel personGridModel = new()
             {
                 GridTitle = "Persons List",
                 Persons = new List<Person>() {
@@ -20,11 +20,11 @@ namespace ViewComponentsExample.ViewComponents
                 }
             };
 
-            ViewBag.Grid = model;
-
+            //ViewBag.Grid = model;
             // pass View name as argument if it is different
             // than Default.cshtml
-            return View(); 
+            // Example of strongly typed view
+            return View("Default", personGridModel); 
             // invoked a partial view from
             // Views/Shared/Components/Grid/Default.cshtml
         }
