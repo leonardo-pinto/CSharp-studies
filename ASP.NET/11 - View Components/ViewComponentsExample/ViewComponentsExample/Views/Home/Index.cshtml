@@ -3,4 +3,19 @@
 }
 
 <h1>Home</h1>
-@await Component.InvokeAsync("Grid");
+
+@{
+    PersonGridModel personGridModel = new()
+            {
+                GridTitle = "Persons",
+                Persons = new List<Person>()
+        {
+            new Person(){ Id = 1, Name = "Jane" },
+            new Person(){ Id = 2, Name = "Jimmy" }
+        }
+            };
+}
+
+@await Component.InvokeAsync("Grid", new  {
+    grid = personGridModel
+});
