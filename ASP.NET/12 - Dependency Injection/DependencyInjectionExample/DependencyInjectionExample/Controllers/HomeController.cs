@@ -1,16 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Services;
+using ServiceContracts;
 
 namespace DependencyInjectionExample.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly CitiesService _citiesService;
+        private readonly ICitiesService _citiesService;
 
         public HomeController()
         {
             // create object of CitiesService class
-            _citiesService = new CitiesService();
+            // Controller is tightly coupled with the services
+            // this represents a dependency problem
+            // The higher-level modules (clients) should not
+            // depend on low-level modules (dependencies)
+            // Both should depend on abstractions (interfaces or abstract class) 
+            // Must create object indirectly
+            //_citiesService = new CitiesService();
         }
 
         [Route("/")]
