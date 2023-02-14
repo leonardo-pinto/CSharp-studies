@@ -1,0 +1,17 @@
+﻿@*
+Should use a parent type of data,
+in the case of List being changed to
+Dictionary in the future
+*@
+@model IEnumerable<string>
+@{
+    ViewBag.Title = "Home";
+}
+
+<h1>Cities</h1>
+<ul class="list">
+    @foreach(string city in Model)
+    {
+        <li>@city</li> 
+    }
+</ul>

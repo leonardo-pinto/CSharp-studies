@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xNIUafQZI1OIZA7NTsbVIf5TA6cn1KEdJEhJb3SCFZU=",
+  "Source": "DependencyInjectionExample",
+  "BasePath": "_content/DependencyInjectionExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DependencyInjectionExample\\wwwroot",
+      "Source": "DependencyInjectionExample",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\12 - Dependency Injection\\DependencyInjectionExample\\DependencyInjectionExample\\wwwroot\\",
+      "BasePath": "_content/DependencyInjectionExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\12 - Dependency Injection\\DependencyInjectionExample\\DependencyInjectionExample\\wwwroot\\StyleSheet.css",
+      "SourceId": "DependencyInjectionExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\12 - Dependency Injection\\DependencyInjectionExample\\DependencyInjectionExample\\wwwroot\\",
+      "BasePath": "_content/DependencyInjectionExample",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
