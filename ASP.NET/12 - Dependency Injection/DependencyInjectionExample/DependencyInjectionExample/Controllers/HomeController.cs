@@ -10,10 +10,13 @@ namespace DependencyInjectionExample.Controllers
         private readonly ICitiesService _citiesService1;
         private readonly ICitiesService _citiesService2;
         private readonly ICitiesService _citiesService3;
-
+        private readonly IServiceScopeFactory _serviceScopeFactory;
 
         public HomeController(
-            ICitiesService citiesService1, ICitiesService citiesService2, ICitiesService citiesService3
+            ICitiesService citiesService1,
+            ICitiesService citiesService2,
+            ICitiesService citiesService3,
+            IServiceScopeFactory serviceScopeFactory
         )
         {
             //create object of CitiesService class
@@ -30,6 +33,7 @@ namespace DependencyInjectionExample.Controllers
             _citiesService1 = citiesService1;
             _citiesService2 = citiesService2;
             _citiesService3 = citiesService3;
+            _serviceScopeFactory = serviceScopeFactory;
         }
 
         // EXAMPLE OF METHOD INJECTION
@@ -40,7 +44,7 @@ namespace DependencyInjectionExample.Controllers
         //    return View(cities);
         //}
 
-[Route("/")]
+        [Route("/")]
         public IActionResult Index()
         {
             List<string> cities = _citiesService1.GetCities();
@@ -48,6 +52,18 @@ namespace DependencyInjectionExample.Controllers
             ViewBag.InstanceId_CitiesService_1 = _citiesService1.ServiceInstanceId;
             ViewBag.InstanceId_CitiesService_2 = _citiesService2.ServiceInstanceId;
             ViewBag.InstanceId_CitiesService_3 = _citiesService3.ServiceInstanceId;
+            
+            // Service Scope
+            using (IServiceScope scope = _serviceScopeFactory.CreateScope())
+            {
+                // Inject CitiesService
+                ICitiesService citiesService = scope.ServiceProvider.GetRequiredService<ICitiesService>();
+
+                ViewBag.InstanceId_CitiesService_InScope = citiesService.ServiceInstanceId;
+                // Db Work
+                
+            } // end of scope -> calls Dipose method of the service
+            
             return View(cities);
         }
     }
