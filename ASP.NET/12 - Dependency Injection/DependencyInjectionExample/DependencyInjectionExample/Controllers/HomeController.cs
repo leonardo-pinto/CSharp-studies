@@ -7,7 +7,7 @@ namespace DependencyInjectionExample.Controllers
     {
         private readonly ICitiesService _citiesService;
 
-        public HomeController()
+        public HomeController(ICitiesService citiesService)
         {
             // create object of CitiesService class
             // Controller is tightly coupled with the services
@@ -17,6 +17,9 @@ namespace DependencyInjectionExample.Controllers
             // Both should depend on abstractions (interfaces or abstract class) 
             // Must create object indirectly
             //_citiesService = new CitiesService();
+
+            // using dependency injection and ioc
+            _citiesService = citiesService;
         }
 
         [Route("/")]
