@@ -10,3 +10,6 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Inje
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\Services\obj\Debug\net6.0\refint\Services.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\Services\obj\Debug\net6.0\ref\Services.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\Services\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\Services\bin\Debug\net6.0\ServiceContracts.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\Services\obj\Debug\net6.0\Services.csproj.CopyComplete

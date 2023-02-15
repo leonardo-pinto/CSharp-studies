@@ -30,3 +30,5 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Inje
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\net6.0\DependencyInjectionExample.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\net6.0\DependencyInjectionExample.genruntimeconfig.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\net6.0\ref\DependencyInjectionExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\DependencyInjectionExample\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\12 - Dependency Injection\DependencyInjectionExample\DependencyInjectionExample\bin\Debug\net6.0\ServiceContracts.pdb
