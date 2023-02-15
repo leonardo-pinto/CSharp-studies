@@ -5,10 +5,12 @@ namespace DependencyInjectionExample.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ICitiesService _citiesService;
+        // EXAMPLE OF CONSTRUCTOR INJECTION
 
-        public HomeController(ICitiesService citiesService)
-        {
+        //private readonly ICitiesService _citiesService;
+
+        //public HomeController(ICitiesService citiesService)
+        //{
             // create object of CitiesService class
             // Controller is tightly coupled with the services
             // this represents a dependency problem
@@ -19,11 +21,12 @@ namespace DependencyInjectionExample.Controllers
             //_citiesService = new CitiesService();
 
             // using dependency injection and ioc
-            _citiesService = citiesService;
-        }
+        //    _citiesService = citiesService;
+        //}
 
+        // EXAMPLE OF METHOD INJECTION
         [Route("/")]
-        public IActionResult Index()
+        public IActionResult Index([FromServices] ICitiesService _citiesService)
         {
             List<string> cities = _citiesService.GetCities();
             return View(cities);
