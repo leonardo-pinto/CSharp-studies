@@ -4,16 +4,18 @@ namespace EnvironmentsExample.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public HomeController(IWebHostEnvironment webHostEnvironment)
+        {
+            _webHostEnvironment = webHostEnvironment;
+        }
+
         [Route("/")]
         [Route("same-route")]
         public IActionResult Index()
         {
-            return View();
-        }
-
-        [Route("same-route")]
-        public IActionResult Other()
-        {
+            ViewBag.CurrentEnvironment = _webHostEnvironment.EnvironmentName;
             return View();
         }
     }
