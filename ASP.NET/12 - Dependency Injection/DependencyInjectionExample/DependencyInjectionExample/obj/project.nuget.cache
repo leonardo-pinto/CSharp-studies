@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gcjB/bFASyBvs48H7Rs7bCVhNgi7W7cRNtVvwxIlncYMnqiNPMy/crEQ8TpNLyKAws2ejXNxaMhQHu5eU/cFWw==",
+  "dgSpecHash": "xdZB9gyI/fawgIdE9GW1gEuNfKi0g7aCfLQjphWXlIq6lBRABAIA+x/2lBnqYRYTlFz8+5K0EiqXnZZFn4UPXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\12 - Dependency Injection\\DependencyInjectionExample\\DependencyInjectionExample\\DependencyInjectionExample.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Leonardo\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }
