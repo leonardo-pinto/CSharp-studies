@@ -4,11 +4,26 @@ in the case of List being changed to
 Dictionary in the future
 *@
 @model IEnumerable<string>
+@inject ICitiesService citiesServiceInView
 @{
     ViewBag.Title = "Home";
 }
 
 <h1>Cities</h1>
+@{
+    List<string> citiesFromServiceInView = citiesServiceInView.GetCities();
+}
+
+<h2>From Service in View</h2>
+<div>@citiesServiceInView.ServiceInstanceId</div>
+<ul class="list">
+    @foreach (string city in citiesFromServiceInView)
+    {
+        <li>@city</li>
+    }
+</ul>
+
+<h2>From Service in Controller</h2>
 <ul class="list">
     @foreach(string city in Model)
     {
