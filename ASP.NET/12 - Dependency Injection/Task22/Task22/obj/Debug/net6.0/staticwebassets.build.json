@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "4bWmgHywDucVJm3jNbuzfgkWM3eFBt/UdkQxwnHLopo=",
+  "Source": "Task22",
+  "BasePath": "_content/Task22",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Task22\\wwwroot",
+      "Source": "Task22",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\12 - Dependency Injection\\Task22\\Task22\\wwwroot\\",
+      "BasePath": "_content/Task22",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\12 - Dependency Injection\\Task22\\Task22\\wwwroot\\StyleSheet.css",
+      "SourceId": "Task22",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\12 - Dependency Injection\\Task22\\Task22\\wwwroot\\",
+      "BasePath": "_content/Task22",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
