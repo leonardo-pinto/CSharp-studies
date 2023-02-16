@@ -5,11 +5,14 @@ var builder = WebApplication.CreateBuilder(args);
 // .Services represents the IOC container
 builder.Services.AddControllersWithViews();
 
-builder.Services.Add(new ServiceDescriptor(
-    typeof(ICitiesService),
-    typeof(CitiesService),
-    ServiceLifetime.Scoped
-));
+//builder.Services.Add(new ServiceDescriptor(
+//    typeof(ICitiesService),
+//    typeof(CitiesService),
+//    ServiceLifetime.Scoped
+//));
+
+// Shorthand
+builder.Services.AddScoped<ICitiesService, CitiesService>();
 
 var app = builder.Build();
 app.UseRouting();
