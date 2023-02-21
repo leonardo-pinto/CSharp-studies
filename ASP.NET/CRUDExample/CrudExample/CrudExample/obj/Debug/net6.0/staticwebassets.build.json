@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "TLJvEzJfVlU4o1H808+EXUjxYN1lIklsQjjK4TEL46U=",
+  "Source": "CrudExample",
+  "BasePath": "_content/CrudExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CrudExample\\wwwroot",
+      "Source": "CrudExample",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "BasePath": "_content/CrudExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\StyleSheet.css",
+      "SourceId": "CrudExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "BasePath": "_content/CrudExample",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
