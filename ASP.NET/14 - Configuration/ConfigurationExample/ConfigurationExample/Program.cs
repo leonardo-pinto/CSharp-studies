@@ -6,17 +6,17 @@ var app = builder.Build();
 
 app.UseStaticFiles();
 app.UseRouting();
-app.UseEndpoints(endpoints =>
-{
-    endpoints.Map("/config", async context =>
-    {
-        // not case-sensitive
-        //await context.Response.WriteAsync(app.Configuration["MyKey"]);
-        await context.Response.WriteAsync(app.Configuration.GetValue<string>("MyKey"));
-        await context.Response.WriteAsync(app.Configuration.GetValue("AnotherKey", "default value"));
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.Map("/config", async context =>
+//    {
+//        // not case-sensitive
+//        //await context.Response.WriteAsync(app.Configuration["MyKey"]);
+//        await context.Response.WriteAsync(app.Configuration.GetValue<string>("MyKey"));
+//        await context.Response.WriteAsync(app.Configuration.GetValue("AnotherKey", "default value"));
 
-    });
-});
+//    });
+//});
 app.MapControllers();
 
 
