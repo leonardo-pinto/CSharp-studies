@@ -24,3 +24,6 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\14 - Configuration\C
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\14 - Configuration\ConfigurationExample\ConfigurationExample\obj\Debug\net6.0\ConfigurationExample.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\14 - Configuration\ConfigurationExample\ConfigurationExample\obj\Debug\net6.0\ConfigurationExample.genruntimeconfig.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\14 - Configuration\ConfigurationExample\ConfigurationExample\obj\Debug\net6.0\ref\ConfigurationExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\14 - Configuration\ConfigurationExample\ConfigurationExample\bin\Debug\net6.0\ConfigurationExample.staticwebassets.runtime.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\14 - Configuration\ConfigurationExample\ConfigurationExample\obj\Debug\net6.0\ConfigurationExample.RazorAssemblyInfo.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\14 - Configuration\ConfigurationExample\ConfigurationExample\obj\Debug\net6.0\ConfigurationExample.RazorAssemblyInfo.cs

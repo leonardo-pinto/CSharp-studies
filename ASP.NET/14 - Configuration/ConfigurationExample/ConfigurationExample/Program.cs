@@ -8,7 +8,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseEndpoints(endpoints =>
 {
-    endpoints.Map("/", async context =>
+    endpoints.Map("/config", async context =>
     {
         // not case-sensitive
         //await context.Response.WriteAsync(app.Configuration["MyKey"]);
