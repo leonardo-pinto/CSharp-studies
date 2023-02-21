@@ -7,6 +7,12 @@ builder.Services.AddControllersWithViews();
 // Supply an object of WeatherApiOptions as a service
 builder.Services.Configure<WeatherApiOptions>(builder.Configuration.GetSection("Weatherapi"));
 
+// load MyOwnConfig.json
+builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
+{
+    config.AddJsonFile("MyOwnConfig.json", optional: true, reloadOnChange: true);
+});
+
 var app = builder.Build();
 
 app.UseStaticFiles();

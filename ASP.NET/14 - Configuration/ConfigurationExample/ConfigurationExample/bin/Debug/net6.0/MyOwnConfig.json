@@ -1,0 +1,6 @@
+{
+  "Weatherapi": {
+    "Id": "user from MyOwnConfig.json",
+    "Secret": "secret from MyOwnConfig.json"
+  }
+}
