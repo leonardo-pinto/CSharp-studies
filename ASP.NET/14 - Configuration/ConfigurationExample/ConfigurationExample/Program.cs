@@ -1,6 +1,11 @@
+using ConfigurationExample.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+
+// Supply an object of WeatherApiOptions as a service
+builder.Services.Configure<WeatherApiOptions>(builder.Configuration.GetSection("Weatherapi"));
 
 var app = builder.Build();
 

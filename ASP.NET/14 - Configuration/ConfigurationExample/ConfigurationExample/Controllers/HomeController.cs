@@ -1,15 +1,23 @@
 ﻿using ConfigurationExample.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace ConfigurationExample.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IConfiguration _configuration;
-        
-        public HomeController(IConfiguration configuration)
+        //private readonly IConfiguration _configuration;
+
+        //public HomeController(IConfiguration configuration)
+        //{
+        //    _configuration = configuration;
+        //}
+
+        private readonly WeatherApiOptions _options;
+
+        public HomeController(IOptions<WeatherApiOptions> weatherApiOptions)
         {
-            _configuration = configuration;
+            _options = weatherApiOptions.Value;
         }
 
         [Route("/")]
@@ -21,13 +29,13 @@ namespace ConfigurationExample.Controllers
 
             //ViewBag.MyKey = _configuration["MyKey"];
             //ViewBag.Id = _configuration.GetSection("weatherapi")["id"];
-            //ViewBag.Secret = _configuration["weatherapi:secret"];
-            ViewBag.MyKey = _configuration["MyKey"];
+            ////ViewBag.Secret = _configuration["weatherapi:secret"];
+            //ViewBag.MyKey = _configuration["MyKey"];
 
-            WeatherApiOptions options = _configuration.GetSection("Weatherapi").Get<WeatherApiOptions>();
+            //WeatherApiOptions options = _configuration.GetSection("Weatherapi").Get<WeatherApiOptions>();
 
-            ViewBag.Id = options.Id;
-            ViewBag.Secret = options.Secret;
+            ViewBag.Id = _options.Id;
+            ViewBag.Secret = _options.Secret;
 
             return View();
         }
