@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ConfigurationExample.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ConfigurationExample.Controllers
 {
@@ -18,9 +19,15 @@ namespace ConfigurationExample.Controllers
             //ViewBag.Id = _configuration["weatherapi:id"];
             //ViewBag.Secret = _configuration["weatherapi:secret"];
 
+            //ViewBag.MyKey = _configuration["MyKey"];
+            //ViewBag.Id = _configuration.GetSection("weatherapi")["id"];
+            //ViewBag.Secret = _configuration["weatherapi:secret"];
             ViewBag.MyKey = _configuration["MyKey"];
-            ViewBag.Id = _configuration.GetSection("weatherapi")["id"];
-            ViewBag.Secret = _configuration["weatherapi:secret"];
+
+            WeatherApiOptions options = _configuration.GetSection("Weatherapi").Get<WeatherApiOptions>();
+
+            ViewBag.Id = options.Id;
+            ViewBag.Secret = options.Secret;
 
             return View();
         }
