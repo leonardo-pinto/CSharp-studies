@@ -1,7 +1,7 @@
 ﻿using Entities;
 using ServiceContracts.DTO;
 using ServiceContracts;
-
+using Services.Helpers;
 namespace Services
 {
     public class PersonsService : IPersonsService
@@ -29,10 +29,8 @@ namespace Services
                 throw new ArgumentNullException(nameof(personAddRequest));
             }
 
-            if (personAddRequest.PersonName == null)
-            {
-                throw new ArgumentException("Person name can't be  blank");
-            }
+            // Using model validations
+            ValidationHelper.ModelValidation(personAddRequest);
 
             Person person = personAddRequest.ToPerson();
             person.PersonID = Guid.NewGuid();
