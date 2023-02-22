@@ -40,7 +40,7 @@ namespace CrudTests
             };
 
             // Assert
-            Assert.Throws<ArgumentNullException>(() =>
+            Assert.Throws<ArgumentException>(() =>
             {
                 // Act
                 _countriesService.AddCountry(request);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\CrudExample.csproj": {}
+    "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\CrudExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\CrudExample.csproj": {
+    "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\CrudExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\CrudExample.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\CrudExample.csproj",
         "projectName": "CrudExample",
-        "projectPath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\CrudExample.csproj",
+        "projectPath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\CrudExample.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\obj\\",
+        "outputPath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",

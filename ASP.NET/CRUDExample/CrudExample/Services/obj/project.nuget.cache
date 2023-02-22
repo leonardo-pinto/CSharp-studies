@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RAuMiY8RH5XvVUdiuLRhzZd/SZ6q8Vd6LEA3FhL3IuUWRccbkF9Lwm8IM6xhbSRxyLamXG/4AhGSo0FMNarf/Q==",
+  "dgSpecHash": "bBG9saLlzMSKbQMZGN9JrD2YYcbzGERRJVY+8n10Rfv35Ewa2iu9ohj8rgeUXSHq9J2TF63cIigE7CGYWhKQhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Services\\Services.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

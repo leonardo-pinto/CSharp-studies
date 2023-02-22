@@ -12,6 +12,7 @@ namespace ServiceContracts.DTO
 
     }
 
+    // method extension for Country
     public static class CountryExtensions
     { 
         public static CountryResponse ToCountryResponse(this Country country)

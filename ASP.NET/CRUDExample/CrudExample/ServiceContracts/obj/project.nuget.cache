@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uGfloZQ1WmN4K0Vxm0c/dDCoXaOmfF+hvTEcCzL8oH0YWwEtGmiUAT0lQegRPRIpFt3T6V0dTPWj9oXtxgjzIQ==",
+  "dgSpecHash": "5OA+oqxu+TUM9yAtkqxGQQeRKIuA9FY2M+7bBwff+SLopljYE2jcqO4jStY1Ers8vOEVWRTpoB2lP4lJGD4qcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\ServiceContracts\\ServiceContracts.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\ServiceContracts\\ServiceContracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
