@@ -2,6 +2,8 @@
 using ServiceContracts.DTO;
 using ServiceContracts;
 using Services.Helpers;
+using ServiceContracts.Enums;
+
 namespace Services
 {
     public class PersonsService : IPersonsService
@@ -110,6 +112,12 @@ namespace Services
             }
 
             return matchingPersons;
+        }
+
+
+        public List<PersonResponse> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, SortOrderOptions sortOptions)
+        {
+            throw new NotImplementedException();
         }
     }
 }
