@@ -117,7 +117,34 @@ namespace Services
 
         public List<PersonResponse> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, SortOrderOptions sortOptions)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(sortBy))
+            {
+                return allPersons;
+            }
+
+            List<PersonResponse> sortedPersons = (sortBy, sortOptions)
+            switch
+            {
+                (nameof(PersonResponse.PersonName), SortOrderOptions.ASC)
+                => allPersons.OrderBy(person => person.PersonName, StringComparer.OrdinalIgnoreCase).ToList(),
+                (nameof(PersonResponse.PersonName), SortOrderOptions.DESC)
+                => allPersons.OrderByDescending(person => person.PersonName, StringComparer.OrdinalIgnoreCase).ToList(),
+                (nameof(PersonResponse.Email), SortOrderOptions.ASC)
+                => allPersons.OrderBy(person => person.Email, StringComparer.OrdinalIgnoreCase).ToList(),
+                (nameof(PersonResponse.Email), SortOrderOptions.DESC)
+                => allPersons.OrderByDescending(person => person.Email, StringComparer.OrdinalIgnoreCase).ToList(),
+                (nameof(PersonResponse.DateOfBirth), SortOrderOptions.ASC)
+                => allPersons.OrderBy(person => person.DateOfBirth).ToList(),
+                (nameof(PersonResponse.DateOfBirth), SortOrderOptions.DESC)
+                => allPersons.OrderByDescending(person => person.DateOfBirth).ToList(),
+                (nameof(PersonResponse.Age), SortOrderOptions.ASC)
+                => allPersons.OrderBy(person => person.Age).ToList(),
+                (nameof(PersonResponse.Age), SortOrderOptions.DESC)
+                => allPersons.OrderByDescending(person => person.Age).ToList(),
+                _ => allPersons
+            };
+
+            return sortedPersons;
         }
     }
 }
