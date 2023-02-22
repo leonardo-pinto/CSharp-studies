@@ -173,9 +173,21 @@ namespace Services
             return matchingPerson.ToPersonResponse();
         }
 
-        public bool DeletePerson(Guid? PersonID)
+        public bool DeletePerson(Guid? personID)
         {
-            throw new NotImplementedException();
+            if (personID == null)
+            {
+                throw new ArgumentNullException(nameof(personID));
+            }
+            Person? person = _persons.FirstOrDefault(person => person.PersonID == personID);
+            
+            if (person == null)
+            {
+                return false;
+            }
+
+            _persons.RemoveAll(person => person.PersonID == personID);
+            return true;
         }
     }
 }
