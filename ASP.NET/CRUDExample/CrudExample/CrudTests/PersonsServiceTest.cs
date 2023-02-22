@@ -382,5 +382,87 @@ namespace CrudTests
         }
 
         #endregion
+
+        #region UpdatePerson
+
+        [Fact]
+        public void UpdatePerson_NullPerson()
+        {
+            PersonUpdateRequest person_update_request = null;
+        
+            Assert.Throws<ArgumentNullException>(() => {
+                _personsService.UpdatePerson(person_update_request);
+            });
+        }
+
+        [Fact]
+        public void UpdatePerson_InvalidPersonID()
+        {
+            PersonUpdateRequest person_update_request = new()
+            {
+                PersonID = Guid.NewGuid(),
+            };
+
+            Assert.Throws<ArgumentException>(() => {
+                _personsService.UpdatePerson(person_update_request);
+            });
+        }
+
+        [Fact]
+        public void UpdatePerson_PersonNameIsNull()
+        {
+            CountryAddRequest country_add_request = new() { CountryName = "Etiopia" };
+            CountryResponse country_response_from_add = _countriesService.AddCountry(country_add_request);
+
+            PersonAddRequest person_add_request = new()
+            {
+                PersonName = "John Doe",
+                Email = "john.doe@mail.com",
+                CountryID = country_response_from_add.CountryID,
+                Address = "John Doe Boulevar, 52",
+                Gender = GenderOptions.Male,
+                DateOfBirth = DateTime.Parse("2000-01-01"),
+                ReceiveNewsLetters = true
+            };
+
+            PersonResponse person_response_from_add = _personsService.AddPerson(person_add_request);
+            PersonUpdateRequest person_update_request = person_response_from_add.ToPersonUpdateRequest();
+            person_update_request.PersonName = null;
+
+
+            Assert.Throws<ArgumentException>(() => {
+                _personsService.UpdatePerson(person_update_request);
+            });
+        }
+
+        [Fact]
+        public void UpdatePerson_PersonFullDetails()
+        {
+            CountryAddRequest country_add_request = new() { CountryName = "Etiopia" };
+            CountryResponse country_response_from_add = _countriesService.AddCountry(country_add_request);
+
+            PersonAddRequest person_add_request = new()
+            {
+                PersonName = "John Doe",
+                Email = "john.doe@mail.com",
+                CountryID = country_response_from_add.CountryID,
+                Address = "John Doe Boulevar, 52",
+                Gender = GenderOptions.Male,
+                DateOfBirth = DateTime.Parse("2000-01-01"),
+                ReceiveNewsLetters = true
+            };
+
+            PersonResponse person_response_from_add = _personsService.AddPerson(person_add_request);
+            PersonUpdateRequest person_update_request = person_response_from_add.ToPersonUpdateRequest();
+            person_update_request.PersonName = "Jimmy";
+            person_update_request.Email = "jimmy.doe@mail.com";
+
+            PersonResponse person_response_from_update = _personsService.UpdatePerson(person_update_request);
+
+            PersonResponse person_response_from_get = _personsService.GetPersonByPersonID(person_response_from_update.PersonID);
+
+            Assert.Equal(person_response_from_get, person_response_from_update);
+        }
+        #endregion
     }
 }
