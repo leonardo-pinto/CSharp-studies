@@ -131,11 +131,38 @@ namespace CrudTests
             {
                 Assert.Contains(expected_country, actualCountryResponseList);
             }
-
-
-
         }
 
+        #endregion
+
+        #region GetCountryById
+
+        [Fact]
+        public void GetCountryByCountryID_NullCountryID()
+        {
+            // Arrange
+            Guid? countryID = null;
+
+            // Act
+            CountryResponse? country_response_from_get_method =  _countriesService.GetCountryByCountryID(countryID);
+
+            // Assert
+            Assert.Null(country_response_from_get_method);
+        }
+
+        [Fact]
+        public void GetCountryByCountryID_ValidCountryID()
+        {
+            // Arrange
+            CountryAddRequest? country_add_request = new() { CountryName = "Brazil" };
+            CountryResponse country_add_response = _countriesService.AddCountry(country_add_request);
+
+            // Act
+            CountryResponse? country_actual_response = _countriesService.GetCountryByCountryID(country_add_response.CountryID);
+
+            // Assert
+            Assert.Equal(country_add_response, country_actual_response);
+        }
         #endregion
     }
 }
