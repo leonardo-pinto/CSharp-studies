@@ -26,7 +26,7 @@ namespace StockApp.Controllers
         }
 
         [Route("/")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             // Reset stock symbol if not exists
             if (string.IsNullOrEmpty(_tradingOptions.DefaultStockSymbol))
@@ -35,23 +35,24 @@ namespace StockApp.Controllers
             }
 
             // get company profile from API server
-            Dictionary<string, object>? companyProfileDictionary = _finnhubService.GetCompanyProfile(_tradingOptions.DefaultStockSymbol);
+            Dictionary<string, object>? companyProfileDictionary = await _finnhubService.GetCompanyProfile(_tradingOptions.DefaultStockSymbol);
 
             // get stock price from API server
-            Dictionary<string, object>? stockQuoteDictionary = _finnhubService.GetStockPriceQuote(_tradingOptions.DefaultStockSymbol);
+            //Dictionary<string, object>? stockQuoteDictionary = _finnhubService.GetStockPriceQuote(_tradingOptions.DefaultStockSymbol);
 
             // create model object
             StockTrade stockTrade = new()
             { StockSymbol = _tradingOptions.DefaultStockSymbol };
 
             // load data from finnhubservice into model object
-            if (companyProfileDictionary != null && stockQuoteDictionary != null)
+            if (companyProfileDictionary != null)
+                //if (companyProfileDictionary != null && stockQuoteDictionary != null)
             {
                 stockTrade = new()
-                { 
+                {
                     StockSymbol = Convert.ToString(companyProfileDictionary["ticker"]),
                     StockName = Convert.ToString(companyProfileDictionary["name"]),
-                    Price = Convert.ToDouble(stockQuoteDictionary["c"].ToString())
+                    //Price = Convert.ToDouble(stockQuoteDictionary["c"].ToString())
                 };
             }
 

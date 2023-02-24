@@ -10,13 +10,13 @@
         /// </summary>
         /// <param name="stockSymbol">Stock symbol to search</param>
         /// <returns>Returns a dictionary that contains details such as company country, currency, exchange etc</returns>
-        Dictionary<string, object>? GetCompanyProfile(string stockSymbol);
+        Task<Dictionary<string, object>?> GetCompanyProfile(string stockSymbol);
 
         /// <summary>
         /// Returns stock price details such as current price, change in price, percentage change, etc
         /// </summary>
         /// <param name="stockSymbol">Stock symbol to search</param>
         /// <returns>Returns a dictionary that contains details such as current price, change in price, percentage change, etc</returns>
-        Dictionary<string, object>? GetStockPriceQuote(string stockSymbol);
+        //Dictionary<string, object>? GetStockPriceQuote(string stockSymbol);
     }
 }
