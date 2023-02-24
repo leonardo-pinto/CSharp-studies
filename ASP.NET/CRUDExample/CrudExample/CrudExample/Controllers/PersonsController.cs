@@ -27,11 +27,13 @@ namespace CrudExample.Controllers
                 { nameof(PersonResponse.DateOfBirth), "Date of Birth" },
                 { nameof(PersonResponse.Gender), "Gender" },
                 { nameof(PersonResponse.Address), "Address" },
-                { nameof(PersonResponse.Country), "Country" },
+                 { nameof(PersonResponse.Country), "Country" },
             };
 
-            List<PersonResponse> persons = _personsService.GetAllPersons();
-            
+            List<PersonResponse> persons = _personsService.GetFilteredPersons(searchBy, searchString);
+
+            ViewBag.CurrentSearchBy = searchBy;
+            ViewBag.CurrentSearchString = searchString;
             return View(persons); // View/Persons/Index.cshtml
         }
     }
