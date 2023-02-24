@@ -18,9 +18,9 @@ namespace Services
                     new Country()
                     { CountryID = Guid.Parse("58907889-5F10-43DA-9CD8-000BCDD4E073"), CountryName = "Canada" },
                     new Country()
-                    { CountryID = Guid.Parse("72BBA61E-AA93-4721-A46D-7DE894F48CF5"), CountryName = "Canada" },
+                    { CountryID = Guid.Parse("72BBA61E-AA93-4721-A46D-7DE894F48CF5"), CountryName = "Brazil" },
                     new Country()
-                    { CountryID = Guid.Parse("3CA2F22E-B6A9-4D60-BDBF-8FAEE2515599"), CountryName = "Canada" },
+                    { CountryID = Guid.Parse("3CA2F22E-B6A9-4D60-BDBF-8FAEE2515599"), CountryName = "Nigeria" },
                 });
             }
         }

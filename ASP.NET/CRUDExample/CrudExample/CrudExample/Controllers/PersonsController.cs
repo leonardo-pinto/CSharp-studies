@@ -9,10 +9,12 @@ namespace CrudExample.Controllers
     {
         // private fields
         private readonly IPersonsService _personsService;
+        private readonly ICountriesService _countriesService;
 
-        public PersonsController(IPersonsService personsService)
+        public PersonsController(IPersonsService personsService, ICountriesService countriesService)
         {
             _personsService = personsService;
+            _countriesService = countriesService;
         }
 
 
@@ -33,7 +35,7 @@ namespace CrudExample.Controllers
                 { nameof(PersonResponse.DateOfBirth), "Date of Birth" },
                 { nameof(PersonResponse.Gender), "Gender" },
                 { nameof(PersonResponse.Address), "Address" },
-                 { nameof(PersonResponse.Country), "Country" },
+                { nameof(PersonResponse.Country), "Country" },
             };
 
             List<PersonResponse> persons = _personsService.GetFilteredPersons(searchBy, searchString);
@@ -46,6 +48,15 @@ namespace CrudExample.Controllers
             ViewBag.CurrentSearchBy = searchBy;
             ViewBag.CurrentSearchString = searchString;
             return View(sortedPersons); // View/Persons/Index.cshtml
+        }
+
+        [Route("/persons/create")]
+        [HttpGet]
+        public IActionResult Create()
+        {
+            List<CountryResponse> countries = _countriesService.GetAllCountries();
+            ViewBag.Countries = countries;
+            return View();
         }
     }
 }

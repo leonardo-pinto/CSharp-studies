@@ -57,11 +57,6 @@ namespace Services
                        ReceiveNewsLetters = false,
                    }
                );
-
-
-                // {903CC86A-1DE5-48A8-911B-0DB06D48D82E}
-                // {0305A650-CD28-4462-AEB0-6FCD0B486097}
-                // {2D82CD45-1C6C-4BD2-989E-FA3B4D0B70C3}
             }
         }
 
@@ -92,7 +87,7 @@ namespace Services
 
         public List<PersonResponse> GetAllPersons()
         {
-            return _persons.Select(person => person.ToPersonResponse()).ToList();
+            return _persons.Select(person => ConvertPersonToPersonResponse(person)).ToList();
         }
 
         public PersonResponse? GetPersonByPersonID(Guid? personID)
@@ -109,7 +104,7 @@ namespace Services
                 return null;
             }
 
-            return person.ToPersonResponse();
+            return ConvertPersonToPersonResponse(person);
         }
 
         public List<PersonResponse> GetFilteredPersons(string searchBy, string? searchString)
@@ -224,7 +219,7 @@ namespace Services
             matchingPerson.CountryID = personUpdateRequest.CountryID;
             matchingPerson.Gender = personUpdateRequest.Gender.ToString();
 
-            return matchingPerson.ToPersonResponse();
+            return ConvertPersonToPersonResponse(matchingPerson);
         }
 
         public bool DeletePerson(Guid? personID)
