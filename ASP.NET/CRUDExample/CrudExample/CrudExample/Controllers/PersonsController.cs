@@ -50,13 +50,29 @@ namespace CrudExample.Controllers
             return View(sortedPersons); // View/Persons/Index.cshtml
         }
 
-        [Route("/persons/create")]
         [HttpGet]
+        [Route("/persons/create")]
         public IActionResult Create()
         {
             List<CountryResponse> countries = _countriesService.GetAllCountries();
             ViewBag.Countries = countries;
             return View();
+        }
+
+        [HttpPost]
+        [Route("/persons/create")]
+        public IActionResult Create(PersonAddRequest personAddRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                List<CountryResponse> countries = _countriesService.GetAllCountries();
+                ViewBag.Countries = countries;
+                ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).SelectMany(e => e.ErrorMessage).ToList();
+                return View();
+            }
+
+            _personsService.AddPerson(personAddRequest);
+            return RedirectToAction("Index", "Persons");
         }
     }
 }

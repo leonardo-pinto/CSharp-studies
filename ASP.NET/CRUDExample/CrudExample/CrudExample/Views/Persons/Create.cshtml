@@ -6,7 +6,6 @@
 <h2>Create Person</h2>
 <div class="w-50">
     <form action="~/persons/create" method="post">
-
         <div class="form-field flex">
             <div class="w-25">
                 <label for="PersonName" class="form-label pt">Person Name</label>
@@ -30,7 +29,7 @@
                 <label for="DateOfBirth" class="form-label pt">Date of Birth</label>
             </div>
             <div class="flex-1">
-                <input class="form-input" type="text" id="DateOfBirth" name="DateOrBirth" />
+                <input class="form-input" type="date" id="DateOfBirth" name="DateOrBirth" />
             </div>
         </div>
 
@@ -39,11 +38,11 @@
                 <label for="Gender" class="form-label pt">Gender</label>
             </div>
             <div class="flex-1">
-                <input class="form-input" type="radio" id="Male" value="Male" name="Gender" />
+                <input type="radio" id="Male" value="Male" name="Gender" />
                 <label for="Male">Male</label>
-                <input class="form-input" type="radio" id="Female" value="Female" name="Gender" />
+                <input class="ml" type="radio" id="Female" value="Female" name="Gender" />
                 <label for="Female">Female</label>
-                <input class="form-input" type="radio" id="Other" value="Other" name="Gender" />
+                <input class="ml" type="radio" id="Other" value="Other" name="Gender" />
                 <label for="Other">Other</label>
             </div>
         </div>
@@ -53,15 +52,52 @@
                 <label for="CountryID" class="form-label pt">Country</label>
             </div>
             <div class="flex-1">
-               <select name="CountryID" id="CountryID" class="form-input">
-                   <option>Please Select</option>
-                   @foreach (CountryResponse country in ViewBag.Countries)
+                <select name="CountryID" id="CountryID" class="form-input">
+                    <option>Please Select</option>
+                    @foreach (CountryResponse country in ViewBag.Countries)
                     {
                         <option value="@country.CountryID">@country.CountryName</option>
                     }
-               </select>
+                </select>
             </div>
         </div>
-        <button>Submit</button>
+
+        <div class="form-field flex">
+            <div class="w-25">
+                <label for="Address" class="form-label pt">Address</label>
+            </div>
+            <div class="flex-1">
+                <textarea class="form-input" type="txt" id="Address" name="Address"></textarea>
+            </div>
+        </div>
+
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <input type="checkbox" name="ReceiveNewsLetters" id="ReceiveNewsLetters" value="true" />
+                <label for="ReceiveNewsLetters">Receive News Letters</label>
+            </div>
+        </div>
+
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <button class="button button-green-back">Create</button>
+
+                @if (ViewBag.Errors != null)
+                {
+                    <div class="text-red ml">
+                        <ul>
+                            @foreach (string error in ViewBag.Errors)
+                            {
+                                <li class="ml">@error</li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
     </form>
 </div>
