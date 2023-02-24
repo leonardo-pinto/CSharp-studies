@@ -3,8 +3,6 @@ using ServiceContracts.DTO;
 using ServiceContracts;
 using Services.Helpers;
 using ServiceContracts.Enums;
-using System.Net;
-using System.Reflection;
 
 namespace Services
 {
@@ -33,7 +31,6 @@ namespace Services
                         ReceiveNewsLetters = true,
                     }
                 );
-
                 _persons.Add(
                    new Person()
                    {
@@ -47,7 +44,6 @@ namespace Services
                        ReceiveNewsLetters = true,
                    }
                );
-
                 _persons.Add(
                    new Person()
                    {
