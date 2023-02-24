@@ -17,8 +17,19 @@ namespace CrudExample.Controllers
 
         [Route("persons/index")]
         [Route("/")]
-        public IActionResult Index()
+        // receive parameters on View to perform search
+        public IActionResult Index(string searchBy, string? searchString)
         {
+            ViewBag.SearchFields = new Dictionary<string, string>()
+            {
+                { nameof(PersonResponse.PersonName), "Person Name" },
+                { nameof(PersonResponse.Email), "Email" },
+                { nameof(PersonResponse.DateOfBirth), "Date of Birth" },
+                { nameof(PersonResponse.Gender), "Gender" },
+                { nameof(PersonResponse.Address), "Address" },
+                { nameof(PersonResponse.Country), "Country" },
+            };
+
             List<PersonResponse> persons = _personsService.GetAllPersons();
             
             return View(persons); // View/Persons/Index.cshtml
