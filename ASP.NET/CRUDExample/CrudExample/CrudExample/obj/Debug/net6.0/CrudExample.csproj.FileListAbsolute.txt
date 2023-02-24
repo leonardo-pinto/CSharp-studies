@@ -25,3 +25,12 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExam
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.genruntimeconfig.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\obj\Debug\net6.0\ref\CrudExample.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Entities.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Services.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\ServiceContracts.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Services.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Entities.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\obj\Debug\net6.0\CrudExample.RazorAssemblyInfo.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\obj\Debug\net6.0\CrudExample.RazorAssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\obj\Debug\net6.0\CrudExample.csproj.CopyComplete
