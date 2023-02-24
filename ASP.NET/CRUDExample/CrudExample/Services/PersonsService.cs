@@ -3,6 +3,8 @@ using ServiceContracts.DTO;
 using ServiceContracts;
 using Services.Helpers;
 using ServiceContracts.Enums;
+using System.Net;
+using System.Reflection;
 
 namespace Services
 {
@@ -11,10 +13,60 @@ namespace Services
         private readonly List<Person> _persons;
         private readonly ICountriesService _countriesService;
 
-        public PersonsService()
+        public PersonsService(bool initialize = true)
         {
             _persons = new List<Person>();
             _countriesService = new CountriesService();
+        
+            if (initialize)
+            {
+                _persons.Add(
+                    new Person()
+                    {
+                        PersonID = Guid.Parse("903CC86A-1DE5-48A8-911B-0DB06D48D82E"),
+                        PersonName = "Chuco",
+                        Email = "chuco@mail.com",
+                        DateOfBirth = DateTime.Parse("1993-08-13"),
+                        Gender = GenderOptions.Male.ToString(),
+                        CountryID = Guid.Parse("58907889-5F10-43DA-9CD8-000BCDD4E073"),
+                        Address = "Rainbow Avenue, 432",
+                        ReceiveNewsLetters = true,
+                    }
+                );
+
+                _persons.Add(
+                   new Person()
+                   {
+                       PersonID = Guid.Parse("0305A650-CD28-4462-AEB0-6FCD0B486097"),
+                       PersonName = "John Doe",
+                       Email = "johndoe@mail.com",
+                       DateOfBirth = DateTime.Parse("1995-02-11"),
+                       Gender = GenderOptions.Male.ToString(),
+                       CountryID = Guid.Parse("72BBA61E-AA93-4721-A46D-7DE894F48CF5"),
+                       Address = "Ellesmere Avenue, 432",
+                       ReceiveNewsLetters = true,
+                   }
+               );
+
+                _persons.Add(
+                   new Person()
+                   {
+                       PersonID = Guid.Parse("2D82CD45-1C6C-4BD2-989E-FA3B4D0B70C3"),
+                       PersonName = "Jane Doe",
+                       Email = "jane@mail.com",
+                       DateOfBirth = DateTime.Parse("1999-11-15"),
+                       Gender = GenderOptions.Female.ToString(),
+                       CountryID = Guid.Parse("3CA2F22E-B6A9-4D60-BDBF-8FAEE2515599"),
+                       Address = "Danford Road, 15",
+                       ReceiveNewsLetters = false,
+                   }
+               );
+
+
+                // {903CC86A-1DE5-48A8-911B-0DB06D48D82E}
+                // {0305A650-CD28-4462-AEB0-6FCD0B486097}
+                // {2D82CD45-1C6C-4BD2-989E-FA3B4D0B70C3}
+            }
         }
 
         private PersonResponse ConvertPersonToPersonResponse(Person person)
