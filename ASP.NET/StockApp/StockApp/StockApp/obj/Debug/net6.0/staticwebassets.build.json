@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "wkCUt1aE7g6bGFpa1p0X30mp+Kejxg4ORrnjFQcj/CQ=",
+  "Source": "StockApp",
+  "BasePath": "_content/StockApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StockApp\\wwwroot",
+      "Source": "StockApp",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\",
+      "BasePath": "_content/StockApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\Scripts\\FinnhubScript.js",
+      "SourceId": "StockApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\",
+      "BasePath": "_content/StockApp",
+      "RelativePath": "Scripts/FinnhubScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Scripts\\FinnhubScript.js"
+    },
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\StyleSheet.css",
+      "SourceId": "StockApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\",
+      "BasePath": "_content/StockApp",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
