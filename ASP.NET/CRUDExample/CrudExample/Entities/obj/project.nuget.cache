@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+dvVoa+rQ7npZKKD2w4gLlsq/BnKPlGBzyjPknCGNP+c/9/stLz8rWlbs8PiOxM/09WaUjU5sgHh5/fLC4/2xA==",
+  "dgSpecHash": "m1KVw7CCydQ9UjiP99ZpwXVEZM5Vsbxmie3u58wMpdd+FRE/4OdVA2n7W2OSRzpp9xIBVMeuWNIUiLrRIY1sow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
