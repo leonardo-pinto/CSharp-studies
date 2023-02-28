@@ -12,7 +12,8 @@
                 <label asp-for="PersonName" class="form-label pt">Person Name</label>
             </div>
             <div class="flex-1">
-                <input class="form-input" asp-for="PersonName"/>
+                <input class="form-input" asp-for="PersonName" />
+                <span asp-validation-for="PersonName" class="text-red"></span>
             </div>
         </div>
 
@@ -21,7 +22,9 @@
                 <label asp-for="Email" class="form-label pt">Email</label>
             </div>
             <div class="flex-1">
-                <input asp-for="Email" class="form-input" type="email"/>
+                <input asp-for="Email" class="form-input" type="email" />
+                <span asp-validation-for="Email" class="text-red"></span>
+
             </div>
         </div>
 
@@ -30,7 +33,9 @@
                 <label asp-for="DateOfBirth" class="form-label pt">Date of Birth</label>
             </div>
             <div class="flex-1">
-                <input asp-for="DateOfBirth" class="form-input" type="date"/>
+                <input asp-for="DateOfBirth" class="form-input" type="date" />
+                <span asp-validation-for="DateOfBirth" class="text-red"></span>
+
             </div>
         </div>
 
@@ -42,11 +47,12 @@
                 @{
                     string[] genders = (string[])Enum.GetNames(typeof(GenderOptions));
                 }
-                @foreach(string gender in genders)
+                @foreach (string gender in genders)
                 {
-                    <input type="radio" asp-for="Gender" value="@gender"/>
+                    <input type="radio" asp-for="Gender" value="@gender" />
                     <label for="@gender">@gender</label>
                 }
+                <span asp-validation-for="Gender" class="text-red"></span>
             </div>
         </div>
 
@@ -57,11 +63,12 @@
             <div class="flex-1">
                 <select asp-items="@ViewBag.Countries" asp-for="CountryID" class="form-input">
                     <option>Please Select</option>
-                   @* @foreach (CountryResponse country in ViewBag.Countries)
+                    @* @foreach (CountryResponse country in ViewBag.Countries)
                     {
-                        <option value="@country.CountryID">@country.CountryName</option>
+                    <option value="@country.CountryID">@country.CountryName</option>
                     }*@
                 </select>
+                <span asp-validation-for="CountryID" class="text-red"></span>
             </div>
         </div>
 
@@ -71,6 +78,7 @@
             </div>
             <div class="flex-1">
                 <textarea asp-for="Address" class="form-input"></textarea>
+                <span asp-validation-for="Address" class="text-red"></span>
             </div>
         </div>
 
@@ -80,6 +88,7 @@
             <div class="flex-1">
                 <input asp-for="ReceiveNewsLetters" type="checkbox" />
                 <label asp-for="ReceiveNewsLetters">Receive News Letters</label>
+                <span asp-validation-for="ReceiveNewsLetters" class="text-red"></span>
             </div>
         </div>
 
@@ -89,18 +98,27 @@
             <div class="flex-1">
                 <button class="button button-green-back">Create</button>
 
-                @if (ViewBag.Errors != null)
-                {
-                    <div class="text-red ml">
-                        <ul>
-                            @foreach (string error in ViewBag.Errors)
-                            {
-                                <li class="ml">@error</li>
-                            }
-                        </ul>
-                    </div>
-                }
+                <div asp-validation-summary="All">
+                    @if (ViewBag.Errors != null)
+                    {
+                        <div class="text-red ml">
+                            <ul>
+                                @foreach (string error in ViewBag.Errors)
+                                {
+                                    <li class="ml">@error</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+
+
+                </div>
             </div>
         </div>
     </form>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
