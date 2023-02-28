@@ -15,7 +15,7 @@ namespace CrudTests
 
         public PersonsServiceTest(ITestOutputHelper testOutputHelper)
         {
-            _personsService = new PersonsService();
+            _personsService = new PersonsService(false);
             _countriesService = new CountriesService(false);
             _testOutputHelper = testOutputHelper;
         }

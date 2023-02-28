@@ -17,6 +17,6 @@
         /// </summary>
         /// <param name="stockSymbol">Stock symbol to search</param>
         /// <returns>Returns a dictionary that contains details such as current price, change in price, percentage change, etc</returns>
-        //Dictionary<string, object>? GetStockPriceQuote(string stockSymbol);
+        Task<Dictionary<string, object>?> GetStockPriceQuote(string stockSymbol);
     }
 }

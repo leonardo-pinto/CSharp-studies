@@ -9,14 +9,7 @@ namespace Services
     public class FinnhubService : IFinnhubService
     {
         private readonly HttpClient _httpClient;
-        //private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
-
-        //public FinnhubService(IHttpClientFactory httpClientFactory, IConfiguration configuration)
-        //{
-        //    _httpClientFactory = httpClientFactory;
-        //    _configuration = configuration;
-        //}
 
         public FinnhubService(HttpClient httpClient, IConfiguration configuration)
         {
@@ -81,39 +74,25 @@ namespace Services
         //    return responseDictionary;
         //}
 
-        //public Dictionary<string, object>? GetStockPriceQuote(string stockSymbol)
-        //{
-        //    // create http client
-        //    HttpClient httpClient = _httpClientFactory.CreateClient();
+        public async Task<Dictionary<string, object>?> GetStockPriceQuote(string stockSymbol)
+        {
+            string responseString = await _httpClient.GetStringAsync($"https://finnhub.io/api/v1/quote?symbol={stockSymbol}&token={_configuration["FinnhubToken"]}");
 
-        //    // create http request
-        //    HttpRequestMessage httpRequestMessage = new()
-        //    {
-        //        Method = HttpMethod.Get,
-        //        RequestUri = new Uri($"https://finnhub.io/api/v1/quote?symbol={stockSymbol}&token={_configuration["FinnhubToken"]}") //URI includes the secret token
-        //    };
+            // convert response body (from json to dic)
+            Dictionary<string, object>? responseDictionary = JsonSerializer.Deserialize<Dictionary<string, object>>(responseString);
 
-        //    // send request
-        //    HttpResponseMessage httpResponseMessage = httpClient.Send(httpRequestMessage);
+            if (responseDictionary == null)
+            {
+                throw new InvalidOperationException("No response from server");
+            }
 
-        //    // read response body
-        //    string responseBody = new StreamReader(httpResponseMessage.Content.ReadAsStream()).ReadToEnd();
+            if (responseDictionary.ContainsKey("error"))
+            {
+                throw new InvalidOperationException(Convert.ToString(responseDictionary["error"]));
+            }
 
-        //    // converts response body (from JSON into Dictionary)
-        //    Dictionary<string, object>? responseDictionary = JsonSerializer.Deserialize<Dictionary<string, object>>(responseBody);
-
-        //    if (responseDictionary == null)
-        //    {
-        //        throw new InvalidOperationException("No response from server");
-        //    }
-
-        //    if (responseDictionary.ContainsKey("error"))
-        //    {
-        //        throw new InvalidOperationException(Convert.ToString(responseDictionary["error"]));
-        //    }
-
-        //    // return response dictionary back to the caller
-        //    return responseDictionary;
-        //}
+            // return response dictionary back to the caller
+            return responseDictionary;
+        }
     }
 }
