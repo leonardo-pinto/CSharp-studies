@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TQfREnqpjbduayAk56jjG616Hn/uhz2IHsSnsYP2LGU=",
+  "Hash": "Z41dbUT2RVVkWftkMwKhq50dC77Igl5ONRhnn9Iw0Go=",
   "Source": "CrudExample",
   "BasePath": "_content/CrudExample",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\logo.png",
+      "SourceId": "CrudExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "BasePath": "_content/CrudExample",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     },
     {
       "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\StyleSheet.css",
