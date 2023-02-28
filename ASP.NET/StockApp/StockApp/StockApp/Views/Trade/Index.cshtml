@@ -1,5 +1,4 @@
 ﻿@model StockTrade
-
 @{
     ViewBag.Title = "Trading";
     ViewBag.CurrentUrl = "~/Trade/Index";
@@ -33,9 +32,9 @@
                 <div class="flex flex-direction-vertical">
                     <h3 class="text-grey mb">New Order</h3>
 
-                    <label for="Quantity" class="mt">Quantity:</label>
+                    <label asp-for="Quantity" class="mt">Quantity:</label>
                     <div class="w-25">
-                        <input type="number" name="Quantity" id="Quantity" value="@Model.Quantity" min="1" max="100000" placeholder="Quantity" required="required" class="form-input mb" autofocus="autofocus" />
+                        <input required asp-for="Quantity" type="number" value="@Model.Quantity" min="1" max="100000" placeholder="Quantity" required="required" class="form-input mb" autofocus="autofocus" />
                     </div>
                 </div>
 
@@ -69,9 +68,9 @@
     </div>
 
 
-    <input type="hidden" name="StockSymbol" id="StockSymbol" value="@Model.StockSymbol" />
-    <input type="hidden" name="StockName" id="StockName" value="@Model.StockName" />
-    <input type="hidden" name="Price" id="price" value="@Model.Price" />
+    <input type="hidden" asp-for="StockSymbol" value="@Model.StockSymbol" />
+    <input type="hidden" asp-for="StockName" value="@Model.StockName" />
+    <input type="hidden" asp-for="Price" value="@Model.Price" />
     <input type="hidden" id="FinnhubToken" value="@ViewBag.FinnhubToken" />
 
 </form>
