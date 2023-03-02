@@ -7,14 +7,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // add servicos into IOC
-builder.Services.AddSingleton<ICountriesService, CountriesService>();
-builder.Services.AddSingleton<IPersonsService, PersonsService>();
+builder.Services.AddScoped<ICountriesService, CountriesService>();
+builder.Services.AddScoped<IPersonsService, PersonsService>();
 
 // DbContext as a service - EFC
 builder.Services.AddDbContext<PersonsDbContext>(options =>
 {
     // supply connection string
     // should save in configuration
+    // scoped service as default ! cannot add into a singleton
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
