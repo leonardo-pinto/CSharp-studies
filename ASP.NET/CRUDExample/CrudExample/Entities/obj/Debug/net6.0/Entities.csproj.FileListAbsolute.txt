@@ -10,3 +10,5 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExam
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
