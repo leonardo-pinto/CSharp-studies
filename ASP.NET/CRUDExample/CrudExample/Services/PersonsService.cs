@@ -38,11 +38,11 @@ namespace Services
             person.PersonID = Guid.NewGuid();
 
             // Using LINQ Query
-            //_db.Persons.Add(person);
-            //_db.SaveChanges();
+            _db.Persons.Add(person);
+            _db.SaveChanges();
 
             // using Stored Procedures
-            _db.sp_InsertPerson(person);
+            //_db.sp_InsertPerson(person);
 
             return ConvertPersonToPersonResponse(person);
         }
@@ -51,14 +51,15 @@ namespace Services
         {
             // SELECT * from Persons
             // using LINQ Queries
-            //return _db.Persons.ToList()
-            //    .Select(person => ConvertPersonToPersonResponse(person))
-            //    .ToList();
-
-            // using Stored Procedures
-            return _db.sp_GetAllPersons()
+            return _db.Persons.ToList()
                 .Select(person => ConvertPersonToPersonResponse(person))
                 .ToList();
+
+            // using Stored Procedures
+            //return _db.sp_GetAllPersons()
+            // to use this, must alter the SP to add TIN column
+            //    .Select(person => ConvertPersonToPersonResponse(person))
+            //    .ToList();
         }
 
         public PersonResponse? GetPersonByPersonID(Guid? personID)
