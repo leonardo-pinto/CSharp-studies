@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VcSQGk+uvE6x8yVyIpNecJXEHzYmwS2xTzPdq6Y1uV7tkxd/Ph5Or8u0dnR/+GfTdFdXgcv6mwdJCnrXYQk1oQ==",
+  "dgSpecHash": "4Vu6ykfwnNw+Zdz/G/gkyOg09Hlr54xVbcgZ4oGkjrmrzLua24OXvzZMJwMotzMlw5p65CQONvdIe38wl1McSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\ServiceContracts\\ServiceContracts.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\ServiceContracts\\ServiceContracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

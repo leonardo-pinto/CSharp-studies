@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wSeh9UyIpPSPtJoUlOaDfkim8xxQs0kjVdAOQw0RBxKIeGChzd57FaOaRjOAzAJtx/T1irUp/7X0fI+JizLU4Q==",
+  "dgSpecHash": "LymXpOAWFyOWiCjZMz/fXu2MB0cz19cRdXmPDiIpQYuMXGjqdBZ8sydIt/EFQNbDNvnXTh7ddzMYZaNESa56ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudTests\\CrudTests.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudTests\\CrudTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z41dbUT2RVVkWftkMwKhq50dC77Igl5ONRhnn9Iw0Go=",
+  "Hash": "97XrCH4oFuVuDkiwf+eYxAxDj7T4JtxyJcUIrJoMd24=",
   "Source": "CrudExample",
   "BasePath": "_content/CrudExample",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CrudExample\\wwwroot",
       "Source": "CrudExample",
-      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\",
       "BasePath": "_content/CrudExample",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\jquery.min.js",
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\jquery.min.js",
       "SourceId": "CrudExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\",
       "BasePath": "_content/CrudExample",
       "RelativePath": "jquery.min.js",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\jquery.validate.min.js",
       "SourceId": "CrudExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\",
       "BasePath": "_content/CrudExample",
       "RelativePath": "jquery.validate.min.js",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\jquery.validate.unobtrusive.min.js",
       "SourceId": "CrudExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\",
       "BasePath": "_content/CrudExample",
       "RelativePath": "jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\logo.png",
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\logo.png",
       "SourceId": "CrudExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\",
       "BasePath": "_content/CrudExample",
       "RelativePath": "logo.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\StyleSheet.css",
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\StyleSheet.css",
       "SourceId": "CrudExample",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudExample\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample\\wwwroot\\",
       "BasePath": "_content/CrudExample",
       "RelativePath": "StyleSheet.css",
       "AssetKind": "All",

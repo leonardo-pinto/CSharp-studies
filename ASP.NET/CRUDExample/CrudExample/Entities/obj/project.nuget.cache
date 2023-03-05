@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U39DELTtj3eTTWaovzay0OuPNLA5nqE0KtNWh+fXbB+gYfhbWHbcYytSCrZ8BK7WBErZSDR9o4DlLvLxL7byRA==",
+  "dgSpecHash": "zUtESfIYx+TqsvbRZsWiFBTxaSyNxZXj6y1mfWcfYntEJ6Bz5uF11uHzPCdwTVJMSZzJRfM4k2ojg2TaRDmALQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

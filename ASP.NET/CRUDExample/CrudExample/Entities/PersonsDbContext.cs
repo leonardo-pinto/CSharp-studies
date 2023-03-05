@@ -32,7 +32,12 @@ namespace Entities
             {
                 modelBuilder.Entity<Person>().HasData(person);
             }
-            
+        }
+
+        // calling Stored Procedure
+        public List<Person> sp_GetAllPersons()
+        {
+            return Persons.FromSqlRaw("EXECUTE [dbo].[GetAllPersons]").ToList();
         }
     }
 }
