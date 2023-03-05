@@ -35,10 +35,17 @@ namespace Entities
             }
 
             // Fluent API
+            // Add column changes
             modelBuilder.Entity<Person>().Property(temp => temp.TIN)
                 .HasColumnName("TaxIdentificationNumber")
                 .HasColumnType("varchar(8)")
                 .HasDefaultValue("ABC12345");
+
+            // dont allow duplicate values
+            //modelBuilder.Entity<Person>().HasIndex(temp => temp.TIN).IsUnique();
+
+            // customize table structure
+            modelBuilder.Entity<Person>().HasCheckConstraint("CHK_TIN", "len([TaxIdentificationNumber]) = 8");
         }
 
         // calling Stored Procedure
