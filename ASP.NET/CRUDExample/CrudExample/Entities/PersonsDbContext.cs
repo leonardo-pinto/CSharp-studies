@@ -45,7 +45,18 @@ namespace Entities
             //modelBuilder.Entity<Person>().HasIndex(temp => temp.TIN).IsUnique();
 
             // customize table structure
-            modelBuilder.Entity<Person>().HasCheckConstraint("CHK_TIN", "len([TaxIdentificationNumber]) = 8");
+            modelBuilder.Entity<Person>()
+                .HasCheckConstraint("CHK_TIN", "len([TaxIdentificationNumber]) = 8");
+
+            // Table Relations
+            // It is not required to declare it explicitly
+            // Common practice is to declare on the model
+            //modelBuilder.Entity<Person>(entity =>
+            //{
+            //    entity.HasOne<Country>(c => c.Country)
+            //    .WithMany(p => p.Persons)
+            //    .HasForeignKey(persons => persons.CountryID);
+            //});
         }
 
         // calling Stored Procedure

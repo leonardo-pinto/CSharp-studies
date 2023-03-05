@@ -3,6 +3,7 @@ using ServiceContracts.DTO;
 using ServiceContracts;
 using Services.Helpers;
 using ServiceContracts.Enums;
+using Microsoft.EntityFrameworkCore;
 
 namespace Services
 {
@@ -15,13 +16,6 @@ namespace Services
         {
             _db = personsDbContext;
             _countriesService = countriesService;
-        }
-
-        private PersonResponse ConvertPersonToPersonResponse(Person person)
-        {
-            PersonResponse personResponse = person.ToPersonResponse();
-            personResponse.Country = _countriesService.GetCountryByCountryID(person.CountryID)?.CountryName;
-            return personResponse;
         }
 
         public PersonResponse AddPerson(PersonAddRequest? personAddRequest)
@@ -44,15 +38,15 @@ namespace Services
             // using Stored Procedures
             //_db.sp_InsertPerson(person);
 
-            return ConvertPersonToPersonResponse(person);
+            return person.ToPersonResponse();
         }
 
         public List<PersonResponse> GetAllPersons()
         {
             // SELECT * from Persons
             // using LINQ Queries
-            return _db.Persons.ToList()
-                .Select(person => ConvertPersonToPersonResponse(person))
+            return _db.Persons.Include("Country").ToList()
+                .Select(person => person.ToPersonResponse())
                 .ToList();
 
             // using Stored Procedures
@@ -69,14 +63,14 @@ namespace Services
                 return null;
             }
 
-            Person? person = _db.Persons.FirstOrDefault(person => person.PersonID == personID);
+            Person? person = _db.Persons.Include("Country").FirstOrDefault(person => person.PersonID == personID);
 
             if (person == null)
             {
                 return null;
             }
 
-            return ConvertPersonToPersonResponse(person);
+            return person.ToPersonResponse();
         }
 
         public List<PersonResponse> GetFilteredPersons(string searchBy, string? searchString)
@@ -191,7 +185,7 @@ namespace Services
             matchingPerson.Gender = personUpdateRequest.Gender.ToString();
 
             _db.SaveChanges(); // UPDATE
-            return ConvertPersonToPersonResponse(matchingPerson);
+            return matchingPerson.ToPersonResponse();
         }
 
         public bool DeletePerson(Guid? personID)
