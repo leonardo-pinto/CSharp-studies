@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GG43TGuyitFjzPbx+2SHJOP1PGR/ysydfFAjltEWVRlmieOd2E1bYIb6Jyut2KqnTSvOiY7U6aKoVrG85KUeXg==",
+  "dgSpecHash": "uMoeCXmxHfg4xXEuMcTf/DVQN2LO8p6UF8aK4HFpvbztWDXWXQjLDQgKrreek6xA4UGqcX208AG860PO/8d04A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudTests\\CrudTests.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudTests\\CrudTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Options;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using StockApp.Models;
+using Rotativa.AspNetCore;
 
 namespace StockApp.Controllers
 {
@@ -67,7 +68,7 @@ namespace StockApp.Controllers
         // makes endpoint as buyOrder
         [Route("[action]")]
         [HttpPost]
-        public IActionResult BuyOrder(BuyOrderRequest buyOrderRequest)
+        public async Task<IActionResult> BuyOrder(BuyOrderRequest buyOrderRequest)
         {
             // update date of order
             buyOrderRequest.DateAndTimeOfOrder = DateTime.Now;
@@ -85,14 +86,14 @@ namespace StockApp.Controllers
             }
 
             // invoke service method
-            BuyOrderResponse buyOrderResponse = _stocksService.CreateBuyOrder(buyOrderRequest);
+            BuyOrderResponse buyOrderResponse = await _stocksService.CreateBuyOrder(buyOrderRequest);
 
             return RedirectToAction(nameof(Orders));
         }
 
         [Route("[action]")]
         [HttpPost]
-        public IActionResult SellOrder(SellOrderRequest sellOrderRequest)
+        public async Task<IActionResult> SellOrder(SellOrderRequest sellOrderRequest)
         {
             //update date of order
             sellOrderRequest.DateAndTimeOfOrder = DateTime.Now;
@@ -109,17 +110,17 @@ namespace StockApp.Controllers
             }
 
             //invoke service method
-            SellOrderResponse sellOrderResponse = _stocksService.CreateSellOrder(sellOrderRequest);
+            SellOrderResponse sellOrderResponse = await _stocksService.CreateSellOrder(sellOrderRequest);
 
             return RedirectToAction(nameof(Orders));
         }
 
         [Route("[action]")]
-        public IActionResult Orders()
+        public async Task<IActionResult> Orders()
         {
             //invoke service methods
-            List<BuyOrderResponse> buyOrderResponses = _stocksService.GetBuyOrders();
-            List<SellOrderResponse> sellOrderResponses = _stocksService.GetSellOrders();
+            List<BuyOrderResponse> buyOrderResponses = await _stocksService.GetBuyOrders();
+            List<SellOrderResponse> sellOrderResponses = await _stocksService.GetSellOrders();
 
             //create model object
             Orders orders = new() { BuyOrders = buyOrderResponses, SellOrders = sellOrderResponses };
@@ -127,6 +128,31 @@ namespace StockApp.Controllers
             ViewBag.TradingOptions = _tradingOptions;
 
             return View(orders);
+        }
+
+        [Route("/orders-pdf")]
+        public async Task<IActionResult> OrdersPDF()
+        {
+            // Get list of all orders
+            List<IOrderResponse> orders = new();
+            orders.AddRange(await _stocksService.GetBuyOrders());
+            orders.AddRange(await _stocksService.GetSellOrders());
+            orders.OrderByDescending(order => order.DateAndTimeOfOrder).ToList();
+
+            ViewBag.TradingOptions = _tradingOptions;
+
+            return new ViewAsPdf("OrdersPDF", orders, ViewData)
+            {
+                PageMargins = new Rotativa.AspNetCore.Options.Margins()
+                {
+                    Top = 20,
+                    Right = 20,
+                    Bottom = 20,
+                    Left = 20,
+                },
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Landscape
+            };
+
         }
     }
 }

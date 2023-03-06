@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wkCUt1aE7g6bGFpa1p0X30mp+Kejxg4ORrnjFQcj/CQ=",
+  "Hash": "3jo/mQl9n7t5E4P0wB9eGxIOPMWh5FMMmvkYa8+FVd0=",
   "Source": "StockApp",
   "BasePath": "_content/StockApp",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "SourceId": "StockApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\",
+      "BasePath": "_content/StockApp",
+      "RelativePath": "Rotativa/wkhtmltopdf.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Rotativa\\wkhtmltopdf.exe"
+    },
     {
       "Identity": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\StockApp\\wwwroot\\Scripts\\FinnhubScript.js",
       "SourceId": "StockApp",

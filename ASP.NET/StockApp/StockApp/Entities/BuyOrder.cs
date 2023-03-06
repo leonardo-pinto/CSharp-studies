@@ -10,6 +10,7 @@ namespace Entities
         /// <summary>
         /// The unique ID of the buy order
         /// </summary>
+        [Key]
         public Guid BuyOrderID { get; set; }
 
         /// <summary>

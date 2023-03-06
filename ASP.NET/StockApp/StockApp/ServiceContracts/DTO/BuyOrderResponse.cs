@@ -6,7 +6,7 @@ namespace ServiceContracts.DTO
     /// <summary>
     /// DTO class that represents a buy order response
     /// </summary>
-    public class BuyOrderResponse
+    public class BuyOrderResponse : IOrderResponse
     {
         /// <summary>
         /// The unique ID of the buy order
@@ -44,6 +44,8 @@ namespace ServiceContracts.DTO
         /// Total trade amount
         /// </summary>
         public double TradeAmount { get; set; }
+
+        public OrderType TypeOfOrder { get; set; }
 
         /// <summary>
         /// Checks if the current object and other (parameter) object values match
