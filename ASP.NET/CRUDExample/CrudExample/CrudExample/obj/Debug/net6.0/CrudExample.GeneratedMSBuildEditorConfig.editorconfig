@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Leonardo/Documents/Projects/CSharp-studies/ASP.NET/CRUDExample/CRUDExample/CrudExample/Views/Countries/UploadFromExcel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXFVwbG9hZEZyb21FeGNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Leonardo/Documents/Projects/CSharp-studies/ASP.NET/CRUDExample/CRUDExample/CrudExample/Views/Persons/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
