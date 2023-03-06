@@ -6,6 +6,7 @@ using ServiceContracts.Enums;
 using Microsoft.EntityFrameworkCore;
 using CsvHelper;
 using System.Globalization;
+using CsvHelper.Configuration;
 
 namespace Services
 {
@@ -214,15 +215,38 @@ namespace Services
         {
             MemoryStream memoryStream = new();
             StreamWriter streamWriter = new(memoryStream);
-            CsvWriter csvWriter = new(streamWriter, CultureInfo.InvariantCulture, leaveOpen: true);
 
-            csvWriter.WriteHeader<PersonResponse>(); // PersonID, PersonName,...
+            // to specify which data will be written
+            CsvConfiguration csvConfiguration = new(CultureInfo.InvariantCulture);
+
+            // without CsvConfiguration
+            //CsvWriter csvWriter = new(streamWriter, CultureInfo.InvariantCulture, leaveOpen: true);
+            
+            CsvWriter csvWriter = new(streamWriter, csvConfiguration);
+
+            // without csv config
+            // csvWriter.WriteHeader<PersonResponse>(); // PersonID, PersonName,...
+
+            csvWriter.WriteField(nameof(PersonResponse.PersonName));
+            csvWriter.WriteField(nameof(PersonResponse.Email));
+            csvWriter.WriteField(nameof(PersonResponse.Address));
             csvWriter.NextRecord();
 
             List<PersonResponse> persons = _db.Persons.Include("Country").Select(temp => temp.ToPersonResponse()).ToList();
 
+            foreach (PersonResponse person in persons)
+            {
+                csvWriter.WriteField(person.PersonName);
+                csvWriter.WriteField(person.Email);
+                csvWriter.WriteField(person.Address);
+                csvWriter.NextRecord();
+                csvWriter.Flush();
+                // after every record we need to flush to add it to the memory stream
+            }
+
             // write all data rows
-            await csvWriter.WriteRecordsAsync(persons);
+            // without configu
+            //await csvWriter.WriteRecordsAsync(persons);
 
             memoryStream.Position = 0;
             return memoryStream;
