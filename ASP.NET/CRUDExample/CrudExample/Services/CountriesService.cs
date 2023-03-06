@@ -71,7 +71,7 @@ namespace Services
                 ExcelWorksheet workSheet = excelPackage.Workbook.Worksheets["Countries"];
 
                 int rowCount = workSheet.Dimension.Rows;
-                for (int row = 2; row <= rowCount; row++)
+                for (int row = 1; row <= rowCount; row++)
                 {
                     string? cellValue = Convert.ToString(workSheet.Cells[row, 1].Value);
 
@@ -79,7 +79,7 @@ namespace Services
                     {
                         string? countryName = cellValue;
 
-                        if(_db.Countries.Where(temp => temp.CountryName == countryName).Any())
+                        if(_db.Countries.Where(temp => temp.CountryName == countryName).Count() == 0)
                         {
                             Country country = new() { CountryName = countryName };
                             _db.Countries.Add(country);
