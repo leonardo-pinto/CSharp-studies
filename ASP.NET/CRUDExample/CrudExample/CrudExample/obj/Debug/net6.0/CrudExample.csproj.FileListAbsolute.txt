@@ -83,3 +83,7 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExam
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Rotativa.AspNetCore.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\obj\Debug\net6.0\CrudExample.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\EPPlus.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
