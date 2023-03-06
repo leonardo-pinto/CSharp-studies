@@ -5,6 +5,7 @@ using Entities;
 using ServiceContracts.Enums;
 using Xunit.Abstractions;
 using Microsoft.EntityFrameworkCore;
+using EntityFrameworkCoreMock;
 
 namespace CrudTests
 {
@@ -16,13 +17,18 @@ namespace CrudTests
 
         public PersonsServiceTest(ITestOutputHelper testOutputHelper)
         {
-            _countriesService = new CountriesService(
-                new PersonsDbContext(
-                    new DbContextOptionsBuilder<PersonsDbContext>().Options
-               )
+            var countriesInitialData = new List<Country>();
+            var personsInitialData = new List<Person>();
+            DbContextMock<ApplicationDbContext> dbContextMock = new(
+                new DbContextOptionsBuilder<ApplicationDbContext>().Options
             );
-            _personsService = new PersonsService(new PersonsDbContext(new DbContextOptionsBuilder<PersonsDbContext>().Options), _countriesService);
-            _testOutputHelper = testOutputHelper;
+
+            ApplicationDbContext dbContext = dbContextMock.Object;
+            dbContextMock.CreateDbSetMock(temp => temp.Countries, countriesInitialData);
+            dbContextMock.CreateDbSetMock(temp => temp.Persons, personsInitialData);
+
+            _countriesService = new CountriesService(dbContext);
+            _personsService = new PersonsService(dbContext, _countriesService);
         }
 
         #region AddPerson
