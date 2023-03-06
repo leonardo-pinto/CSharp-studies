@@ -4,6 +4,8 @@ using ServiceContracts;
 using Services.Helpers;
 using ServiceContracts.Enums;
 using Microsoft.EntityFrameworkCore;
+using CsvHelper;
+using System.Globalization;
 
 namespace Services
 {
@@ -206,6 +208,24 @@ namespace Services
                 _db.Persons.First(person => person.PersonID == personID));
             await _db.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<MemoryStream> GetPersonsCSV()
+        {
+            MemoryStream memoryStream = new();
+            StreamWriter streamWriter = new(memoryStream);
+            CsvWriter csvWriter = new(streamWriter, CultureInfo.InvariantCulture, leaveOpen: true);
+
+            csvWriter.WriteHeader<PersonResponse>(); // PersonID, PersonName,...
+            csvWriter.NextRecord();
+
+            List<PersonResponse> persons = _db.Persons.Include("Country").Select(temp => temp.ToPersonResponse()).ToList();
+
+            // write all data rows
+            await csvWriter.WriteRecordsAsync(persons);
+
+            memoryStream.Position = 0;
+            return memoryStream;
         }
 
         // Without DB
@@ -441,5 +461,5 @@ namespace Services
         //        _persons.RemoveAll(person => person.PersonID == personID);
         //        return true;
         //    }
-        }
+    }
 }
