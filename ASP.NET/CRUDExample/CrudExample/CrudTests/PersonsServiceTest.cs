@@ -6,6 +6,7 @@ using ServiceContracts.Enums;
 using Xunit.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using EntityFrameworkCoreMock;
+using AutoFixture;
 
 namespace CrudTests
 {
@@ -14,9 +15,11 @@ namespace CrudTests
         private readonly IPersonsService _personsService;
         private readonly ICountriesService _countriesService;
         private readonly ITestOutputHelper _testOutputHelper;
+        private readonly IFixture _fixture;
 
         public PersonsServiceTest(ITestOutputHelper testOutputHelper)
         {
+            _fixture = new Fixture();
             var countriesInitialData = new List<Country>();
             var personsInitialData = new List<Person>();
             DbContextMock<ApplicationDbContext> dbContextMock = new(
@@ -61,17 +64,24 @@ namespace CrudTests
         [Fact]
         public async Task AddPerson_ProperPersonDetails()
         {
+            // using AutoFixture
+            // Creates with all default properties
+            //PersonAddRequest? personAddRequest = _fixture.Create<PersonAddRequest>();
+            // Build.With to customize specific properties
+            PersonAddRequest? personAddRRequest = _fixture.Build<PersonAddRequest>()
+                .With(temp => temp.Email, "mail@mail.com")
+                .Create();
             // Arrange
-            PersonAddRequest? personAddRequest = new()
-            { 
-                PersonName = "John Doe",
-                Email = "john.doe@mail.com",
-                CountryID = Guid.NewGuid(),
-                Address = "John Doe Boulevar, 52",
-                Gender = GenderOptions.Male,
-                DateOfBirth = DateTime.Parse("2000-01-01"),
-                ReceiveNewsLetters = true
-            };
+            //PersonAddRequest? personAddRequest = new()
+            //{ 
+            //    PersonName = "John Doe",
+            //    Email = "john.doe@mail.com",
+            //    CountryID = Guid.NewGuid(),
+            //    Address = "John Doe Boulevar, 52",
+            //    Gender = GenderOptions.Male,
+            //    DateOfBirth = DateTime.Parse("2000-01-01"),
+            //    ReceiveNewsLetters = true
+            //};
 
             // Act
             PersonResponse person_response_from_add = await _personsService.AddPerson(personAddRequest);

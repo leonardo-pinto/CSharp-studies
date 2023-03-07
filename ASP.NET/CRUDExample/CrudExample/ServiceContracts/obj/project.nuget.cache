@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+bAyNPIJRwtNC8AW3Z+BbrPngbfP7Mnh0lIjQWbm++p3/echLfBW/yeWlqFiRhF0v+J3A5FGYzUud5U5YElePQ==",
+  "dgSpecHash": "zRYl+PkYhi4v6BsOfm1mwvfrcutadsheAljD+zR6IUm2J9PWFQSgLPS2hspbrODqiBzYjxIKDTRphvUvQSbuhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\ServiceContracts\\ServiceContracts.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\ServiceContracts\\ServiceContracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
