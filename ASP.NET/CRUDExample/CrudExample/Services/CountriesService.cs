@@ -1,6 +1,7 @@
 ﻿using ServiceContracts;
 using ServiceContracts.DTO;
 using Entities;
+using RepositoryContracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
 using OfficeOpenXml;
@@ -9,11 +10,12 @@ namespace Services
 {
     public class CountriesService : ICountriesService
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ICountriesRepository _countriesRepository;
 
-        public CountriesService(ApplicationDbContext personsDbContext)
+
+        public CountriesService(ICountriesRepository personsDbContext)
         {
-            _db = personsDbContext;
+            _countriesRepository = personsDbContext;
         }
 
         public async Task<CountryResponse> AddCountry(CountryAddRequest? countryAddRequest)
@@ -28,7 +30,7 @@ namespace Services
                 throw new ArgumentException(nameof(countryAddRequest.CountryName));
             }
 
-            if (await _db.Countries.CountAsync(country => country.CountryName == countryAddRequest.CountryName) > 0)
+            if (await _countriesRepository.GetCountryByCountryName(countryAddRequest.CountryName) != null)
             {
                 throw new ArgumentException("Given country name already exists");
             }
@@ -37,15 +39,15 @@ namespace Services
 
             country.CountryID = Guid.NewGuid();
 
-            _db.Countries.Add(country);
-            await _db.SaveChangesAsync();
+            await _countriesRepository.AddCountry(country);
 
             return country.ToCountryResponse();
         }
 
         public async Task<List<CountryResponse>> GetAllCountries()
         {
-            return await _db.Countries.Select(country => country.ToCountryResponse()).ToListAsync();
+            return  (await _countriesRepository.GetAllCountries())
+                .Select(country => country.ToCountryResponse()).ToList();
         }
 
         public async Task<CountryResponse?> GetCountryByCountryID(Guid? countryID)
@@ -55,7 +57,7 @@ namespace Services
                 return null;
             }
 
-            Country? country_response_from_list = await _db.Countries.FirstOrDefaultAsync(country => country.CountryID == countryID);
+            Country? country_response_from_list = await _countriesRepository.GetCountryByCountryID(countryID);
 
             return country_response_from_list?.ToCountryResponse();
         }
@@ -79,11 +81,10 @@ namespace Services
                     {
                         string? countryName = cellValue;
 
-                        if(_db.Countries.Where(temp => temp.CountryName == countryName).Count() == 0)
+                        if(await _countriesRepository.GetCountryByCountryName(countryName) == null)
                         {
                             Country country = new() { CountryName = countryName };
-                            _db.Countries.Add(country);
-                            await _db.SaveChangesAsync();
+                            await _countriesRepository.AddCountry(country);
                             insertedCountries++;
                         }
                     }
