@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Microsoft.EntityFrameworkCore;
 using RepositoryContracts;
 using System.Linq.Expressions;
 
@@ -6,34 +7,66 @@ namespace Repositories
 {
     public class PersonsRepository : IPersonsRepository
     {
-        public Task<Person> AddPerson(Person person)
+        private readonly ApplicationDbContext _db;
+
+        public PersonsRepository(ApplicationDbContext db)
         {
-            throw new NotImplementedException();
+            _db = db;
+        }
+        public async Task<Person> AddPerson(Person person)
+        {
+            _db.Persons.Add(person);
+            await _db.SaveChangesAsync();
+            return person;
         }
 
-        public Task<bool> DeletePerson(Guid? personID)
+        public async Task<bool> DeletePerson(Guid? personID)
         {
-            throw new NotImplementedException();
+            _db.Persons.RemoveRange(_db.Persons.Where(person => person.PersonID == personID));
+            int rowsDeleted = await _db.SaveChangesAsync();
+
+            return rowsDeleted > 0;
         }
 
-        public Task<List<Person>> GetAllPersons()
+        public async Task<List<Person>> GetAllPersons()
         {
-            throw new NotImplementedException();
+            return await _db.Persons.Include("Country").ToListAsync();
         }
 
-        public Task<List<Person>> GetFilteredPersons(Expression<Func<Person, bool>> predicate)
+        public async Task<List<Person>> GetFilteredPersons(Expression<Func<Person, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return await _db.Persons.Include("Country")
+                .Where(predicate)
+                .ToListAsync();
         }
 
-        public Task<Person?> GetPersonByPersonID(Guid? personID)
+        public async Task<Person?> GetPersonByPersonID(Guid? personID)
         {
-            throw new NotImplementedException();
+            return await _db.Persons
+                .Include("Country")
+                .FirstOrDefaultAsync(person => person.PersonID == personID);
         }
 
-        public Task<Person> UpdatePerson(Person person)
+        public async Task<Person> UpdatePerson(Person person)
         {
-            throw new NotImplementedException();
+            Person? matchingPerson = await _db.Persons.FirstOrDefaultAsync(temp => temp.PersonID == person.PersonID);
+
+            if (matchingPerson == null)
+            {
+                return person;
+            }
+
+            matchingPerson.PersonName = person?.PersonName;
+            matchingPerson.Email = person.Email;
+            matchingPerson.DateOfBirth = person.DateOfBirth;
+            matchingPerson.Address = person.Address;
+            matchingPerson.ReceiveNewsLetters = person.ReceiveNewsLetters;
+            matchingPerson.CountryID = person.CountryID;
+            matchingPerson.Gender = person.Gender.ToString();
+
+            await _db.SaveChangesAsync();
+
+            return matchingPerson;
         }
     }
 }
