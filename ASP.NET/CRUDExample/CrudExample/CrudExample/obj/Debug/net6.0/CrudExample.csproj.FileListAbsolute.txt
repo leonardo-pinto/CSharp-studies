@@ -87,3 +87,7 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExam
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\EPPlus.Interfaces.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\EPPlus.System.Drawing.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Repositories.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\RepositoryContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\CrudExample\bin\Debug\net6.0\RepositoryContracts.pdb

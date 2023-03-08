@@ -1,0 +1,15 @@
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.deps.json
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\bin\Debug\net6.0\Entities.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\bin\Debug\net6.0\Entities.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\refint\RepositoryContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CRUDExample\RepositoryContracts\obj\Debug\net6.0\ref\RepositoryContracts.dll

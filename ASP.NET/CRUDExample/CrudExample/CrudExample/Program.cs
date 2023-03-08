@@ -2,6 +2,8 @@ using ServiceContracts;
 using Services;
 using Microsoft.EntityFrameworkCore;
 using Entities;
+using Repositories;
+using RepositoryContracts;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
@@ -9,6 +11,9 @@ builder.Services.AddControllersWithViews();
 // add servicos into IOC
 builder.Services.AddScoped<ICountriesService, CountriesService>();
 builder.Services.AddScoped<IPersonsService, PersonsService>();
+
+builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
+builder.Services.AddScoped<IPersonsRepository, PersonsRepository>();
 
 // DbContext as a service - EFC
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
