@@ -17,7 +17,6 @@ namespace CrudTests
     public class PersonsServiceTest
     {
         private readonly IPersonsService _personsService;
-        private readonly ICountriesService _countriesService;
         private readonly IPersonsRepository _personsRepository;
         private readonly Mock<IPersonsRepository> _personsRepositoryMock;
         private readonly ITestOutputHelper _testOutputHelper;
@@ -29,19 +28,8 @@ namespace CrudTests
             // create mock instance
             _personsRepositoryMock = new Mock<IPersonsRepository>();
             _personsRepository = _personsRepositoryMock.Object;
-
-            var countriesInitialData = new List<Country>();
-            var personsInitialData = new List<Person>();
-            DbContextMock<ApplicationDbContext> dbContextMock = new(
-                new DbContextOptionsBuilder<ApplicationDbContext>().Options
-            );
-
-            ApplicationDbContext dbContext = dbContextMock.Object;
-            dbContextMock.CreateDbSetMock(temp => temp.Countries, countriesInitialData);
-            dbContextMock.CreateDbSetMock(temp => temp.Persons, personsInitialData);
-
-            _countriesService = new CountriesService(null);
             _personsService = new PersonsService(_personsRepository);
+            _testOutputHelper = testOutputHelper;
         }
 
         #region AddPerson
@@ -334,40 +322,28 @@ namespace CrudTests
         #region GetSortedPersons
 
         [Fact]
-        public async Task GetSortedPersons_SortByPersonName()
+        public async Task GetSortedPersons_ToBeSuccessful()
         {
-            CountryAddRequest country_request_1 = _fixture.Create<CountryAddRequest>();
-            CountryAddRequest country_request_2 = _fixture.Create<CountryAddRequest>();
-
-            CountryResponse country_response_1 = await _countriesService.AddCountry(country_request_1);
-            CountryResponse country_response_2 = await _countriesService.AddCountry(country_request_2);
-
-            PersonAddRequest? person_request_1 = _fixture.Build<PersonAddRequest>()
-                .With(temp => temp.PersonName, "John Doe")
-                .With(temp => temp.Email, "someone_1@mail.com")
-                .With(temp => temp.CountryID, country_response_1.CountryID)
-                .Create();
-
-            PersonAddRequest? person_request_2 = _fixture.Build<PersonAddRequest>()
-                .With(temp => temp.PersonName, "Jane Doe")
-                .With(temp => temp.Email, "someone_2@mail.com")
-                .With(temp => temp.CountryID, country_response_2.CountryID)
-                .Create();
-
-            List<PersonAddRequest> persons_requests = new()
-            { person_request_1, person_request_2 };
-
-            List<PersonResponse> person_response_list_from_add = new();
-
-            foreach (PersonAddRequest person in persons_requests)
+            List<Person> persons = new()
             {
-                PersonResponse person_response = await _personsService.AddPerson(person);
-                person_response_list_from_add.Add(person_response);
-            }
+               _fixture.Build<Person>()
+                .With(temp => temp.Email, "any_mail1@mail.com")
+                .With(temp => temp.Country, null as Country) // null to avoid circular dependence
+                .Create(),
 
+               _fixture.Build<Person>()
+                .With(temp => temp.Email, "any_mail2@mail.com")
+                .With(temp => temp.Country, null as Country) // null to avoid circular dependence
+                .Create()
 
-            List<PersonResponse> persons_list_from_get = await _personsService.GetAllPersons();
-            List<PersonResponse> persons_list_from_sort = await _personsService.GetSortedPersons(persons_list_from_get, nameof(Person.PersonName), SortOrderOptions.DESC);
+            };
+
+            List<PersonResponse> person_response_list_expected = persons.Select(person => person.ToPersonResponse()).ToList();
+
+            _personsRepositoryMock.Setup(temp => temp.GetAllPersons()).ReturnsAsync(persons);
+
+            List<PersonResponse> allPersons = await _personsService.GetAllPersons();
+            List<PersonResponse> persons_list_from_sort = await _personsService.GetSortedPersons(allPersons, nameof(Person.PersonName), SortOrderOptions.DESC);
 
             //person_response_list_from_add = person_response_list_from_add.OrderByDescending(person => person.PersonName).ToList();
 
@@ -385,8 +361,9 @@ namespace CrudTests
         #region UpdatePerson
 
         [Fact]
-        public async Task UpdatePerson_NullPerson()
+        public async Task UpdatePerson_NullPerson_ToBeArgumentNullException()
         {
+            // dont need to mock!
             PersonUpdateRequest person_update_request = null;
 
             Func<Task> action = async () =>
@@ -403,7 +380,7 @@ namespace CrudTests
         }
 
         [Fact]
-        public async Task UpdatePerson_InvalidPersonID()
+        public async Task UpdatePerson_InvalidPersonID_ToBeArgumentException()
         {
             PersonUpdateRequest person_update_request = _fixture.Build<PersonUpdateRequest>().Create();
 
@@ -420,19 +397,17 @@ namespace CrudTests
         }
 
         [Fact]
-        public async Task UpdatePerson_PersonNameIsNull()
+        public async Task UpdatePerson_PersonNameIsNull_ToBeArgumentException()
         {
-            CountryAddRequest country_add_request = _fixture.Create<CountryAddRequest>();
-            CountryResponse country_response_from_add = await _countriesService.AddCountry(country_add_request);
-
-            PersonAddRequest person_add_request = _fixture.Build<PersonAddRequest>()
+            Person person = _fixture.Build<Person>()
+                .With(temp => temp.PersonName, null as string)
                 .With(temp => temp.Email, "someone_1@mail.com")
-                .With(temp => temp.CountryID, country_response_from_add.CountryID)
+                .With(temp => temp.Country, null as Country)
+                .With(temp => temp.Gender , "Male") // check test error avoided
                 .Create();
 
-            PersonResponse person_response_from_add = await _personsService.AddPerson(person_add_request);
+            PersonResponse person_response_from_add = person.ToPersonResponse();
             PersonUpdateRequest person_update_request = person_response_from_add.ToPersonUpdateRequest();
-            person_update_request.PersonName = null;
 
             Func<Task> action = async () =>
             {
@@ -449,24 +424,21 @@ namespace CrudTests
         [Fact]
         public async Task UpdatePerson_PersonFullDetails()
         {
-            CountryAddRequest country_add_request = _fixture.Create<CountryAddRequest>();
-            CountryResponse country_response_from_add = await _countriesService.AddCountry(country_add_request);
-
-            PersonAddRequest person_add_request = _fixture.Build<PersonAddRequest>()
+            Person person = _fixture.Build<Person>()
                 .With(temp => temp.Email, "someone_1@mail.com")
-                .With(temp => temp.CountryID, country_response_from_add.CountryID)
+                .With(temp => temp.Country, null as Country)
+                .With(temp => temp.Gender, "Male") // check test error avoided
                 .Create();
 
-            PersonResponse person_response_from_add = await _personsService.AddPerson(person_add_request);
-            PersonUpdateRequest person_update_request = person_response_from_add.ToPersonUpdateRequest();
-            person_update_request.PersonName = "Jimmy";
-            person_update_request.Email = "jimmy.doe@mail.com";
+            PersonResponse person_response_expected = person.ToPersonResponse();
+            PersonUpdateRequest person_update_request = person_response_expected.ToPersonUpdateRequest();
+
+            _personsRepositoryMock.Setup(temp => temp.GetPersonByPersonID(It.IsAny<Guid>())).ReturnsAsync(person);
+            _personsRepositoryMock.Setup(temp => temp.UpdatePerson(It.IsAny<Person>())).ReturnsAsync(person);
 
             PersonResponse person_response_from_update = await _personsService.UpdatePerson(person_update_request);
 
-            PersonResponse person_response_from_get = await _personsService.GetPersonByPersonID(person_response_from_update.PersonID);
-
-            person_response_from_update.Should().Be(person_response_from_get);
+            person_response_from_update.Should().Be(person_response_expected);
 
             //Assert.Equal(person_response_from_get, person_response_from_update);
         }
@@ -477,6 +449,8 @@ namespace CrudTests
         [Fact]
         public async Task DeletePerson_InvalidPersonID()
         {
+
+
             bool isDeleted = await _personsService.DeletePerson(Guid.NewGuid());
 
             isDeleted.Should().BeFalse();
@@ -484,21 +458,19 @@ namespace CrudTests
         }
 
         [Fact]
-        public async Task DeletePerson_ValidPersonID()
+        public async Task DeletePerson_ValidPersonID_ToBeSuccessful()
         {
-            CountryAddRequest country_add_request = _fixture.Create<CountryAddRequest>();
-            CountryResponse country_response_from_add = await _countriesService.AddCountry(country_add_request);
+            Person person = _fixture.Build<Person>()
+                 .With(temp => temp.Email, "any_mail1@mail.com")
+                 .With(temp => temp.Country, null as Country) // null to avoid circular dependence
+                 .With(temp => temp.Gender, "Female")
+                 .Create();
 
-            PersonAddRequest person_add_request = _fixture.Build<PersonAddRequest>()
-                .With(temp => temp.Email, "someone_1@mail.com")
-                .With(temp => temp.CountryID, country_response_from_add.CountryID)
-                .Create();
+            _personsRepositoryMock.Setup(temp => temp.GetPersonByPersonID(It.IsAny<Guid>())).ReturnsAsync(person);
+            _personsRepositoryMock.Setup(temp => temp.DeletePerson(It.IsAny<Guid>())).ReturnsAsync(true);
 
-            PersonResponse person_add_response = await _personsService.AddPerson(person_add_request);
-
-            bool isDeleted = await _personsService.DeletePerson(person_add_response.PersonID);
+            bool isDeleted = await _personsService.DeletePerson(person.PersonID);
             isDeleted.Should().BeTrue();
-            //Assert.True(isDeleted);
         }
 
         #endregion
