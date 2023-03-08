@@ -18,6 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("CrudExample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudExample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("CrudTests")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 
