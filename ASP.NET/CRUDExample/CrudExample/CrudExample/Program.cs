@@ -36,6 +36,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 var app = builder.Build();
 
+// enable HTTP logging;
+// set log level in config file (dev and prod)!
+//app.UseHttpLogging();
+
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
