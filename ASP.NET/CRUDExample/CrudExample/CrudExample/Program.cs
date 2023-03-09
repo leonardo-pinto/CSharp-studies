@@ -41,9 +41,9 @@ if (builder.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-app.Logger.LogDebug("debug-message");
-app.Logger.LogCritical("critical-message");
-app.Logger.LogWarning("warning-message");
+//app.Logger.LogDebug("debug-message");
+//app.Logger.LogCritical("critical-message");
+//app.Logger.LogWarning("warning-message");
 
 if (builder.Environment.IsEnvironment("Test") == false) {
     Rotativa.AspNetCore.RotativaConfiguration.Setup("wwwroot", wkhtmltopdfRelativePath: "Rotativa");

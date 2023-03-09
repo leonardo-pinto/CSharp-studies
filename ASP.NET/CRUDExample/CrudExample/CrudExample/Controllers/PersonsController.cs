@@ -13,13 +13,18 @@ namespace CrudExample.Controllers
         // private fields
         private readonly IPersonsService _personsService;
         private readonly ICountriesService _countriesService;
+        private readonly ILogger<PersonsController> _logger;
 
-        public PersonsController(IPersonsService personsService, ICountriesService countriesService)
+        public PersonsController(
+            IPersonsService personsService,
+            ICountriesService countriesService,
+            ILogger<PersonsController> logger
+        )
         {
             _personsService = personsService;
             _countriesService = countriesService;
+            _logger = logger;
         }
-
 
         [Route("[action]")]
         [Route("/")]
@@ -31,6 +36,9 @@ namespace CrudExample.Controllers
             SortOrderOptions sortOrder = SortOrderOptions.ASC
         )
         {
+            _logger.LogInformation("Index action method on PersonsController");
+
+            _logger.LogDebug($"searchBy: {searchBy}, searchString: {searchString}, sortBy: {sortBy}, sortOrder: {sortOrder}");
             ViewBag.SearchFields = new Dictionary<string, string>()
             {
                 { nameof(PersonResponse.PersonName), "Person Name" },
