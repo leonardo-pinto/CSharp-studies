@@ -16,9 +16,9 @@ builder.Services.AddTransient<IStocksRepository, StocksRepository>();
 
 
 //builder.Services.AddTransient<IFinn>
-//builder.Services.AddHttpClient();
+builder.Services.AddHttpClient();
 
-builder.Services.AddHttpClient<IFinnhubService, FinnhubService>();
+//builder.Services.AddHttpClient<IFinnhubService, FinnhubService>();
 
 builder.Services.AddDbContext<StockMarketDbContext>(options =>
 {

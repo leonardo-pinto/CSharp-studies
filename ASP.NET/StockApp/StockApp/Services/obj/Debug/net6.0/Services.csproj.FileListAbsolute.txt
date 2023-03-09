@@ -15,3 +15,5 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\Se
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\Services\obj\Debug\net6.0\refint\Services.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\Services\obj\Debug\net6.0\ref\Services.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\Services\bin\Debug\net6.0\RepositoryContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\Services\bin\Debug\net6.0\RepositoryContracts.pdb

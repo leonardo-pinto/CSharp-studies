@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using RepositoryContracts;
+﻿using RepositoryContracts;
 using ServiceContracts;
 
 
@@ -11,7 +10,7 @@ namespace Services
 
         public FinnhubService(IFinhubRepository finnhubRepository)
         {
-            _finnhubRepository= finnhubRepository;
+            _finnhubRepository = finnhubRepository;
         }
 
         public async Task<Dictionary<string, object>?> GetCompanyProfile(string stockSymbol)

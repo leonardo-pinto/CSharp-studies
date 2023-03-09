@@ -100,3 +100,7 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\St
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\StockApp\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\StockApp\bin\Debug\net6.0\Rotativa.AspNetCore.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\StockApp\obj\Debug\net6.0\StockApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\StockApp\bin\Debug\net6.0\Repositories.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\StockApp\bin\Debug\net6.0\RepositoryContracts.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\StockApp\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\StockApp\StockApp\StockApp\bin\Debug\net6.0\RepositoryContracts.pdb
