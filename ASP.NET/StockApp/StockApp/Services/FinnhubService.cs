@@ -1,41 +1,22 @@
 ﻿using Microsoft.Extensions.Configuration;
+using RepositoryContracts;
 using ServiceContracts;
-using System;
-using System.Net.Http;
-using System.Text.Json;
+
 
 namespace Services
 {
     public class FinnhubService : IFinnhubService
     {
-        private readonly HttpClient _httpClient;
-        private readonly IConfiguration _configuration;
+        private readonly IFinhubRepository _finnhubRepository;
 
-        public FinnhubService(HttpClient httpClient, IConfiguration configuration)
+        public FinnhubService(IFinhubRepository finnhubRepository)
         {
-            _httpClient = httpClient;
-            _configuration = configuration;
+            _finnhubRepository= finnhubRepository;
         }
 
         public async Task<Dictionary<string, object>?> GetCompanyProfile(string stockSymbol)
         {
-            var responseString = await _httpClient.GetStringAsync($"https://finnhub.io/api/v1/stock/profile2?symbol={stockSymbol}&token={_configuration["FinnhubToken"]}");
-
-
-            // convert response body (from JSON into Dictionary)
-            Dictionary<string, object>? responseDictionary = JsonSerializer.Deserialize<Dictionary<string, object>>(responseString);
-
-            if (responseDictionary == null)
-            {
-                throw new InvalidOperationException("No response from server");
-            }
-
-            if (responseDictionary.ContainsKey("error"))
-            {
-                throw new InvalidOperationException(Convert.ToString(responseDictionary["error"]));
-            }
-
-            // return response dictionary back to the caller
+            Dictionary<string, object>? responseDictionary = await _finnhubRepository.GetCompanyProfile(stockSymbol);
             return responseDictionary;
         }
 
@@ -76,23 +57,22 @@ namespace Services
 
         public async Task<Dictionary<string, object>?> GetStockPriceQuote(string stockSymbol)
         {
-            string responseString = await _httpClient.GetStringAsync($"https://finnhub.io/api/v1/quote?symbol={stockSymbol}&token={_configuration["FinnhubToken"]}");
-
-            // convert response body (from json to dic)
-            Dictionary<string, object>? responseDictionary = JsonSerializer.Deserialize<Dictionary<string, object>>(responseString);
-
-            if (responseDictionary == null)
-            {
-                throw new InvalidOperationException("No response from server");
-            }
-
-            if (responseDictionary.ContainsKey("error"))
-            {
-                throw new InvalidOperationException(Convert.ToString(responseDictionary["error"]));
-            }
-
-            // return response dictionary back to the caller
+            Dictionary<string, object>? responseDictionary = await _finnhubRepository.GetStockPriceQuote(stockSymbol);
             return responseDictionary;
         }
+
+        public async Task<List<Dictionary<string, string>>?> GetStocks()
+        {
+            List<Dictionary<string, string>>? stocks = await _finnhubRepository.GetStocks();
+            return stocks;
+        }
+
+        public async Task<Dictionary<string, object>?> SearchStocks(string stockSymbol)
+        {
+            Dictionary<string, object>? stock = await _finnhubRepository.SearchStocks(stockSymbol);
+            return stock;
+        }
+
+        
     }
 }

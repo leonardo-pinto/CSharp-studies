@@ -1082,6 +1082,19 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "RepositoryContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        }
+      },
       "ServiceContracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3296,6 +3309,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "RepositoryContracts/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryContracts/RepositoryContracts.csproj",
+      "msbuildProject": "../RepositoryContracts/RepositoryContracts.csproj"
+    },
     "ServiceContracts/1.0.0": {
       "type": "project",
       "path": "../ServiceContracts/ServiceContracts.csproj",
@@ -3308,6 +3326,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.3",
       "Microsoft.Extensions.Configuration.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Http >= 7.0.0",
+      "RepositoryContracts >= 1.0.0",
       "ServiceContracts >= 1.0.0"
     ]
   },
@@ -3340,6 +3359,9 @@
           "projectReferences": {
             "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\RepositoryContracts\\RepositoryContracts.csproj"
             },
             "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\ServiceContracts\\ServiceContracts.csproj": {
               "projectPath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\StockApp\\StockApp\\ServiceContracts\\ServiceContracts.csproj"
