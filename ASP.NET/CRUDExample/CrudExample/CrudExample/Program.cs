@@ -4,14 +4,27 @@ using Microsoft.EntityFrameworkCore;
 using Entities;
 using Repositories;
 using RepositoryContracts;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Serilog
+builder.Host.UseSerilog((HostBuilderContext context,
+    IServiceProvider services, LoggerConfiguration loggerConfiguration) =>
+{
+    loggerConfiguration
+    // read configuration settings from built-in IConfiguration
+    .ReadFrom.Configuration(context.Configuration)
+    // read out current app services and make them available to serilog
+    .ReadFrom.Services(services);
+    // must add Serilog to appsettings.json
+});
+
 builder.Services.AddControllersWithViews();
 
 // add servicos into IOC
 builder.Services.AddScoped<ICountriesService, CountriesService>();
 builder.Services.AddScoped<IPersonsService, PersonsService>();
-
 builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
 builder.Services.AddScoped<IPersonsRepository, PersonsRepository>();
 
