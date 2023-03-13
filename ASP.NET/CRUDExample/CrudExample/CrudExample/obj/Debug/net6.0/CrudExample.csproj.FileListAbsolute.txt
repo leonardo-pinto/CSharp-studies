@@ -99,3 +99,7 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExam
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.MSSqlServer.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDExample\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
