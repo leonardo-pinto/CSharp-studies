@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
+﻿using CrudExample.Controllers;
+using Microsoft.AspNetCore.Mvc.Filters;
 using ServiceContracts.DTO;
 
 namespace CrudExample.Filters.ActionFilters
@@ -14,11 +15,24 @@ namespace CrudExample.Filters.ActionFilters
 
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            _logger.LogInformation("PersonsListActionFilter.OnActionExecuted method");
+            // alternative to set ViewBag outside Controller
+            //// no access to ActionArguments
+            //PersonsController personsController = (PersonsController)context.Controller;
+            //IDictionary<string, object?>? parameters = (IDictionary<string, object?>?)context.HttpContext.Items["arguments"];
+
+            //if (parameters != null)
+            //{
+            //    if (parameters.ContainsKey("searchBy"))
+            //    {
+            //        personsController.ViewData["searchBy"] = parameters["searchBy"];
+            //    }
+            //}
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
+            context.HttpContext.Items["arguments"] = context.ActionArguments;
+
             if (context.ActionArguments.ContainsKey("searchBy"))
             {
                 string? searchBy = Convert.ToString(context.ActionArguments["searchBy"]);
