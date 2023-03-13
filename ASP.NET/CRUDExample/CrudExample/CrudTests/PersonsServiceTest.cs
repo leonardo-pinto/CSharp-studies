@@ -11,6 +11,8 @@ using AutoFixture;
 using FluentAssertions;
 using Moq;
 using System.Linq.Expressions;
+using Serilog;
+using Microsoft.Extensions.Logging;
 
 namespace CrudTests
 {
@@ -28,7 +30,11 @@ namespace CrudTests
             // create mock instance
             _personsRepositoryMock = new Mock<IPersonsRepository>();
             _personsRepository = _personsRepositoryMock.Object;
-            _personsService = new PersonsService(_personsRepository);
+            var diagnosticContextMock = new Mock<IDiagnosticContext>();
+            var loggerMock = new Mock<ILogger<PersonsService>>();
+
+
+            _personsService = new PersonsService(_personsRepository, loggerMock.Object, diagnosticContextMock.Object);
             _testOutputHelper = testOutputHelper;
         }
 

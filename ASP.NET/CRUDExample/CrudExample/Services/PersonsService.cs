@@ -109,7 +109,6 @@ namespace Services
                         _ => await _personsRepository.GetAllPersons()
             };
 
-
             // using with SEQ
             _diagnosticContext.Set("Persons", persons); // needs to create ToString method in Person entities
             return persons.Select(temp => temp.ToPersonResponse()).ToList();

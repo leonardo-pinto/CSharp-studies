@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CrudExample.Filters.ActionFilters;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Rotativa.AspNetCore;
 using ServiceContracts;
@@ -30,6 +31,7 @@ namespace CrudExample.Controllers
         [Route("[action]")]
         [Route("/")]
         // receive parameters on View to perform search
+        [TypeFilter(typeof(PersonsListActionFilter))]
         public async Task<IActionResult> Index(
             string searchBy, 
             string? searchString, 
