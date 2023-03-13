@@ -49,6 +49,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 var app = builder.Build();
 
+app.UseSerilogRequestLogging();
+
 // enable HTTP logging;
 // set log level in config file (dev and prod)!
 //app.UseHttpLogging();

@@ -10,6 +10,7 @@ using CsvHelper.Configuration;
 using OfficeOpenXml;
 using RepositoryContracts;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace Services
 {
@@ -17,11 +18,13 @@ namespace Services
     {
         private readonly IPersonsRepository _personsRepository;
         private readonly ILogger<PersonsService> _logger;
+        private readonly IDiagnosticContext _diagnosticContext;
 
-        public PersonsService(IPersonsRepository personsRepository, ILogger<PersonsService> logger)
+        public PersonsService(IPersonsRepository personsRepository, ILogger<PersonsService> logger, IDiagnosticContext diagnosticContext)
         {
             _personsRepository = personsRepository;
             _logger = logger;
+            _diagnosticContext = diagnosticContext;
         }
 
         public async Task<PersonResponse> AddPerson(PersonAddRequest? personAddRequest)
@@ -105,6 +108,10 @@ namespace Services
                        temp.Address.Contains(searchString)),
                         _ => await _personsRepository.GetAllPersons()
             };
+
+
+            // using with SEQ
+            _diagnosticContext.Set("Persons", persons); // needs to create ToString method in Person entities
             return persons.Select(temp => temp.ToPersonResponse()).ToList();
         }
 
