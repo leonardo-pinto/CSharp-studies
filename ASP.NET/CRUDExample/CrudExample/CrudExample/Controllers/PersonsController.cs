@@ -1,5 +1,6 @@
 ﻿using CrudExample.Filters.ActionFilters;
 using CrudExample.Filters.AuthorizationFilters;
+using CrudExample.Filters.ExceptionFilters;
 using CrudExample.Filters.ResultFilters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -40,6 +41,7 @@ namespace CrudExample.Controllers
         [TypeFilter(typeof(ResponseHeaderActionFilter),
             Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)] // key and value
         [TypeFilter(typeof(PersonsListResultFilter))]
+        [TypeFilter(typeof(HandleExceptionFilter))]
         public async Task<IActionResult> Index(
             string searchBy,
             string? searchString,
