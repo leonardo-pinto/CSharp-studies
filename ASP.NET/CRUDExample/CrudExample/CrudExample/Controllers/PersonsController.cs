@@ -32,6 +32,8 @@ namespace CrudExample.Controllers
         [Route("/")]
         // receive parameters on View to perform search
         [TypeFilter(typeof(PersonsListActionFilter))]
+        [TypeFilter(typeof(ResponseHeaderActionFilter), 
+            Arguments = new object[] { "X-Custom-Key", "Custom-Value"})] // key and value
         public async Task<IActionResult> Index(
             string searchBy, 
             string? searchString, 
