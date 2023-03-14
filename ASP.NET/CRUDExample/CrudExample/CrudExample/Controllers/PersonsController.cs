@@ -36,7 +36,7 @@ namespace CrudExample.Controllers
         [TypeFilter(typeof(PersonsListActionFilter))]
         // Method level filter
         [TypeFilter(typeof(ResponseHeaderActionFilter), 
-            Arguments = new object[] { "X-Custom-Key", "Custom-Value"}, Order = 1)] // key and value
+            Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1})] // key and value
         public async Task<IActionResult> Index(
             string searchBy, 
             string? searchString, 
