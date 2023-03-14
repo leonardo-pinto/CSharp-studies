@@ -31,6 +31,9 @@ namespace CrudExample.Filters.ActionFilters
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
+            // Parametrized log messages can be search using SEQ
+            _logger.LogInformation("{FilterName}. {MethodName} method",
+                nameof(PersonsListActionFilter), nameof(OnActionExecuting));
             context.HttpContext.Items["arguments"] = context.ActionArguments;
 
             if (context.ActionArguments.ContainsKey("searchBy"))

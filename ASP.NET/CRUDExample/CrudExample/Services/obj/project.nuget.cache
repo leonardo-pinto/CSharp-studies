@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pK0Nqa1qSW8ozeQVHRz4V3nWkB6AKQ8px4UL33ZvaNGAgezeNXOcqy2gELZc1ICO2s1hfci12iPKj5RRRqHdIw==",
+  "dgSpecHash": "skUDii7E90SHZXkPcDexNA1eu115ON9mAcAlqxuHc3A4fZBBFvTKKwGQM2eqrXG4f/ziuuQXx+mfjU0vMpPriA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\epplus\\6.0.6\\epplus.6.0.6.nupkg.sha512",

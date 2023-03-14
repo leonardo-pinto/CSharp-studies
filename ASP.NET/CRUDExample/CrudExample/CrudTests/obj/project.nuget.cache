@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dV1kn5S6ENIkZt3p/+I7rDd0zMreDf2rk9SpwZy3k89p/Z1snSbPuzQ0FLgTe0YpEwHknXcywIsJ/+v3KfM00Q==",
+  "dgSpecHash": "Q718WKWzh9GmfALC/vxyvzCnN9fiokiDO7OJEsQbETnB7BRpnKvoFi6W410GpGo3GyZ+cJgpq+o3XgK4/Rh9SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\CrudTests\\CrudTests.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudTests\\CrudTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",

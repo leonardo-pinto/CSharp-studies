@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "By5OnKkZXU+iKMU6+LwtS1aNrMZWlB0mhAnC3h5HlwH7qANfZ2sFLkmTh56pXCWXL1dWacgPAysH+/wVYdJ5Ug==",
+  "dgSpecHash": "qXV4daijLl31IiDx06ljxqs+s4glWcHJaxeU4PG+/j6nL+cDwZ45nns7VcATnuBW+J4oBUV6KQ6CK2/qHRA5tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CrudExample\\Repositories\\Repositories.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
