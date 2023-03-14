@@ -5,11 +5,13 @@ using Rotativa.AspNetCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
-using Services;
 
 namespace CrudExample.Controllers
 {
     [Route("[controller]")]
+    // Class-level filter
+    //[TypeFilter(typeof(ResponseHeaderActionFilter),
+    //        Arguments = new object[] { "X-Custom-Key", "Custom-Value" })] // key and value
     public class PersonsController : Controller
     {
         // private fields
@@ -32,6 +34,7 @@ namespace CrudExample.Controllers
         [Route("/")]
         // receive parameters on View to perform search
         [TypeFilter(typeof(PersonsListActionFilter))]
+        // Method level filter
         [TypeFilter(typeof(ResponseHeaderActionFilter), 
             Arguments = new object[] { "X-Custom-Key", "Custom-Value"})] // key and value
         public async Task<IActionResult> Index(

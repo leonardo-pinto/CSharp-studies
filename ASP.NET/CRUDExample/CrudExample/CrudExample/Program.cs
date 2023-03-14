@@ -5,6 +5,7 @@ using Entities;
 using Repositories;
 using RepositoryContracts;
 using Serilog;
+using CrudExample.Filters.ActionFilters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +21,15 @@ builder.Host.UseSerilog((HostBuilderContext context,
     // must add Serilog to appsettings.json
 });
 
-builder.Services.AddControllersWithViews();
+// add Global-level filters
+builder.Services.AddControllersWithViews(options => {
+    // can not supply argument values with this syntax
+    // options.Filters.Add<ResponseHeaderActionFilter>();
+
+    // add ILogger
+    var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>();
+    options.Filters.Add(new ResponseHeaderActionFilter(logger, "My-Key-From-Global", "My-Value-From-Global"));
+});
 
 // add servicos into IOC
 builder.Services.AddScoped<ICountriesService, CountriesService>();
