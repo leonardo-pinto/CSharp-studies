@@ -1,4 +1,5 @@
 ﻿using CrudExample.Filters.ActionFilters;
+using CrudExample.Filters.ResultFilters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Rotativa.AspNetCore;
@@ -37,6 +38,7 @@ namespace CrudExample.Controllers
         // Method level filter
         [TypeFilter(typeof(ResponseHeaderActionFilter),
             Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)] // key and value
+        [TypeFilter(typeof(PersonsListResultFilter))]
         public async Task<IActionResult> Index(
             string searchBy,
             string? searchString,
