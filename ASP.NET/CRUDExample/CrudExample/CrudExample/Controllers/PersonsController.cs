@@ -38,8 +38,10 @@ namespace CrudExample.Controllers
         // receive parameters on View to perform search
         [TypeFilter(typeof(PersonsListActionFilter), Order = 3)]
         // Method level filter
-        [TypeFilter(typeof(ResponseHeaderActionFilter),
-            Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)] // key and value
+        //[TypeFilter(typeof(ResponseHeaderActionFilter),
+        //    Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1 }, Order = 1)] // key and value
+        // using ActionFilterAttribute class
+        [ResponseHeaderActionFilter("X-Custom-Key", "Custom-Value", 1)]
         [TypeFilter(typeof(PersonsListResultFilter))]
         [TypeFilter(typeof(HandleExceptionFilter))]
         public async Task<IActionResult> Index(
