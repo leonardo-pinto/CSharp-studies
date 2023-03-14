@@ -11,7 +11,7 @@ namespace CrudExample.Controllers
     [Route("[controller]")]
     // Class-level filter
     //[TypeFilter(typeof(ResponseHeaderActionFilter),
-    //        Arguments = new object[] { "X-Custom-Key", "Custom-Value" })] // key and value
+    //        Arguments = new object[] { "X-Custom-Key", "Custom-Value", 3})] // key and value
     public class PersonsController : Controller
     {
         // private fields
@@ -33,10 +33,10 @@ namespace CrudExample.Controllers
         [Route("[action]")]
         [Route("/")]
         // receive parameters on View to perform search
-        [TypeFilter(typeof(PersonsListActionFilter))]
+        [TypeFilter(typeof(PersonsListActionFilter), Order = 3)]
         // Method level filter
         [TypeFilter(typeof(ResponseHeaderActionFilter), 
-            Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1})] // key and value
+            Arguments = new object[] { "X-Custom-Key", "Custom-Value", 1}, Order = 1)] // key and value
         public async Task<IActionResult> Index(
             string searchBy, 
             string? searchString, 

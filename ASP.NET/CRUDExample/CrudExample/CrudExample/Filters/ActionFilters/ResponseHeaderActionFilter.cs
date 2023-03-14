@@ -2,7 +2,7 @@
 
 namespace CrudExample.Filters.ActionFilters
 {
-    public class ResponseHeaderActionFilter : IActionFilter, IOrderedFilter
+    public class ResponseHeaderActionFilter : IAsyncActionFilter, IOrderedFilter
     {
         private readonly ILogger<ResponseHeaderActionFilter> _logger;
         private readonly string _key;
@@ -19,12 +19,22 @@ namespace CrudExample.Filters.ActionFilters
 
         public int Order { get; set; }
 
-        public void OnActionExecuted(ActionExecutedContext context)
-        {
-        }
+        //public void OnActionExecuted(ActionExecutedContext context)
+        //{
+        //}
 
-        public void OnActionExecuting(ActionExecutingContext context)
+        //public void OnActionExecuting(ActionExecutingContext context)
+        //{
+        //    context.HttpContext.Response.Headers[_key] = _value;
+        //}
+
+        public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
+            _logger.LogInformation("{FilterName}. {MethodName} before method",
+                nameof(ResponseHeaderActionFilter), nameof(OnActionExecutionAsync));
+            // before action
+            await next();
+            // after action
             context.HttpContext.Response.Headers[_key] = _value;
         }
     }
