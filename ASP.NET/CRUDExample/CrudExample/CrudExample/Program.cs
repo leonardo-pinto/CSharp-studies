@@ -7,6 +7,7 @@
 using Serilog;
 //using CrudExample.Filters.ActionFilters;
 using CrudExample;
+using CrudExample.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -71,6 +72,10 @@ app.UseSerilogRequestLogging();
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandlingMiddleware();
 }
 
 //app.Logger.LogDebug("debug-message");
