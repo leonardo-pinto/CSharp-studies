@@ -11,6 +11,7 @@ using OfficeOpenXml;
 using RepositoryContracts;
 using Microsoft.Extensions.Logging;
 using Serilog;
+using Exceptions;
 
 namespace Services
 {
@@ -159,7 +160,7 @@ namespace Services
             Person? matchingPerson = await _personsRepository.GetPersonByPersonID(personUpdateRequest.PersonID);
             if (matchingPerson == null)
             {
-                throw new ArgumentException("Given person id does not exist");
+                throw new InvalidPersonIdException("Given person id does not exist");
             }
 
             matchingPerson.PersonName = personUpdateRequest?.PersonName;
