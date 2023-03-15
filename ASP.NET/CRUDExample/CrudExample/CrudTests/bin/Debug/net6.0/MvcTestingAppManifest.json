@@ -1,8 +1,0 @@
-{
-  "CrudExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\CrudExample",
-  "Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Entities",
-  "Repositories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Repositories",
-  "RepositoryContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\RepositoryContracts",
-  "ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\ServiceContracts",
-  "Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Leonardo\\Documents\\Projects\\CSharp-studies\\ASP.NET\\CRUDExample\\CRUDExample\\Services"
-}
