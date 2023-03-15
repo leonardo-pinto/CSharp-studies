@@ -16,6 +16,8 @@ namespace CrudExample.Middlewares
             _logger = logger;
         }
 
+
+        // https://learn.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-7.0
         public async Task Invoke(HttpContext httpContext)
         {
             try
@@ -37,9 +39,10 @@ namespace CrudExample.Middlewares
                        ex.Message);
                 }
 
-                httpContext.Response.StatusCode = 500;
+                //httpContext.Response.StatusCode = 500;
                 // dont show the real error message to the user
-                await httpContext.Response.WriteAsync("An unexpected error occurred. Please try again");
+                //await httpContext.Response.WriteAsync("An unexpected error occurred. Please try again");
+                throw;
             }
         }
     }
