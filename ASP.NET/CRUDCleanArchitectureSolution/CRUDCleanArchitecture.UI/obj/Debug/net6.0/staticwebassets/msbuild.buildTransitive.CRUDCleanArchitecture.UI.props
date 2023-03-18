@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CRUDCleanArchitecture.UI.props" />
+</Project>
