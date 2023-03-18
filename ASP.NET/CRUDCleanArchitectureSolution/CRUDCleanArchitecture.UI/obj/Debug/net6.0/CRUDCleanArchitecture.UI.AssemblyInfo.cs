@@ -18,6 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("CRUDCleanArchitecture.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUDCleanArchitecture.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("CRUDCleanArchitecture.IntegrationTests")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

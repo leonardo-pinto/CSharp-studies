@@ -25,4 +25,8 @@
     <ProjectReference Include="..\CRUDCleanArchitecture.Infrastructure\CRUDCleanArchitecture.Infrastructure.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<InternalsVisibleTo Include="CRUDCleanArchitecture.IntegrationTests"/>
+	</ItemGroup>
+
 </Project>
