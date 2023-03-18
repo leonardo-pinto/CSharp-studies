@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0DDA0E19
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDCleanArchitecture.Core", "CRUDCleanArchitecture.Core\CRUDCleanArchitecture.Core.csproj", "{EAFA8A1A-3B5A-4736-9BF7-44F00995742E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDCleanArchitecture.Infrastructure", "CRUDCleanArchitecture.Infrastructure\CRUDCleanArchitecture.Infrastructure.csproj", "{37C16497-1555-42E0-9BC3-263CEE5A6160}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{EAFA8A1A-3B5A-4736-9BF7-44F00995742E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFA8A1A-3B5A-4736-9BF7-44F00995742E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFA8A1A-3B5A-4736-9BF7-44F00995742E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C16497-1555-42E0-9BC3-263CEE5A6160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C16497-1555-42E0-9BC3-263CEE5A6160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C16497-1555-42E0-9BC3-263CEE5A6160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C16497-1555-42E0-9BC3-263CEE5A6160}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B5134665-2CE7-4A2E-8C6B-6DDA310B821B} = {8F830535-5A5A-4D0F-AB54-8C12FE21CE53}
 		{EAFA8A1A-3B5A-4736-9BF7-44F00995742E} = {8F830535-5A5A-4D0F-AB54-8C12FE21CE53}
+		{37C16497-1555-42E0-9BC3-263CEE5A6160} = {8F830535-5A5A-4D0F-AB54-8C12FE21CE53}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {105ED675-8DAD-4EE7-A45E-698DCDFDA60C}
