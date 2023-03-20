@@ -1,5 +1,8 @@
-﻿using CrudExample.Filters.ActionFilters;
+﻿using CRUDCleanArchitecture.Core.Domain.IdentityEntities;
+using CrudExample.Filters.ActionFilters;
 using Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Repositories;
 using RepositoryContracts;
@@ -36,6 +39,14 @@ namespace CrudExample
                 // scoped service as default ! cannot add into a singleton
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             });
+
+            // Enable Identity in the project
+            services
+                .AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddDefaultTokenProviders()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>() // repository layer level
+                .AddRoleStore<RoleStore<ApplicationRole, ApplicationDbContext, Guid>>();
 
             return services;
         }

@@ -5,7 +5,7 @@ using CrudExample.Controllers;
 
 namespace CRUDCleanArchitecture.UI.Controllers
 {
-    [Route("[controller/[action]")]
+    [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
         [HttpGet]

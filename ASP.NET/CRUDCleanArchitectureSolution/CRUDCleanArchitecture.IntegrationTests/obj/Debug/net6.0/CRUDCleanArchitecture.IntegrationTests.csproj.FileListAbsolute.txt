@@ -483,3 +483,8 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectur
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\obj\Debug\net6.0\CRUDCleanArchitecture.IntegrationTests.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\obj\Debug\net6.0\CRUDCleanArchitecture.IntegrationTests.genruntimeconfig.cache
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\obj\Debug\net6.0\ref\CRUDCleanArchitecture.IntegrationTests.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.IntegrationTests\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

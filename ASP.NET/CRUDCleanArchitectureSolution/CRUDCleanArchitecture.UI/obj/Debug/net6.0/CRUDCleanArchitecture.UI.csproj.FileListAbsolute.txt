@@ -103,3 +103,8 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectur
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\bin\Debug\net6.0\CRUDCleanArchitecture.Infrastructure.pdb
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\obj\Debug\net6.0\CRUDCleanArchitecture.UI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\obj\Debug\net6.0\CRUDCleanArchitecture.UI.csproj.CopyComplete
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CRUDCleanArchitectureSolution\CRUDCleanArchitecture.UI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
