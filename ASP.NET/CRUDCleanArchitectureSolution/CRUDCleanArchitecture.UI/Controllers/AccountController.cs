@@ -11,9 +11,11 @@ namespace CRUDCleanArchitecture.UI.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        public AccountController(UserManager<ApplicationUser> userManager)
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
       
 
@@ -47,6 +49,11 @@ namespace CRUDCleanArchitecture.UI.Controllers
 
             if (result.Succeeded)
             {
+                // Sign-in
+                // create checkbox to attribute to isPErsistent
+                // keep me signed in?
+                await _signInManager.SignInAsync(user, true);
+
                 return RedirectToAction(nameof(PersonsController.Index), "Persons");
             }
             else
