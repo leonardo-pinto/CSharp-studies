@@ -1,10 +1,16 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using CRUDCleanArchitecture.Core.Domain.IdentityEntities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
 namespace Entities
 {
-    public class ApplicationDbContext : DbContext
+    // IdentityDbContext contains pre define db sets
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>
+
+    // Without Identity package
+    //public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions options) : base(options) { }
 
