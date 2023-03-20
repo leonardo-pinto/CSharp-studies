@@ -2,12 +2,21 @@
 using Microsoft.AspNetCore.Mvc;
 using CRUDCleanArchitecture.UI.Controllers;
 using CrudExample.Controllers;
+using Microsoft.AspNetCore.Identity;
+using CRUDCleanArchitecture.Core.Domain.IdentityEntities;
 
 namespace CRUDCleanArchitecture.UI.Controllers
 {
     [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
+        private readonly UserManager<ApplicationUser> _userManager;
+        public AccountController(UserManager<ApplicationUser> userManager)
+        {
+            _userManager = userManager;
+        }
+      
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -15,9 +24,41 @@ namespace CRUDCleanArchitecture.UI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(RegisterRequest registerRequest)
+        public async Task<IActionResult> Register(RegisterRequest registerRequest)
         {
-            return RedirectToAction(nameof(PersonsController.Index), "Persons");
+            // Check for validation errors
+            if (ModelState.IsValid == false)
+            {
+                ViewBag.Errors = ModelState.Values
+                    .SelectMany(temp => temp.Errors)
+                    .Select(temp => temp.ErrorMessage);
+                return View(registerRequest);
+            }
+
+            ApplicationUser user = new()
+            {
+                Email = registerRequest.Email,
+                PhoneNumber = registerRequest.Phone,
+                UserName = registerRequest.Email,
+                PersonName = registerRequest.PersonName,
+            };
+
+            IdentityResult result = await _userManager.CreateAsync(user, registerRequest.Password);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(PersonsController.Index), "Persons");
+            }
+            else
+            {
+                foreach (IdentityError error in result.Errors)
+                {
+                    ModelState.AddModelError("Register", error.Description);
+                }
+
+                return View(registerRequest);
+            }
+
         }
     }
 }
