@@ -45,12 +45,17 @@ namespace CRUDCleanArchitecture.UI.Controllers
                 PhoneNumber = registerRequest.Phone,
                 UserName = registerRequest.Email,
                 PersonName = registerRequest.PersonName,
+                
             };
 
             IdentityResult result = await _userManager.CreateAsync(user, registerRequest.Password);
 
             if (result.Succeeded)
             {
+                if (registerRequest.UserType == Core.Enums.UserTypeOptions.Admin)
+                {
+                    // add logic
+                }
                 // create cookies
                 // Sign-in
                 // create checkbox to attribute to isPErsistent

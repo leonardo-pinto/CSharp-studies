@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using CRUDCleanArchitecture.Core.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUDCleanArchitecture.Core.DTO
@@ -26,5 +27,7 @@ namespace CRUDCleanArchitecture.Core.DTO
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Password and confirm password do not match")]
         public string ConfirmPassword { get; set; }
+
+        public UserTypeOptions UserType { get; set; } = UserTypeOptions.User
     }
 }
