@@ -17,7 +17,7 @@ namespace CRUDCleanArchitecture.UI.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
-      
+
 
         [HttpGet]
         public IActionResult Register()
@@ -49,6 +49,7 @@ namespace CRUDCleanArchitecture.UI.Controllers
 
             if (result.Succeeded)
             {
+                // create cookies
                 // Sign-in
                 // create checkbox to attribute to isPErsistent
                 // keep me signed in?
@@ -65,7 +66,44 @@ namespace CRUDCleanArchitecture.UI.Controllers
 
                 return View(registerRequest);
             }
+        }
 
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginRequest loginRequest)
+        {
+            if (ModelState.IsValid == false)
+            {
+                ViewBag.Errors = ModelState.Values
+                                   .SelectMany(temp => temp.Errors)
+                                   .Select(temp => temp.ErrorMessage);
+                return View(loginRequest);
+            }
+
+            // keep signed in?
+            var result = await _signInManager
+                .PasswordSignInAsync(loginRequest.Email, loginRequest.Password, isPersistent: true, lockoutOnFailure: false);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(PersonsController.Index), "Persons");
+            }
+            else
+            {
+                ModelState.AddModelError("Login", "Invalid email or password");
+                return View(loginRequest);
+            }
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(PersonsController.Index), "Persons");
         }
     }
 }
