@@ -28,6 +28,6 @@ namespace CRUDCleanArchitecture.Core.DTO
         [Compare("Password", ErrorMessage = "Password and confirm password do not match")]
         public string ConfirmPassword { get; set; }
 
-        public UserTypeOptions UserType { get; set; } = UserTypeOptions.User
+        public UserTypeOptions UserType { get; set; } = UserTypeOptions.User;
     }
 }

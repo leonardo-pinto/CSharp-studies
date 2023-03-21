@@ -1,10 +1,10 @@
 ﻿using CRUDCleanArchitecture.Core.DTO;
 using Microsoft.AspNetCore.Mvc;
-using CRUDCleanArchitecture.UI.Controllers;
 using CrudExample.Controllers;
 using Microsoft.AspNetCore.Identity;
 using CRUDCleanArchitecture.Core.Domain.IdentityEntities;
 using Microsoft.AspNetCore.Authorization;
+using CRUDCleanArchitecture.Core.Enums;
 
 namespace CRUDCleanArchitecture.UI.Controllers
 {
@@ -14,10 +14,13 @@ namespace CRUDCleanArchitecture.UI.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        private readonly RoleManager<ApplicationRole> _roleManager;
+        public AccountController(
+            UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<ApplicationRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
 
 
@@ -52,10 +55,24 @@ namespace CRUDCleanArchitecture.UI.Controllers
 
             if (result.Succeeded)
             {
-                if (registerRequest.UserType == Core.Enums.UserTypeOptions.Admin)
+                if (registerRequest.UserType == UserTypeOptions.Admin)
                 {
-                    // add logic
+                    if (await _roleManager.FindByNameAsync(UserTypeOptions.Admin.ToString()) is null)
+                    {
+                        // create role
+                        ApplicationRole applicationRole = new() { Name = UserTypeOptions.Admin.ToString() };
+                        await _roleManager.CreateAsync(applicationRole);
+                    }
+
+                    // add role to user
+                    await _userManager.AddToRoleAsync(user, UserTypeOptions.Admin.ToString());
                 }
+                else
+                {
+                    await _userManager.AddToRoleAsync(user, UserTypeOptions.User.ToString());
+                }
+
+                
                 // create cookies
                 // Sign-in
                 // create checkbox to attribute to isPErsistent
@@ -98,6 +115,16 @@ namespace CRUDCleanArchitecture.UI.Controllers
 
             if (result.Succeeded)
             {
+                // Admin
+                ApplicationUser user = await _userManager.FindByEmailAsync(loginRequest.Email);
+                if (user != null)
+                {
+                    if (await _userManager.IsInRoleAsync(user, UserTypeOptions.Admin.ToString()))
+                    {
+                        return RedirectToAction("Index", "Home", new { area = "Admin" });
+                    }
+                }
+
                 if (!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
                 {
                     return LocalRedirect(ReturnUrl);
