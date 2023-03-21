@@ -4,10 +4,12 @@ using CRUDCleanArchitecture.UI.Controllers;
 using CrudExample.Controllers;
 using Microsoft.AspNetCore.Identity;
 using CRUDCleanArchitecture.Core.Domain.IdentityEntities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CRUDCleanArchitecture.UI.Controllers
 {
     [Route("[controller]/[action]")]
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

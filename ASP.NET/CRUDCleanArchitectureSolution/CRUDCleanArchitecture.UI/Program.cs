@@ -88,8 +88,9 @@ if (builder.Environment.IsEnvironment("Test") == false) {
 }
 
 app.UseStaticFiles();
-app.UseAuthentication(); // Reading Identity cookie
 app.UseRouting(); // Identifying action method based
+app.UseAuthentication(); // Reading Identity cookie
+app.UseAuthorization(); // Evaluate permissions of the user
 app.MapControllers(); // Execute the filter pipeline (action + filters)
 app.Run();
 

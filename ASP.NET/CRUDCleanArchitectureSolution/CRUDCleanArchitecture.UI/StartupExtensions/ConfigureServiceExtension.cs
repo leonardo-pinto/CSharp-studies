@@ -8,6 +8,7 @@ using Repositories;
 using RepositoryContracts;
 using ServiceContracts;
 using Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CrudExample
 {
@@ -52,6 +53,17 @@ namespace CrudExample
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>() // repository layer level
                 .AddRoleStore<RoleStore<ApplicationRole, ApplicationDbContext, Guid>>();
+
+            services.AddAuthorization(options =>
+            {
+                options.FallbackPolicy = new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser().Build(); // enables authorization policy (user must be authenticated) for all action methods
+            });
+
+            services.ConfigureExternalCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";
+            });
 
             return services;
         }
