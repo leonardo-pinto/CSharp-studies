@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CRUDCleanArchitecture.Core.DTO
 {
@@ -9,6 +10,7 @@ namespace CRUDCleanArchitecture.Core.DTO
 
         [Required(ErrorMessage = "Email can't be blank")]
         [EmailAddress(ErrorMessage = "Email should be in a proper email address format")]
+        [Remote(action:"IsEmailAlreadyRegistered", controller: "Account", ErrorMessage = "Email already exists")] // generate js code automaticallt
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Phone can't be blank")]
