@@ -77,7 +77,7 @@ namespace CRUDCleanArchitecture.UI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginRequest loginRequest)
+        public async Task<IActionResult> Login(LoginRequest loginRequest, string? ReturnUrl)
         {
             if (ModelState.IsValid == false)
             {
@@ -93,6 +93,10 @@ namespace CRUDCleanArchitecture.UI.Controllers
 
             if (result.Succeeded)
             {
+                if (!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
+                {
+                    return LocalRedirect(ReturnUrl);
+                }
                 return RedirectToAction(nameof(PersonsController.Index), "Persons");
             }
             else
