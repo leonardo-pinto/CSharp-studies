@@ -42,7 +42,12 @@ namespace CrudExample
 
             // Enable Identity in the project
             services
-                .AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddIdentity<ApplicationUser, ApplicationRole>(options =>
+                {
+                    options.Password.RequiredLength = 5; // default is 6
+                    options.Password.RequireNonAlphanumeric = false; // default is true
+                    options.Password.RequireUppercase = false; // default is true
+                })
                 .AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>() // repository layer level
