@@ -9,7 +9,8 @@ using CRUDCleanArchitecture.Core.Enums;
 namespace CRUDCleanArchitecture.UI.Controllers
 {
     [Route("[controller]/[action]")]
-    [AllowAnonymous]
+    [AllowAnonymous] // contrast of Policy -> does not require authorization
+    // use policy to allow actions
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -25,11 +26,13 @@ namespace CRUDCleanArchitecture.UI.Controllers
 
 
         [HttpGet]
+        //[Authorize("NotAuthorized")]
         public IActionResult Register()
         {
             return View();
         }
 
+        [Authorize("NotAuthorized")]
         [HttpPost]
         public async Task<IActionResult> Register(RegisterRequest registerRequest)
         {
@@ -93,12 +96,14 @@ namespace CRUDCleanArchitecture.UI.Controllers
         }
 
         [HttpGet]
+        //[Authorize("NotAuthorized")]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
+        //[Authorize("NotAuthorized")]
         public async Task<IActionResult> Login(LoginRequest loginRequest, string? ReturnUrl)
         {
             if (ModelState.IsValid == false)

@@ -58,6 +58,15 @@ namespace CrudExample
             {
                 options.FallbackPolicy = new AuthorizationPolicyBuilder()
                 .RequireAuthenticatedUser().Build(); // enables authorization policy (user must be authenticated) for all action methods
+
+                // custom policies
+                options.AddPolicy("NotAuthenticated", policy =>
+                {
+                    policy.RequireAssertion(context =>
+                    {
+                        return !context.User.Identity.IsAuthenticated;
+                    });
+                });
             });
 
             services.ConfigureExternalCookie(options =>
