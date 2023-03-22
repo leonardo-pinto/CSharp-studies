@@ -79,6 +79,11 @@ else
     app.UseExceptionHandlingMiddleware();
 }
 
+// changed URL address on launchSettings.json
+// enables HTTPS
+app.UseHsts();
+app.UseHttpsRedirection();
+
 //app.Logger.LogDebug("debug-message");
 //app.Logger.LogCritical("critical-message");
 //app.Logger.LogWarning("warning-message");
