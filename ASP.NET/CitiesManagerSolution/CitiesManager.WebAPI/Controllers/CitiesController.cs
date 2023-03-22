@@ -53,6 +53,7 @@ namespace CitiesManager.WebAPI.Controllers
         // PUT: api/Cities/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        // recommended the use Bind to avoid overposting !
         public async Task<IActionResult> PutCity(Guid id, City city)
         {
             if (id != city.CityId)
@@ -60,6 +61,7 @@ namespace CitiesManager.WebAPI.Controllers
                 return BadRequest();
             }
 
+            // prefer to change properties one by one
             _context.Entry(city).State = EntityState.Modified;
 
             try
@@ -74,6 +76,8 @@ namespace CitiesManager.WebAPI.Controllers
                 }
                 else
                 {
+                    // throws DbUpdateConcurrencyException to the user
+                    // Use filters to handle global exception
                     throw;
                 }
             }
@@ -86,6 +90,7 @@ namespace CitiesManager.WebAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<City>> PostCity(City city)
         {
+            // it is never null!!!
           if (_context.Cities == null)
           {
               return Problem("Entity set 'ApplicationDbContext.Cities'  is null.");
@@ -93,6 +98,7 @@ namespace CitiesManager.WebAPI.Controllers
             _context.Cities.Add(city);
             await _context.SaveChangesAsync();
 
+            // Returns 201, and call GetCity method
             return CreatedAtAction("GetCity", new { id = city.CityId }, city);
         }
 
