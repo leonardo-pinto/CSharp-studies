@@ -12,6 +12,7 @@ namespace CitiesManager.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    // should use CustomControllerBased???
     public class CitiesController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -22,13 +23,19 @@ namespace CitiesManager.WebAPI.Controllers
         }
 
         // GET: api/Cities
+        // need to convert into xml file
+        /// <summary>
+        /// To get list of cities (including city ID and city name) from 'cities table'
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        
         public async Task<ActionResult<IEnumerable<City>>> GetCities()
         {
-          if (_context.Cities == null)
-          {
-              return NotFound();
-          }
+            if (_context.Cities == null)
+            {
+                return NotFound();
+            }
             return await _context.Cities.ToListAsync();
         }
 
@@ -36,15 +43,17 @@ namespace CitiesManager.WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<City>> GetCity(Guid id)
         {
-          if (_context.Cities == null)
-          {
-              return NotFound();
-          }
+            // Model.IsValid occurs automatically from APIController
+            if (_context.Cities == null)
+            {
+                return NotFound();
+            }
             var city = await _context.Cities.FindAsync(id);
 
             if (city == null)
             {
-                return NotFound();
+                return Problem(detail: "Invalid city id", statusCode: 400, title: "City Search");
+                //return NotFound();
             }
 
             return city;
@@ -91,10 +100,10 @@ namespace CitiesManager.WebAPI.Controllers
         public async Task<ActionResult<City>> PostCity(City city)
         {
             // it is never null!!!
-          if (_context.Cities == null)
-          {
-              return Problem("Entity set 'ApplicationDbContext.Cities'  is null.");
-          }
+            if (_context.Cities == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Cities'  is null.");
+            }
             _context.Cities.Add(city);
             await _context.SaveChangesAsync();
 
