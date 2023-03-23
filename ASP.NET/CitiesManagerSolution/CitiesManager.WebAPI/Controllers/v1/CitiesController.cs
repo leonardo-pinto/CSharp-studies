@@ -8,12 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using CitiesManager.WebAPI.DatabaseContext;
 using CitiesManager.WebAPI.Models;
 
-namespace CitiesManager.WebAPI.Controllers
+namespace CitiesManager.WebAPI.Controllers.v1
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    //[Route("api/[controller]")]
+    //[ApiController]
+    [ApiVersion("1.0")]
     // should use CustomControllerBased???
-    public class CitiesController : ControllerBase
+    public class CitiesController : CustomControllerBase
     {
         private readonly ApplicationDbContext _context;
 
@@ -29,7 +30,7 @@ namespace CitiesManager.WebAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        
+
         public async Task<ActionResult<IEnumerable<City>>> GetCities()
         {
             if (_context.Cities == null)

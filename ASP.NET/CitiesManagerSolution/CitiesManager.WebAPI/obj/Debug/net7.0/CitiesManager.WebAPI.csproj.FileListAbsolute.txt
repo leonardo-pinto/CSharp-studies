@@ -275,3 +275,5 @@ C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CitiesManagerSolutio
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CitiesManagerSolution\CitiesManager.WebAPI\obj\Debug\net7.0\CitiesManager.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net7.0\api.xml
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\Leonardo\Documents\Projects\CSharp-studies\ASP.NET\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
